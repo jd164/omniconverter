@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OmniConverter • Multi-Format Call Log Converter & Analytics</title>
+  <meta name="description" content="Convert WhatsApp and phone call logs to Excel (.xlsx), CSV, JSON, and iCalendar (.ics) with an interactive real-time analytics dashboard.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Local Libraries for 100% Offline / Static Functionality -->
+  <script src="libs/xlsx.full.min.js"></script>
+  <script src="libs/chart.umd.min.js"></script>
+  <script src="libs/jszip.min.js"></script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient Background Glows -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-glow bg-glow-3"></div>
+
+  <!-- Toast Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Top Navbar -->
+  <header class="navbar" id="main-header">
+    <div class="nav-container">
+      <div class="brand-group">
+        <div class="brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <div class="brand-title-wrap">
+            <h1 class="brand-title">OmniConverter</h1>
+            <span class="badge badge-version">v2.0 Pro</span>
+          </div>
+          <p class="brand-subtitle">Multi-Format Converter & Call Analytics</p>
+        </div>
+      </div>
+
+      <div class="nav-actions">
+        <div id="connection-badge" class="connection-pill online">
+          <span class="status-dot"></span>
+          <span id="connection-status-text">Server Connected</span>
+        </div>
+        <button id="btn-load-sample" class="btn btn-glass" title="Load sample call log dataset">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Load Sample Data</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <!-- Hero / Drag & Drop Upload Zone -->
+    <section class="upload-section" aria-label="File Upload">
+      <div class="drop-card" id="drop-zone">
+        <input type="file" id="file-input" accept=".json,.ics,.csv" class="file-input-hidden">
+        <div class="drop-content">
+          <div class="drop-icon-wrap">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path>
+              <path d="M12 12v9"></path>
+              <path d="m16 16-4-4-4 4"></path>
+            </svg>
+          </div>
+          <div class="drop-text">
+            <h3>Drag & drop your file here or <span class="highlight">browse your computer</span></h3>
+            <p>Supports <strong>JSON</strong> (WhatsApp export), <strong>ICS</strong>, and <strong>CSV</strong></p>
+          </div>
+          <div class="format-tags">
+            <span class="fmt-pill">.JSON</span>
+            <span class="fmt-pill">.XLSX</span>
+            <span class="fmt-pill">.CSV</span>
+            <span class="fmt-pill">.ICS</span>
+          </div>
+        </div>
+
+        <!-- Loaded File Banner -->
+        <div id="loaded-file-banner" class="loaded-banner hidden">
+          <div class="loaded-meta">
+            <div class="file-icon">📄</div>
+            <div>
+              <div class="loaded-filename" id="loaded-filename-display">dados.json</div>
+              <div class="loaded-details" id="loaded-details-display">94 calls loaded • 251.3 KB</div>
+            </div>
+          </div>
+          <div class="loaded-actions">
+            <button id="btn-reselect-file" class="btn btn-sm btn-ghost">Replace File</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conversion & Export Command Center -->
+    <section class="export-center" aria-label="Export Center">
+      <div class="section-card export-card">
+        <div class="export-header">
+          <div class="export-title-group">
+            <div class="icon-circle icon-indigo">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 16 12 12 8 16"></polyline>
+                <line x1="12" y1="12" x2="12" y2="21"></line>
+                <path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path>
+              </svg>
+            </div>
+            <div>
+              <h2>Conversion & Export Center</h2>
+              <p class="section-desc">Convert and export your call logs directly to the format you need</p>
+            </div>
+          </div>
+
+          <!-- Calendar Title Customizer -->
+          <div class="calendar-config">
+            <label for="event-title-input" class="config-label">Calendar Event Title (ICS):</label>
+            <div class="input-with-tags">
+              <input type="text" id="event-title-input" class="text-input" value="Call with {contact}" placeholder="e.g. Call with {contact}">
+              <div class="tag-helpers">
+                <span class="tag-helper" data-insert="{contact}">+ {contact}</span>
+                <span class="tag-helper" data-insert="{type}">+ {type}</span>
+                <span class="tag-helper" data-insert="{duration}">+ {duration}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Export Buttons Grid -->
+        <div class="export-buttons-grid">
+          <!-- Excel -->
+          <button id="btn-export-xlsx" class="btn-export btn-export-excel" data-format="xlsx">
+            <div class="export-btn-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="8" y1="13" x2="16" y2="17"></line>
+                <line x1="16" y1="13" x2="8" y2="17"></line>
+              </svg>
+            </div>
+            <div class="export-btn-content">
+              <span class="btn-format-title">Excel Spreadsheet</span>
+              <span class="btn-format-ext">.XLSX</span>
+              <span class="btn-format-sub">Formatted Tables + Summary</span>
+            </div>
+            <div class="btn-hover-arrow">↓</div>
+          </button>
+
+          <!-- CSV -->
+          <button id="btn-export-csv" class="btn-export btn-export-csv" data-format="csv">
+            <div class="export-btn-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="8" y1="13" x2="16" y2="13"></line>
+                <line x1="8" y1="17" x2="16" y2="17"></line>
+                <line x1="10" y1="9" x2="8" y2="9"></line>
+              </svg>
+            </div>
+            <div class="export-btn-content">
+              <span class="btn-format-title">CSV File</span>
+              <span class="btn-format-ext">.CSV</span>
+              <span class="btn-format-sub">Excel-Ready UTF-8 with BOM</span>
+            </div>
+            <div class="btn-hover-arrow">↓</div>
+          </button>
+
+          <!-- ICS -->
+          <button id="btn-export-ics" class="btn-export btn-export-ics" data-format="ics">
+            <div class="export-btn-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <div class="export-btn-content">
+              <span class="btn-format-title">Calendar File</span>
+              <span class="btn-format-ext">.ICS</span>
+              <span class="btn-format-sub">Google / Apple / Outlook</span>
+            </div>
+            <div class="btn-hover-arrow">↓</div>
+          </button>
+
+          <!-- JSON -->
+          <button id="btn-export-json" class="btn-export btn-export-json" data-format="json">
+            <div class="export-btn-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <polyline points="10 12 8 14 10 16"></polyline>
+                <polyline points="14 12 16 14 14 16"></polyline>
+              </svg>
+            </div>
+            <div class="export-btn-content">
+              <span class="btn-format-title">JSON Format</span>
+              <span class="btn-format-ext">.JSON</span>
+              <span class="btn-format-sub">Clean Structured Data</span>
+            </div>
+            <div class="btn-hover-arrow">↓</div>
+          </button>
+
+          <!-- ZIP -->
+          <button id="btn-export-zip" class="btn-export btn-export-zip" data-format="zip">
+            <div class="export-btn-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <div class="export-btn-content">
+              <span class="btn-format-title">Complete Bundle</span>
+              <span class="btn-format-ext">.ZIP</span>
+              <span class="btn-format-sub">All 4 Formats in One File</span>
+            </div>
+            <div class="btn-hover-arrow">⚡</div>
+          </button>
+        </div>
+
+        <!-- Export Option Toggle -->
+        <div class="export-footer-options">
+          <label class="checkbox-container">
+            <input type="checkbox" id="chk-export-filtered" checked>
+            <span class="checkmark"></span>
+            <span class="checkbox-label">Export only currently filtered calls (<strong id="filtered-count-badge">94</strong> items)</span>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- KPI Metric Cards -->
+    <section class="kpi-grid" aria-label="Key Metrics">
+      <div class="kpi-card card-total">
+        <div class="kpi-icon-wrap">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+        </div>
+        <div class="kpi-info">
+          <div class="kpi-label">Total Calls</div>
+          <div class="kpi-value" id="kpi-total-calls">94</div>
+          <div class="kpi-subtext" id="kpi-period-subtext">May 2026 - Sep 2026</div>
+        </div>
+      </div>
+
+      <div class="kpi-card card-duration">
+        <div class="kpi-icon-wrap">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+        </div>
+        <div class="kpi-info">
+          <div class="kpi-label">Total Duration</div>
+          <div class="kpi-value text-amber" id="kpi-total-duration">69h 48m 23s</div>
+          <div class="kpi-subtext" id="kpi-total-sec">251,303 seconds</div>
+        </div>
+      </div>
+
+      <div class="kpi-card card-average">
+        <div class="kpi-icon-wrap">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+          </svg>
+        </div>
+        <div class="kpi-info">
+          <div class="kpi-label">Average Duration</div>
+          <div class="kpi-value text-indigo" id="kpi-avg-duration">44m 33s</div>
+          <div class="kpi-subtext">per completed call</div>
+        </div>
+      </div>
+
+      <div class="kpi-card card-types">
+        <div class="kpi-icon-wrap">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+            <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+            <line x1="12" y1="19" x2="12" y2="22"></line>
+          </svg>
+        </div>
+        <div class="kpi-info">
+          <div class="kpi-label">Call Types</div>
+          <div class="kpi-value text-cyan" id="kpi-types-display">71 Voice / 23 Video</div>
+          <div class="kpi-subtext">
+            <span class="rate-bar-bg"><span id="kpi-voice-bar" class="rate-bar-fill" style="width: 75%"></span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="kpi-card card-status">
+        <div class="kpi-icon-wrap">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+          </svg>
+        </div>
+        <div class="kpi-info">
+          <div class="kpi-label">Answer Rate</div>
+          <div class="kpi-value text-emerald" id="kpi-answered-rate">92%</div>
+          <div class="kpi-subtext" id="kpi-status-subtext">87 Answered • 7 Missed</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Analytics Charts Section -->
+    <section class="charts-section" aria-label="Visual Analytics">
+      <div class="charts-grid">
+        <div class="section-card chart-card chart-card-wide">
+          <div class="chart-header">
+            <div>
+              <h3>Timeline Analytics</h3>
+              <p class="section-desc">Conversation volume and duration over time</p>
+            </div>
+            <div class="chart-toggle-group">
+              <button class="btn-toggle active" data-chart-mode="duration">Duration (Hours)</button>
+              <button class="btn-toggle" data-chart-mode="count">Call Count</button>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="chart-timeline"></canvas>
+          </div>
+        </div>
+
+        <div class="section-card chart-card">
+          <div class="chart-header">
+            <div>
+              <h3>Peak Calling Hours</h3>
+              <p class="section-desc">Hourly call distribution (00h - 23h)</p>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="chart-hourly"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Filters & Search -->
+    <section class="filter-section" aria-label="Filters and Search">
+      <div class="filter-card">
+        <div class="filter-row">
+          <!-- Text Search -->
+          <div class="search-wrap">
+            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="search-input" class="search-input" placeholder="Search by date, time, duration, ID, status...">
+            <button id="btn-clear-search" class="clear-btn hidden" title="Clear search">&times;</button>
+          </div>
+
+          <!-- Date Filters -->
+          <div class="date-filter-group">
+            <div class="date-input-wrap">
+              <label for="filter-date-from">From:</label>
+              <input type="date" id="filter-date-from" class="date-input">
+            </div>
+            <div class="date-input-wrap">
+              <label for="filter-date-to">To:</label>
+              <input type="date" id="filter-date-to" class="date-input">
+            </div>
+          </div>
+
+          <!-- Quick Filter Pills -->
+          <div class="quick-pills">
+            <button class="filter-pill active" data-filter-type="all">All</button>
+            <button class="filter-pill" data-filter-type="voice">🎙️ Voice</button>
+            <button class="filter-pill" data-filter-type="video">📹 Video</button>
+            <button class="filter-pill" data-filter-type="answered">✅ Answered</button>
+            <button class="filter-pill" data-filter-type="missed">❌ Missed</button>
+            <button class="filter-pill" data-filter-type="long">⏱️ > 30 min</button>
+          </div>
+        </div>
+
+        <div class="filter-stats-bar">
+          <div class="filter-count-info">
+            Showing <strong id="visible-count">94</strong> of <strong id="total-count">94</strong> calls
+          </div>
+          <div class="table-actions">
+            <button id="btn-select-all" class="btn btn-xs btn-ghost">Select Visible</button>
+            <button id="btn-select-none" class="btn btn-xs btn-ghost">Clear Selection</button>
+            <div class="page-size-select">
+              <label for="select-page-size">Per page:</label>
+              <select id="select-page-size">
+                <option value="15" selected>15</option>
+                <option value="30">30</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="99999">All</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Data Table Section -->
+    <section class="table-section" aria-label="Call Records Table">
+      <div class="section-card table-card">
+        <div class="table-responsive">
+          <table class="data-table" id="calls-table">
+            <thead>
+              <tr>
+                <th class="col-chk">
+                  <input type="checkbox" id="chk-select-page" title="Select current page">
+                </th>
+                <th class="col-num">#</th>
+                <th class="col-date sortable" data-sort="date">
+                  <span>Date</span>
+                  <span class="sort-indicator">↕</span>
+                </th>
+                <th class="col-time sortable" data-sort="time">
+                  <span>Time</span>
+                  <span class="sort-indicator">↕</span>
+                </th>
+                <th class="col-type">Type</th>
+                <th class="col-dir">Direction</th>
+                <th class="col-status">Status</th>
+                <th class="col-dur sortable" data-sort="durationSec">
+                  <span>Duration</span>
+                  <span class="sort-indicator">↕</span>
+                </th>
+                <th class="col-iso">UTC Start</th>
+                <th class="col-actions">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="calls-table-body">
+              <!-- Populated via JavaScript -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Pagination Controls -->
+        <div class="pagination-bar" id="pagination-controls">
+          <div class="pagination-info" id="pagination-info">Page 1 of 7</div>
+          <div class="pagination-buttons">
+            <button id="btn-page-first" class="btn-page" title="First page">«</button>
+            <button id="btn-page-prev" class="btn-page" title="Previous page">‹</button>
+            <div id="pagination-numbers" class="pagination-numbers"></div>
+            <button id="btn-page-next" class="btn-page" title="Next page">›</button>
+            <button id="btn-page-last" class="btn-page" title="Last page">»</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal Details -->
+  <div id="modal-details" class="modal-backdrop hidden" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <div class="modal-icon">📞</div>
+          <h3>Complete Call Record Details</h3>
+        </div>
+        <button id="btn-close-modal" class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-details-content">
+        <!-- Injected via JavaScript -->
+      </div>
+      <div class="modal-footer">
+        <button id="btn-copy-json" class="btn btn-glass">Copy Record JSON</button>
+        <button id="btn-modal-done" class="btn btn-primary">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="main-footer">
+    <p>OmniConverter v2.0 • Multi-Format Call Log Converter for Excel, CSV, JSON, and iCalendar (ICS) • Offline & Online Ready</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

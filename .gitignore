@@ -1,0 +1,41 @@
+# Sensitive & personal data (DO NOT COMMIT)
+dados_pessoal*.json
+videochamadas_momo.*
+*personal*
+*.private.*
+.env
+
+# Generated export test files
+call_logs.xlsx
+call_logs.csv
+call_logs.json
+call_logs.ics
+call_logs_export*
+call_logs_bundle*
+*.zip
+
+# Python temporary & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# IDE & Editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
