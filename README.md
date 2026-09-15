@@ -5,9 +5,11 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-Framework-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-An all-in-one tool and interactive web dashboard to convert WhatsApp and phone call history exports into **Excel (.xlsx)**, **CSV**, **JSON**, and **iCalendar (.ics)** calendar events.
+An all-in-one tool and interactive web dashboard to:
+1. Convert WhatsApp and phone call history exports into **Excel (.xlsx)**, **CSV**, **JSON**, and **iCalendar (.ics)** calendar events.
+2. **Slice and split heavy .ics calendar files** (Google Calendar, Google Takeout, Apple Calendar, Outlook) into smaller parts (e.g. 950 KB) to bypass Google Calendar's strict **1 MB import limit**.
 
-> 🔒 **Privacy-First**: The web dashboard is fully client-side capable. When hosted on **GitHub Pages**, your call data is processed directly inside your browser—no files or personal data are ever uploaded to any external server.
+> 🔒 **Privacy-First**: The web dashboard is fully client-side capable. When hosted on **GitHub Pages**, your call data and calendar files are processed directly inside your browser—no files or personal data are ever uploaded to any external server.
 
 ---
 
@@ -17,16 +19,23 @@ You can use this tool directly in your browser without installing anything:
 
 👉 **[Launch OmniConverter on GitHub Pages](https://jd164.github.io/omniconverter/)**
 
-1. Open the link above.
-2. Drag & drop your call log `.json` file (or click **Load Sample Data** to explore the demo).
-3. View instant KPIs, duration charts, and interactive call records.
-4. Click any format button (**Excel**, **CSV**, **Calendar .ics**, **JSON**, or **ZIP bundle**) to download immediately!
+### Features available online:
+- **Call Log Converter & Analytics**: Drag & drop WhatsApp `.json` exports to view charts, statistics, and export to Excel, CSV, JSON, and ICS.
+- **ICS Calendar Slicer**: Drag & drop any large `.ics` file (from Google Calendar or Google Takeout) to slice into chunks under 1 MB with a single click, packaged as a `.zip` ready for import.
 
 ---
 
 ## ⚡ Key Features
 
-- **📊 Multi-Format Conversion**:
+### 📅 1. ICS Calendar Slicer (Google Calendar Limit Bypass)
+- **Solves the Google Calendar 1 MB Import Error**: Google Calendar rejects any `.ics` file larger than 1 MB. OmniConverter splits large archives into safe, compliant chunks (default: **950 KB**).
+- **Preserves Calendar Integrity**: Automatically preserves all `VTIMEZONE` blocks, timezone daylight/standard definitions, and global calendar headers across every slice.
+- **Two Splitting Modes**:
+  - **By File Size (KB/MB)**: Choose presets like `950 KB (Google Limit Safe)`, `800 KB`, `500 KB`, `1 MB`, or enter custom size limits.
+  - **By Event Count**: Split by `250`, `500`, `1,000`, or custom event count per file.
+- **One-Click Batch ZIP Download**: Download all generated parts and step-by-step import instructions in a single `.zip` archive, or download individual parts separately.
+
+### 📊 2. Multi-Format Call Log Conversion
   - **Excel (.xlsx)**: Formatted workbook with two sheets:
     - `Call Log`: Filtered records with styled headers, alternating row colors, auto-adjusted column widths, and duration formatting.
     - `Statistical Summary`: Aggregated volume metrics, total hours, call averages, and date span.
@@ -90,6 +99,16 @@ python main.py --format ics    # iCalendar (.ics) only
 
 # Custom input, output, and calendar event title:
 python main.py -i my_calls.json -o report -f all -t "Call with {contact}"
+
+# -------------------------------------------------------------
+# ICS Calendar Slicer (Split heavy .ics files for Google Calendar)
+# -------------------------------------------------------------
+
+# Split by maximum file size (e.g. 950KB safe for Google Calendar):
+python main.py --split heavy_calendar.ics --max-size 950KB
+
+# Split by maximum events per file (e.g. 200 events):
+python main.py --split heavy_calendar.ics --max-events 200 --split-out ./calendar_parts
 ```
 
 ### CLI Parameters:
@@ -99,6 +118,10 @@ python main.py -i my_calls.json -o report -f all -t "Call with {contact}"
 | `--output` | `-o` | `call_logs` | Base name for exported files |
 | `--format` | `-f` | `all` | Target: `all`, `xlsx`, `csv`, `json`, `ics` |
 | `--title` | `-t` | `Call with {contact}` | Calendar event summary template |
+| `--split` | | `None` | Path to .ics file to slice into smaller pieces |
+| `--max-size` | | `None` | Max size per chunk (e.g. `950KB`, `1MB`, `500KB`) |
+| `--max-events`| | `None` | Max number of events per chunk (e.g. `200`) |
+| `--split-out` | | `None` | Output directory for sliced .ics files |
 | `--web` | | `False` | Launch interactive web dashboard |
 | `--port` | | `8000` | Local server port |
 

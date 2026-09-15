@@ -88,7 +88,57 @@ const DOM = {
   btnCloseModal: document.getElementById('btn-close-modal'),
   btnModalDone: document.getElementById('btn-modal-done'),
   btnCopyJson: document.getElementById('btn-copy-json'),
-  toastContainer: document.getElementById('toast-container')
+  toastContainer: document.getElementById('toast-container'),
+
+  // Navigation Tabs
+  tabBtnConverter: document.getElementById('tab-btn-converter'),
+  tabBtnSlicer: document.getElementById('tab-btn-slicer'),
+  viewConverter: document.getElementById('view-converter'),
+  viewSlicer: document.getElementById('view-slicer'),
+
+  // ICS Calendar Slicer
+  slicerDropZone: document.getElementById('slicer-drop-zone'),
+  slicerFileInput: document.getElementById('slicer-file-input'),
+  slicerFileBanner: document.getElementById('slicer-file-banner'),
+  slicerFilenameDisplay: document.getElementById('slicer-filename-display'),
+  slicerDetailsDisplay: document.getElementById('slicer-details-display'),
+  btnSlicerReselect: document.getElementById('btn-slicer-reselect'),
+  slicerWorkspace: document.getElementById('slicer-workspace'),
+  btnModeSize: document.getElementById('btn-mode-size'),
+  btnModeEvents: document.getElementById('btn-mode-events'),
+  blockSizeOptions: document.getElementById('block-size-options'),
+  blockEventsOptions: document.getElementById('block-events-options'),
+  sizePresetContainer: document.getElementById('size-preset-container'),
+  eventsPresetContainer: document.getElementById('events-preset-container'),
+  customSizeVal: document.getElementById('custom-size-val'),
+  customSizeUnit: document.getElementById('custom-size-unit'),
+  customEventsVal: document.getElementById('custom-events-val'),
+  slicerBaseName: document.getElementById('slicer-base-name'),
+  btnRecalculateSplit: document.getElementById('btn-recalculate-split'),
+  slicerPlanSummary: document.getElementById('slicer-plan-summary'),
+  slicerStatEvents: document.getElementById('slicer-stat-events'),
+  slicerStatSize: document.getElementById('slicer-stat-size'),
+  slicerStatParts: document.getElementById('slicer-stat-parts'),
+  slicerStatTz: document.getElementById('slicer-stat-tz'),
+  btnDownloadAllZip: document.getElementById('btn-download-all-zip'),
+  slicerPartsContainer: document.getElementById('slicer-parts-container'),
+  slicerPartsCount: document.getElementById('slicer-parts-count'),
+  slicerPartsList: document.getElementById('slicer-parts-list')
+};
+
+// Slicer Application State
+const SlicerState = {
+  rawContent: '',
+  filename: 'calendar.ics',
+  baseName: 'calendar_part',
+  sizeBytes: 0,
+  headers: [],
+  timezones: [],
+  events: [],
+  splitMode: 'size', // 'size' or 'events'
+  targetSizeKB: 950,
+  targetEvents: 500,
+  parts: []
 };
 
 // Utilities
@@ -992,9 +1042,338 @@ async function exportToZip() {
   showToast('Complete ZIP bundle downloaded successfully!', 'success');
 }
 
-// File Upload / Parsing
+// Byte Formatter
+function formatBytes(bytes) {
+  if (!bytes || isNaN(bytes) || bytes === 0) return '0 B';
+  const k = 1024;
+  const sizes = ['B', 'KB', 'MB', 'GB'];
+  const i = Math.floor(Math.log(bytes) / Math.log(k));
+  return parseFloat((bytes / Math.pow(k, i)).toFixed(1)) + ' ' + sizes[i];
+}
+
+// Navigation Tab Switcher
+function switchTab(tab) {
+  if (tab === 'converter') {
+    DOM.tabBtnConverter.classList.add('active');
+    DOM.tabBtnSlicer.classList.remove('active');
+    DOM.viewConverter.classList.remove('hidden');
+    DOM.viewSlicer.classList.add('hidden');
+  } else if (tab === 'slicer') {
+    DOM.tabBtnSlicer.classList.add('active');
+    DOM.tabBtnConverter.classList.remove('active');
+    DOM.viewSlicer.classList.remove('hidden');
+    DOM.viewConverter.classList.add('hidden');
+  }
+}
+
+// ICS Parser Engine
+function parseIcsCalendar(content) {
+  const lines = content.replace(/\r\n/g, '\n').replace(/\r/g, '\n').split('\n');
+  const headers = [];
+  const timezones = [];
+  const events = [];
+
+  let inVCalendar = false;
+  let currentBlock = null;
+  let blockLines = [];
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    const trimmed = line.trim();
+
+    if (trimmed.toUpperCase() === 'BEGIN:VCALENDAR') {
+      inVCalendar = true;
+      headers.push(line);
+      continue;
+    }
+
+    if (trimmed.toUpperCase() === 'END:VCALENDAR') {
+      continue;
+    }
+
+    if (trimmed.toUpperCase().startsWith('BEGIN:')) {
+      const compName = trimmed.substring(6).toUpperCase();
+      if (compName === 'VEVENT' || compName === 'VTIMEZONE') {
+        currentBlock = compName;
+        blockLines = [line];
+        continue;
+      }
+    }
+
+    if (currentBlock) {
+      blockLines.push(line);
+      if (trimmed.toUpperCase() === `END:${currentBlock}`) {
+        const blockText = blockLines.join('\r\n');
+        if (currentBlock === 'VEVENT') {
+          events.push(blockText);
+        } else if (currentBlock === 'VTIMEZONE') {
+          timezones.push(blockText);
+        }
+        currentBlock = null;
+        blockLines = [];
+      }
+      continue;
+    }
+
+    if (inVCalendar && !currentBlock) {
+      headers.push(line);
+    }
+  }
+
+  if (headers.length === 0) {
+    headers.push('BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//OmniConverter//EN', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH');
+  }
+
+  return { headers, timezones, events };
+}
+
+// ICS Split Engine
+function calculateIcsSplits() {
+  if (SlicerState.events.length === 0) {
+    SlicerState.parts = [];
+    renderSlicerResults();
+    return [];
+  }
+
+  const encoder = new TextEncoder();
+  const headerBlock = SlicerState.headers.join('\r\n') + '\r\n';
+  const tzBlock = SlicerState.timezones.length > 0 ? SlicerState.timezones.join('\r\n') + '\r\n' : '';
+  const footerBlock = 'END:VCALENDAR\r\n';
+
+  const baseHeaderFooter = headerBlock + tzBlock + footerBlock;
+  const baseOverheadBytes = encoder.encode(baseHeaderFooter).length;
+
+  const parts = [];
+  const baseName = SlicerState.baseName.trim() || 'calendar_part';
+
+  if (SlicerState.splitMode === 'size') {
+    const maxBytes = Math.max(10240, SlicerState.targetSizeKB * 1024);
+    let currentPartEvents = [];
+    let currentBytes = baseOverheadBytes;
+
+    for (let i = 0; i < SlicerState.events.length; i++) {
+      const evt = SlicerState.events[i];
+      const evtBytes = encoder.encode(evt + '\r\n').length;
+
+      // Check if adding this event exceeds maxBytes
+      if (currentPartEvents.length > 0 && (currentBytes + evtBytes) > maxBytes) {
+        const partNum = parts.length + 1;
+        const partContent = headerBlock + tzBlock + currentPartEvents.join('\r\n') + '\r\n' + footerBlock;
+        const actualSizeBytes = encoder.encode(partContent).length;
+        parts.push({
+          partNum,
+          filename: `${baseName}_${partNum}.ics`,
+          eventsCount: currentPartEvents.length,
+          sizeBytes: actualSizeBytes,
+          content: partContent
+        });
+
+        currentPartEvents = [];
+        currentBytes = baseOverheadBytes;
+      }
+
+      currentPartEvents.push(evt);
+      currentBytes += evtBytes;
+    }
+
+    if (currentPartEvents.length > 0) {
+      const partNum = parts.length + 1;
+      const partContent = headerBlock + tzBlock + currentPartEvents.join('\r\n') + '\r\n' + footerBlock;
+      const actualSizeBytes = encoder.encode(partContent).length;
+      parts.push({
+        partNum,
+        filename: `${baseName}_${partNum}.ics`,
+        eventsCount: currentPartEvents.length,
+        sizeBytes: actualSizeBytes,
+        content: partContent
+      });
+    }
+  } else {
+    // Mode: by event count
+    const maxEvents = Math.max(1, SlicerState.targetEvents);
+    let partNum = 1;
+    for (let i = 0; i < SlicerState.events.length; i += maxEvents) {
+      const chunk = SlicerState.events.slice(i, i + maxEvents);
+      const partContent = headerBlock + tzBlock + chunk.join('\r\n') + '\r\n' + footerBlock;
+      const actualSizeBytes = encoder.encode(partContent).length;
+      parts.push({
+        partNum: partNum++,
+        filename: `${baseName}_${parts.length + 1}.ics`,
+        eventsCount: chunk.length,
+        sizeBytes: actualSizeBytes,
+        content: partContent
+      });
+    }
+  }
+
+  SlicerState.parts = parts;
+  renderSlicerResults();
+  return parts;
+}
+
+// Render Slicer Output Cards & Statistics
+function renderSlicerResults() {
+  const parts = SlicerState.parts;
+  const totalEvents = SlicerState.events.length;
+  const origSize = SlicerState.sizeBytes;
+
+  DOM.slicerStatEvents.textContent = totalEvents.toLocaleString();
+  DOM.slicerStatSize.textContent = formatBytes(origSize);
+  DOM.slicerStatParts.textContent = parts.length;
+  DOM.slicerStatTz.textContent = SlicerState.timezones.length;
+  DOM.slicerPartsCount.textContent = parts.length;
+
+  if (parts.length === 0) {
+    DOM.slicerPlanSummary.textContent = 'No events found in this calendar file.';
+    DOM.slicerPartsList.innerHTML = '<div class="empty-state">No events available to split.</div>';
+    DOM.btnDownloadAllZip.disabled = true;
+    return;
+  }
+
+  DOM.btnDownloadAllZip.disabled = false;
+  DOM.slicerPlanSummary.textContent = `Split into ${parts.length} file${parts.length > 1 ? 's' : ''} • All parts are safe for Google Calendar import!`;
+
+  let eventOffset = 1;
+  DOM.slicerPartsList.innerHTML = parts.map((part, idx) => {
+    const startEvt = eventOffset;
+    const endEvt = eventOffset + part.eventsCount - 1;
+    eventOffset = endEvt + 1;
+
+    const sizeFormatted = formatBytes(part.sizeBytes);
+    const isGoogleSafe = part.sizeBytes <= 1048576; // <= 1MB
+    const safePill = isGoogleSafe
+      ? `<span class="part-size-pill">✓ ${sizeFormatted} (Safe)</span>`
+      : `<span class="part-size-pill" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">⚠️ ${sizeFormatted}</span>`;
+
+    return `
+      <div class="part-card" data-part-index="${idx}">
+        <div class="part-card-left">
+          <div class="part-badge-num">${part.partNum}</div>
+          <div>
+            <div class="part-name">
+              <span>${part.filename}</span>
+              ${safePill}
+            </div>
+            <div class="part-submeta">
+              Contains ${part.eventsCount.toLocaleString()} events (Events #${startEvt} – #${endEvt})
+            </div>
+          </div>
+        </div>
+        <div class="part-card-right">
+          <button class="btn btn-sm btn-glass btn-download-part" data-part-index="${idx}">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>Download .ICS</span>
+          </button>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+// Download Individual Sliced Part
+function downloadIcsPart(partIndex) {
+  const part = SlicerState.parts[partIndex];
+  if (!part) return;
+
+  const blob = new Blob([part.content], { type: 'text/calendar;charset=utf-8' });
+  downloadBlob(blob, part.filename);
+  showToast(`Downloaded ${part.filename}`, 'success');
+}
+
+// Download All Parts as ZIP
+async function downloadAllPartsZip() {
+  if (!SlicerState.parts || SlicerState.parts.length === 0) {
+    showToast('No sliced parts to download.', 'error');
+    return;
+  }
+
+  if (typeof JSZip === 'undefined') {
+    showToast('JSZip library not loaded. Downloading parts individually.', 'error');
+    SlicerState.parts.forEach((_, idx) => downloadIcsPart(idx));
+    return;
+  }
+
+  showToast('Preparing ZIP package of calendar slices...', 'info', 1800);
+  const zip = new JSZip();
+  const folder = zip.folder("calendar_slices");
+
+  SlicerState.parts.forEach(part => {
+    folder.file(part.filename, part.content);
+  });
+
+  const instructionsText = 
+`GOOGLE CALENDAR IMPORT INSTRUCTIONS:
+===================================
+1. Unzip this package to your computer.
+2. Open Google Calendar (https://calendar.google.com).
+3. Click the Settings Gear Icon (top right) -> Settings.
+4. In the left menu, select "Import & Export".
+5. Upload each file (${SlicerState.parts[0]?.filename} etc.) one by one.
+6. Choose the destination calendar and click "Import".
+
+All files were created by OmniConverter to strictly comply with Google's 1MB upload limit.
+Enjoy!`;
+
+  folder.file("IMPORT_INSTRUCTIONS.txt", instructionsText);
+
+  const zipBlob = await zip.generateAsync({ type: 'blob' });
+  const base = SlicerState.baseName || 'calendar';
+  downloadBlob(zipBlob, `${base}_split_${SlicerState.parts.length}_parts.zip`);
+  showToast(`Successfully downloaded ZIP with ${SlicerState.parts.length} calendar parts!`, 'success');
+}
+
+// Handle Slicer File Upload
+function handleSlicerFileUpload(file) {
+  if (!file) return;
+
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    try {
+      const text = e.target.result;
+      const parsed = parseIcsCalendar(text);
+
+      if (parsed.events.length === 0) {
+        showToast('No VEVENT components found in this .ics file.', 'error');
+        return;
+      }
+
+      SlicerState.rawContent = text;
+      SlicerState.filename = file.name;
+      SlicerState.sizeBytes = file.size || new TextEncoder().encode(text).length;
+      SlicerState.headers = parsed.headers;
+      SlicerState.timezones = parsed.timezones;
+      SlicerState.events = parsed.events;
+
+      // Suggest base prefix from file name
+      const cleanName = file.name.replace(/\.[^/.]+$/, '').replace(/[^a-zA-Z0-9_-]/g, '_');
+      SlicerState.baseName = `${cleanName}_part`;
+      DOM.slicerBaseName.value = SlicerState.baseName;
+
+      DOM.slicerFilenameDisplay.textContent = file.name;
+      DOM.slicerDetailsDisplay.textContent = `${parsed.events.length.toLocaleString()} events • ${formatBytes(SlicerState.sizeBytes)} • ${parsed.timezones.length} timezones`;
+      DOM.slicerFileBanner.classList.remove('hidden');
+      DOM.slicerWorkspace.classList.remove('hidden');
+
+      calculateIcsSplits();
+      showToast(`Loaded ${parsed.events.length} events from ${file.name}!`, 'success');
+    } catch (err) {
+      showToast(`Error parsing ICS file: ${err.message}`, 'error');
+    }
+  };
+  reader.readAsText(file);
+}
+
+// File Upload / Parsing for Main View
 function handleFileUpload(file) {
   if (!file) return;
+
+  // Smart detect .ics uploaded in main tab -> redirect to Slicer!
+  if (file.name.toLowerCase().endsWith('.ics')) {
+    switchTab('slicer');
+    handleSlicerFileUpload(file);
+    showToast(`Detected .ics calendar file. Switched to ICS Slicer!`, 'info');
+    return;
+  }
 
   const reader = new FileReader();
   reader.onload = (e) => {
@@ -1004,7 +1383,7 @@ function handleFileUpload(file) {
         const parsed = JSON.parse(text);
         loadDataset(normalizeDataset(parsed), file.name);
       } else {
-        showToast('Please upload a compatible .json file.', 'error');
+        showToast('Please upload a compatible .json file or switch to ICS Slicer.', 'error');
       }
     } catch (err) {
       showToast(`Error reading file: ${err.message}`, 'error');
@@ -1229,6 +1608,154 @@ function initEventListeners() {
       closeModal();
     }
   });
+
+  // Navigation Tab Switching
+  if (DOM.tabBtnConverter && DOM.tabBtnSlicer) {
+    DOM.tabBtnConverter.addEventListener('click', () => switchTab('converter'));
+    DOM.tabBtnSlicer.addEventListener('click', () => switchTab('slicer'));
+  }
+
+  // Slicer Drag & Drop Listeners
+  if (DOM.slicerDropZone) {
+    ['dragenter', 'dragover'].forEach(eventName => {
+      DOM.slicerDropZone.addEventListener(eventName, (e) => {
+        e.preventDefault();
+        DOM.slicerDropZone.classList.add('drag-over');
+      });
+    });
+
+    ['dragleave', 'drop'].forEach(eventName => {
+      DOM.slicerDropZone.addEventListener(eventName, (e) => {
+        e.preventDefault();
+        DOM.slicerDropZone.classList.remove('drag-over');
+      });
+    });
+
+    DOM.slicerDropZone.addEventListener('drop', (e) => {
+      const files = e.dataTransfer.files;
+      if (files.length > 0) handleSlicerFileUpload(files[0]);
+    });
+
+    DOM.slicerDropZone.addEventListener('click', (e) => {
+      if (e.target.closest('#btn-slicer-reselect') || !e.target.closest('.loaded-banner')) {
+        DOM.slicerFileInput.click();
+      }
+    });
+
+    DOM.btnSlicerReselect.addEventListener('click', (e) => {
+      e.stopPropagation();
+      DOM.slicerFileInput.click();
+    });
+
+    DOM.slicerFileInput.addEventListener('change', (e) => {
+      if (e.target.files.length > 0) handleSlicerFileUpload(e.target.files[0]);
+    });
+  }
+
+  // Slicer Mode Switchers (Size vs Events)
+  if (DOM.btnModeSize && DOM.btnModeEvents) {
+    DOM.btnModeSize.addEventListener('click', () => {
+      DOM.btnModeSize.classList.add('active');
+      DOM.btnModeEvents.classList.remove('active');
+      DOM.blockSizeOptions.classList.remove('hidden');
+      DOM.blockEventsOptions.classList.add('hidden');
+      SlicerState.splitMode = 'size';
+      calculateIcsSplits();
+    });
+
+    DOM.btnModeEvents.addEventListener('click', () => {
+      DOM.btnModeEvents.classList.add('active');
+      DOM.btnModeSize.classList.remove('active');
+      DOM.blockEventsOptions.classList.remove('hidden');
+      DOM.blockSizeOptions.classList.add('hidden');
+      SlicerState.splitMode = 'events';
+      calculateIcsSplits();
+    });
+  }
+
+  // Slicer Size Presets
+  if (DOM.sizePresetContainer) {
+    DOM.sizePresetContainer.querySelectorAll('.preset-pill').forEach(pill => {
+      pill.addEventListener('click', () => {
+        DOM.sizePresetContainer.querySelectorAll('.preset-pill').forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+        const sizeVal = parseInt(pill.getAttribute('data-size'), 10);
+        const unit = pill.getAttribute('data-unit') || 'KB';
+        DOM.customSizeVal.value = sizeVal;
+        DOM.customSizeUnit.value = unit;
+        SlicerState.targetSizeKB = unit === 'MB' ? sizeVal * 1024 : sizeVal;
+        calculateIcsSplits();
+      });
+    });
+
+    DOM.customSizeVal.addEventListener('input', (e) => {
+      DOM.sizePresetContainer.querySelectorAll('.preset-pill').forEach(p => p.classList.remove('active'));
+      const val = parseInt(e.target.value, 10) || 950;
+      const unit = DOM.customSizeUnit.value;
+      SlicerState.targetSizeKB = unit === 'MB' ? val * 1024 : val;
+      calculateIcsSplits();
+    });
+
+    DOM.customSizeUnit.addEventListener('change', (e) => {
+      const val = parseInt(DOM.customSizeVal.value, 10) || 950;
+      const unit = e.target.value;
+      SlicerState.targetSizeKB = unit === 'MB' ? val * 1024 : val;
+      calculateIcsSplits();
+    });
+  }
+
+  // Slicer Events Presets
+  if (DOM.eventsPresetContainer) {
+    DOM.eventsPresetContainer.querySelectorAll('.preset-pill').forEach(pill => {
+      pill.addEventListener('click', () => {
+        DOM.eventsPresetContainer.querySelectorAll('.preset-pill').forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+        const eventsVal = parseInt(pill.getAttribute('data-events'), 10);
+        DOM.customEventsVal.value = eventsVal;
+        SlicerState.targetEvents = eventsVal;
+        calculateIcsSplits();
+      });
+    });
+
+    DOM.customEventsVal.addEventListener('input', (e) => {
+      DOM.eventsPresetContainer.querySelectorAll('.preset-pill').forEach(p => p.classList.remove('active'));
+      const val = parseInt(e.target.value, 10) || 500;
+      SlicerState.targetEvents = val;
+      calculateIcsSplits();
+    });
+  }
+
+  // Base output name
+  if (DOM.slicerBaseName) {
+    DOM.slicerBaseName.addEventListener('input', (e) => {
+      SlicerState.baseName = e.target.value.trim() || 'calendar_part';
+      calculateIcsSplits();
+    });
+  }
+
+  // Recalculate Split Button
+  if (DOM.btnRecalculateSplit) {
+    DOM.btnRecalculateSplit.addEventListener('click', () => {
+      calculateIcsSplits();
+      showToast('Split recalculated successfully!', 'info');
+    });
+  }
+
+  // Batch Download as ZIP
+  if (DOM.btnDownloadAllZip) {
+    DOM.btnDownloadAllZip.addEventListener('click', downloadAllPartsZip);
+  }
+
+  // Download Individual Part from list
+  if (DOM.slicerPartsList) {
+    DOM.slicerPartsList.addEventListener('click', (e) => {
+      const btn = e.target.closest('.btn-download-part');
+      if (btn) {
+        const idx = parseInt(btn.getAttribute('data-part-index'), 10);
+        downloadIcsPart(idx);
+      }
+    });
+  }
 }
 
 // Bootstrap

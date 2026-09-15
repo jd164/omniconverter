@@ -1,0 +1,6026 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:My Google Calendar Backup
+X-WR-TIMEZONE:Europe/Lisbon
+BEGIN:VTIMEZONE
+TZID:Europe/Lisbon
+X-LIC-LOCATION:Europe/Lisbon
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:WET
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:WEST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:evt_0001@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250202T100000
+DTEND;TZID=Europe/Lisbon:20250202T110000
+SUMMARY:Project Sync & Meeting #1
+DESCRIPTION:Detailed discussion on team milestones and deliverables #1
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0002@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250303T100000
+DTEND;TZID=Europe/Lisbon:20250303T110000
+SUMMARY:Project Sync & Meeting #2
+DESCRIPTION:Detailed discussion on team milestones and deliverables #2
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0003@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250404T100000
+DTEND;TZID=Europe/Lisbon:20250404T110000
+SUMMARY:Project Sync & Meeting #3
+DESCRIPTION:Detailed discussion on team milestones and deliverables #3
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0004@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250505T100000
+DTEND;TZID=Europe/Lisbon:20250505T110000
+SUMMARY:Project Sync & Meeting #4
+DESCRIPTION:Detailed discussion on team milestones and deliverables #4
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0005@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250606T100000
+DTEND;TZID=Europe/Lisbon:20250606T110000
+SUMMARY:Project Sync & Meeting #5
+DESCRIPTION:Detailed discussion on team milestones and deliverables #5
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0006@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250707T100000
+DTEND;TZID=Europe/Lisbon:20250707T110000
+SUMMARY:Project Sync & Meeting #6
+DESCRIPTION:Detailed discussion on team milestones and deliverables #6
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0007@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250808T100000
+DTEND;TZID=Europe/Lisbon:20250808T110000
+SUMMARY:Project Sync & Meeting #7
+DESCRIPTION:Detailed discussion on team milestones and deliverables #7
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0008@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250909T100000
+DTEND;TZID=Europe/Lisbon:20250909T110000
+SUMMARY:Project Sync & Meeting #8
+DESCRIPTION:Detailed discussion on team milestones and deliverables #8
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0009@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251010T100000
+DTEND;TZID=Europe/Lisbon:20251010T110000
+SUMMARY:Project Sync & Meeting #9
+DESCRIPTION:Detailed discussion on team milestones and deliverables #9
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0010@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251111T100000
+DTEND;TZID=Europe/Lisbon:20251111T110000
+SUMMARY:Project Sync & Meeting #10
+DESCRIPTION:Detailed discussion on team milestones and deliverables #10
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0011@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251212T100000
+DTEND;TZID=Europe/Lisbon:20251212T110000
+SUMMARY:Project Sync & Meeting #11
+DESCRIPTION:Detailed discussion on team milestones and deliverables #11
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0012@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250113T100000
+DTEND;TZID=Europe/Lisbon:20250113T110000
+SUMMARY:Project Sync & Meeting #12
+DESCRIPTION:Detailed discussion on team milestones and deliverables #12
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0013@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250214T100000
+DTEND;TZID=Europe/Lisbon:20250214T110000
+SUMMARY:Project Sync & Meeting #13
+DESCRIPTION:Detailed discussion on team milestones and deliverables #13
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0014@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250315T100000
+DTEND;TZID=Europe/Lisbon:20250315T110000
+SUMMARY:Project Sync & Meeting #14
+DESCRIPTION:Detailed discussion on team milestones and deliverables #14
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0015@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250416T100000
+DTEND;TZID=Europe/Lisbon:20250416T110000
+SUMMARY:Project Sync & Meeting #15
+DESCRIPTION:Detailed discussion on team milestones and deliverables #15
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0016@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250517T100000
+DTEND;TZID=Europe/Lisbon:20250517T110000
+SUMMARY:Project Sync & Meeting #16
+DESCRIPTION:Detailed discussion on team milestones and deliverables #16
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0017@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250618T100000
+DTEND;TZID=Europe/Lisbon:20250618T110000
+SUMMARY:Project Sync & Meeting #17
+DESCRIPTION:Detailed discussion on team milestones and deliverables #17
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0018@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250719T100000
+DTEND;TZID=Europe/Lisbon:20250719T110000
+SUMMARY:Project Sync & Meeting #18
+DESCRIPTION:Detailed discussion on team milestones and deliverables #18
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0019@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250820T100000
+DTEND;TZID=Europe/Lisbon:20250820T110000
+SUMMARY:Project Sync & Meeting #19
+DESCRIPTION:Detailed discussion on team milestones and deliverables #19
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0020@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250921T100000
+DTEND;TZID=Europe/Lisbon:20250921T110000
+SUMMARY:Project Sync & Meeting #20
+DESCRIPTION:Detailed discussion on team milestones and deliverables #20
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0021@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251022T100000
+DTEND;TZID=Europe/Lisbon:20251022T110000
+SUMMARY:Project Sync & Meeting #21
+DESCRIPTION:Detailed discussion on team milestones and deliverables #21
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0022@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251123T100000
+DTEND;TZID=Europe/Lisbon:20251123T110000
+SUMMARY:Project Sync & Meeting #22
+DESCRIPTION:Detailed discussion on team milestones and deliverables #22
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0023@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251224T100000
+DTEND;TZID=Europe/Lisbon:20251224T110000
+SUMMARY:Project Sync & Meeting #23
+DESCRIPTION:Detailed discussion on team milestones and deliverables #23
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0024@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250125T100000
+DTEND;TZID=Europe/Lisbon:20250125T110000
+SUMMARY:Project Sync & Meeting #24
+DESCRIPTION:Detailed discussion on team milestones and deliverables #24
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0025@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250226T100000
+DTEND;TZID=Europe/Lisbon:20250226T110000
+SUMMARY:Project Sync & Meeting #25
+DESCRIPTION:Detailed discussion on team milestones and deliverables #25
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0026@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250327T100000
+DTEND;TZID=Europe/Lisbon:20250327T110000
+SUMMARY:Project Sync & Meeting #26
+DESCRIPTION:Detailed discussion on team milestones and deliverables #26
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0027@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250428T100000
+DTEND;TZID=Europe/Lisbon:20250428T110000
+SUMMARY:Project Sync & Meeting #27
+DESCRIPTION:Detailed discussion on team milestones and deliverables #27
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0028@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250501T100000
+DTEND;TZID=Europe/Lisbon:20250501T110000
+SUMMARY:Project Sync & Meeting #28
+DESCRIPTION:Detailed discussion on team milestones and deliverables #28
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0029@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250602T100000
+DTEND;TZID=Europe/Lisbon:20250602T110000
+SUMMARY:Project Sync & Meeting #29
+DESCRIPTION:Detailed discussion on team milestones and deliverables #29
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0030@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250703T100000
+DTEND;TZID=Europe/Lisbon:20250703T110000
+SUMMARY:Project Sync & Meeting #30
+DESCRIPTION:Detailed discussion on team milestones and deliverables #30
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0031@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250804T100000
+DTEND;TZID=Europe/Lisbon:20250804T110000
+SUMMARY:Project Sync & Meeting #31
+DESCRIPTION:Detailed discussion on team milestones and deliverables #31
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0032@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250905T100000
+DTEND;TZID=Europe/Lisbon:20250905T110000
+SUMMARY:Project Sync & Meeting #32
+DESCRIPTION:Detailed discussion on team milestones and deliverables #32
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0033@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251006T100000
+DTEND;TZID=Europe/Lisbon:20251006T110000
+SUMMARY:Project Sync & Meeting #33
+DESCRIPTION:Detailed discussion on team milestones and deliverables #33
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0034@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251107T100000
+DTEND;TZID=Europe/Lisbon:20251107T110000
+SUMMARY:Project Sync & Meeting #34
+DESCRIPTION:Detailed discussion on team milestones and deliverables #34
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0035@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251208T100000
+DTEND;TZID=Europe/Lisbon:20251208T110000
+SUMMARY:Project Sync & Meeting #35
+DESCRIPTION:Detailed discussion on team milestones and deliverables #35
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0036@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250109T100000
+DTEND;TZID=Europe/Lisbon:20250109T110000
+SUMMARY:Project Sync & Meeting #36
+DESCRIPTION:Detailed discussion on team milestones and deliverables #36
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0037@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250210T100000
+DTEND;TZID=Europe/Lisbon:20250210T110000
+SUMMARY:Project Sync & Meeting #37
+DESCRIPTION:Detailed discussion on team milestones and deliverables #37
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0038@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250311T100000
+DTEND;TZID=Europe/Lisbon:20250311T110000
+SUMMARY:Project Sync & Meeting #38
+DESCRIPTION:Detailed discussion on team milestones and deliverables #38
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0039@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250412T100000
+DTEND;TZID=Europe/Lisbon:20250412T110000
+SUMMARY:Project Sync & Meeting #39
+DESCRIPTION:Detailed discussion on team milestones and deliverables #39
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0040@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250513T100000
+DTEND;TZID=Europe/Lisbon:20250513T110000
+SUMMARY:Project Sync & Meeting #40
+DESCRIPTION:Detailed discussion on team milestones and deliverables #40
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0041@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250614T100000
+DTEND;TZID=Europe/Lisbon:20250614T110000
+SUMMARY:Project Sync & Meeting #41
+DESCRIPTION:Detailed discussion on team milestones and deliverables #41
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0042@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250715T100000
+DTEND;TZID=Europe/Lisbon:20250715T110000
+SUMMARY:Project Sync & Meeting #42
+DESCRIPTION:Detailed discussion on team milestones and deliverables #42
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0043@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250816T100000
+DTEND;TZID=Europe/Lisbon:20250816T110000
+SUMMARY:Project Sync & Meeting #43
+DESCRIPTION:Detailed discussion on team milestones and deliverables #43
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0044@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250917T100000
+DTEND;TZID=Europe/Lisbon:20250917T110000
+SUMMARY:Project Sync & Meeting #44
+DESCRIPTION:Detailed discussion on team milestones and deliverables #44
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0045@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251018T100000
+DTEND;TZID=Europe/Lisbon:20251018T110000
+SUMMARY:Project Sync & Meeting #45
+DESCRIPTION:Detailed discussion on team milestones and deliverables #45
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0046@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251119T100000
+DTEND;TZID=Europe/Lisbon:20251119T110000
+SUMMARY:Project Sync & Meeting #46
+DESCRIPTION:Detailed discussion on team milestones and deliverables #46
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0047@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251220T100000
+DTEND;TZID=Europe/Lisbon:20251220T110000
+SUMMARY:Project Sync & Meeting #47
+DESCRIPTION:Detailed discussion on team milestones and deliverables #47
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0048@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250121T100000
+DTEND;TZID=Europe/Lisbon:20250121T110000
+SUMMARY:Project Sync & Meeting #48
+DESCRIPTION:Detailed discussion on team milestones and deliverables #48
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0049@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250222T100000
+DTEND;TZID=Europe/Lisbon:20250222T110000
+SUMMARY:Project Sync & Meeting #49
+DESCRIPTION:Detailed discussion on team milestones and deliverables #49
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0050@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250323T100000
+DTEND;TZID=Europe/Lisbon:20250323T110000
+SUMMARY:Project Sync & Meeting #50
+DESCRIPTION:Detailed discussion on team milestones and deliverables #50
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0051@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250424T100000
+DTEND;TZID=Europe/Lisbon:20250424T110000
+SUMMARY:Project Sync & Meeting #51
+DESCRIPTION:Detailed discussion on team milestones and deliverables #51
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0052@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250525T100000
+DTEND;TZID=Europe/Lisbon:20250525T110000
+SUMMARY:Project Sync & Meeting #52
+DESCRIPTION:Detailed discussion on team milestones and deliverables #52
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0053@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250626T100000
+DTEND;TZID=Europe/Lisbon:20250626T110000
+SUMMARY:Project Sync & Meeting #53
+DESCRIPTION:Detailed discussion on team milestones and deliverables #53
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0054@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250727T100000
+DTEND;TZID=Europe/Lisbon:20250727T110000
+SUMMARY:Project Sync & Meeting #54
+DESCRIPTION:Detailed discussion on team milestones and deliverables #54
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0055@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250828T100000
+DTEND;TZID=Europe/Lisbon:20250828T110000
+SUMMARY:Project Sync & Meeting #55
+DESCRIPTION:Detailed discussion on team milestones and deliverables #55
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0056@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250901T100000
+DTEND;TZID=Europe/Lisbon:20250901T110000
+SUMMARY:Project Sync & Meeting #56
+DESCRIPTION:Detailed discussion on team milestones and deliverables #56
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0057@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251002T100000
+DTEND;TZID=Europe/Lisbon:20251002T110000
+SUMMARY:Project Sync & Meeting #57
+DESCRIPTION:Detailed discussion on team milestones and deliverables #57
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0058@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251103T100000
+DTEND;TZID=Europe/Lisbon:20251103T110000
+SUMMARY:Project Sync & Meeting #58
+DESCRIPTION:Detailed discussion on team milestones and deliverables #58
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0059@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251204T100000
+DTEND;TZID=Europe/Lisbon:20251204T110000
+SUMMARY:Project Sync & Meeting #59
+DESCRIPTION:Detailed discussion on team milestones and deliverables #59
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0060@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250105T100000
+DTEND;TZID=Europe/Lisbon:20250105T110000
+SUMMARY:Project Sync & Meeting #60
+DESCRIPTION:Detailed discussion on team milestones and deliverables #60
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0061@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250206T100000
+DTEND;TZID=Europe/Lisbon:20250206T110000
+SUMMARY:Project Sync & Meeting #61
+DESCRIPTION:Detailed discussion on team milestones and deliverables #61
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0062@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250307T100000
+DTEND;TZID=Europe/Lisbon:20250307T110000
+SUMMARY:Project Sync & Meeting #62
+DESCRIPTION:Detailed discussion on team milestones and deliverables #62
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0063@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250408T100000
+DTEND;TZID=Europe/Lisbon:20250408T110000
+SUMMARY:Project Sync & Meeting #63
+DESCRIPTION:Detailed discussion on team milestones and deliverables #63
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0064@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250509T100000
+DTEND;TZID=Europe/Lisbon:20250509T110000
+SUMMARY:Project Sync & Meeting #64
+DESCRIPTION:Detailed discussion on team milestones and deliverables #64
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0065@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250610T100000
+DTEND;TZID=Europe/Lisbon:20250610T110000
+SUMMARY:Project Sync & Meeting #65
+DESCRIPTION:Detailed discussion on team milestones and deliverables #65
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0066@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250711T100000
+DTEND;TZID=Europe/Lisbon:20250711T110000
+SUMMARY:Project Sync & Meeting #66
+DESCRIPTION:Detailed discussion on team milestones and deliverables #66
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0067@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250812T100000
+DTEND;TZID=Europe/Lisbon:20250812T110000
+SUMMARY:Project Sync & Meeting #67
+DESCRIPTION:Detailed discussion on team milestones and deliverables #67
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0068@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250913T100000
+DTEND;TZID=Europe/Lisbon:20250913T110000
+SUMMARY:Project Sync & Meeting #68
+DESCRIPTION:Detailed discussion on team milestones and deliverables #68
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0069@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251014T100000
+DTEND;TZID=Europe/Lisbon:20251014T110000
+SUMMARY:Project Sync & Meeting #69
+DESCRIPTION:Detailed discussion on team milestones and deliverables #69
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0070@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251115T100000
+DTEND;TZID=Europe/Lisbon:20251115T110000
+SUMMARY:Project Sync & Meeting #70
+DESCRIPTION:Detailed discussion on team milestones and deliverables #70
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0071@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251216T100000
+DTEND;TZID=Europe/Lisbon:20251216T110000
+SUMMARY:Project Sync & Meeting #71
+DESCRIPTION:Detailed discussion on team milestones and deliverables #71
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0072@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250117T100000
+DTEND;TZID=Europe/Lisbon:20250117T110000
+SUMMARY:Project Sync & Meeting #72
+DESCRIPTION:Detailed discussion on team milestones and deliverables #72
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0073@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250218T100000
+DTEND;TZID=Europe/Lisbon:20250218T110000
+SUMMARY:Project Sync & Meeting #73
+DESCRIPTION:Detailed discussion on team milestones and deliverables #73
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0074@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250319T100000
+DTEND;TZID=Europe/Lisbon:20250319T110000
+SUMMARY:Project Sync & Meeting #74
+DESCRIPTION:Detailed discussion on team milestones and deliverables #74
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0075@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250420T100000
+DTEND;TZID=Europe/Lisbon:20250420T110000
+SUMMARY:Project Sync & Meeting #75
+DESCRIPTION:Detailed discussion on team milestones and deliverables #75
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0076@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250521T100000
+DTEND;TZID=Europe/Lisbon:20250521T110000
+SUMMARY:Project Sync & Meeting #76
+DESCRIPTION:Detailed discussion on team milestones and deliverables #76
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0077@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250622T100000
+DTEND;TZID=Europe/Lisbon:20250622T110000
+SUMMARY:Project Sync & Meeting #77
+DESCRIPTION:Detailed discussion on team milestones and deliverables #77
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0078@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250723T100000
+DTEND;TZID=Europe/Lisbon:20250723T110000
+SUMMARY:Project Sync & Meeting #78
+DESCRIPTION:Detailed discussion on team milestones and deliverables #78
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0079@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250824T100000
+DTEND;TZID=Europe/Lisbon:20250824T110000
+SUMMARY:Project Sync & Meeting #79
+DESCRIPTION:Detailed discussion on team milestones and deliverables #79
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0080@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250925T100000
+DTEND;TZID=Europe/Lisbon:20250925T110000
+SUMMARY:Project Sync & Meeting #80
+DESCRIPTION:Detailed discussion on team milestones and deliverables #80
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0081@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251026T100000
+DTEND;TZID=Europe/Lisbon:20251026T110000
+SUMMARY:Project Sync & Meeting #81
+DESCRIPTION:Detailed discussion on team milestones and deliverables #81
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0082@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251127T100000
+DTEND;TZID=Europe/Lisbon:20251127T110000
+SUMMARY:Project Sync & Meeting #82
+DESCRIPTION:Detailed discussion on team milestones and deliverables #82
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0083@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251228T100000
+DTEND;TZID=Europe/Lisbon:20251228T110000
+SUMMARY:Project Sync & Meeting #83
+DESCRIPTION:Detailed discussion on team milestones and deliverables #83
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0084@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250101T100000
+DTEND;TZID=Europe/Lisbon:20250101T110000
+SUMMARY:Project Sync & Meeting #84
+DESCRIPTION:Detailed discussion on team milestones and deliverables #84
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0085@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250202T100000
+DTEND;TZID=Europe/Lisbon:20250202T110000
+SUMMARY:Project Sync & Meeting #85
+DESCRIPTION:Detailed discussion on team milestones and deliverables #85
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0086@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250303T100000
+DTEND;TZID=Europe/Lisbon:20250303T110000
+SUMMARY:Project Sync & Meeting #86
+DESCRIPTION:Detailed discussion on team milestones and deliverables #86
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0087@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250404T100000
+DTEND;TZID=Europe/Lisbon:20250404T110000
+SUMMARY:Project Sync & Meeting #87
+DESCRIPTION:Detailed discussion on team milestones and deliverables #87
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0088@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250505T100000
+DTEND;TZID=Europe/Lisbon:20250505T110000
+SUMMARY:Project Sync & Meeting #88
+DESCRIPTION:Detailed discussion on team milestones and deliverables #88
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0089@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250606T100000
+DTEND;TZID=Europe/Lisbon:20250606T110000
+SUMMARY:Project Sync & Meeting #89
+DESCRIPTION:Detailed discussion on team milestones and deliverables #89
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0090@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250707T100000
+DTEND;TZID=Europe/Lisbon:20250707T110000
+SUMMARY:Project Sync & Meeting #90
+DESCRIPTION:Detailed discussion on team milestones and deliverables #90
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0091@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250808T100000
+DTEND;TZID=Europe/Lisbon:20250808T110000
+SUMMARY:Project Sync & Meeting #91
+DESCRIPTION:Detailed discussion on team milestones and deliverables #91
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0092@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250909T100000
+DTEND;TZID=Europe/Lisbon:20250909T110000
+SUMMARY:Project Sync & Meeting #92
+DESCRIPTION:Detailed discussion on team milestones and deliverables #92
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0093@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251010T100000
+DTEND;TZID=Europe/Lisbon:20251010T110000
+SUMMARY:Project Sync & Meeting #93
+DESCRIPTION:Detailed discussion on team milestones and deliverables #93
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0094@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251111T100000
+DTEND;TZID=Europe/Lisbon:20251111T110000
+SUMMARY:Project Sync & Meeting #94
+DESCRIPTION:Detailed discussion on team milestones and deliverables #94
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0095@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251212T100000
+DTEND;TZID=Europe/Lisbon:20251212T110000
+SUMMARY:Project Sync & Meeting #95
+DESCRIPTION:Detailed discussion on team milestones and deliverables #95
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0096@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250113T100000
+DTEND;TZID=Europe/Lisbon:20250113T110000
+SUMMARY:Project Sync & Meeting #96
+DESCRIPTION:Detailed discussion on team milestones and deliverables #96
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0097@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250214T100000
+DTEND;TZID=Europe/Lisbon:20250214T110000
+SUMMARY:Project Sync & Meeting #97
+DESCRIPTION:Detailed discussion on team milestones and deliverables #97
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0098@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250315T100000
+DTEND;TZID=Europe/Lisbon:20250315T110000
+SUMMARY:Project Sync & Meeting #98
+DESCRIPTION:Detailed discussion on team milestones and deliverables #98
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0099@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250416T100000
+DTEND;TZID=Europe/Lisbon:20250416T110000
+SUMMARY:Project Sync & Meeting #99
+DESCRIPTION:Detailed discussion on team milestones and deliverables #99
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0100@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250517T100000
+DTEND;TZID=Europe/Lisbon:20250517T110000
+SUMMARY:Project Sync & Meeting #100
+DESCRIPTION:Detailed discussion on team milestones and deliverables #100
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0101@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250618T100000
+DTEND;TZID=Europe/Lisbon:20250618T110000
+SUMMARY:Project Sync & Meeting #101
+DESCRIPTION:Detailed discussion on team milestones and deliverables #101
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0102@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250719T100000
+DTEND;TZID=Europe/Lisbon:20250719T110000
+SUMMARY:Project Sync & Meeting #102
+DESCRIPTION:Detailed discussion on team milestones and deliverables #102
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0103@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250820T100000
+DTEND;TZID=Europe/Lisbon:20250820T110000
+SUMMARY:Project Sync & Meeting #103
+DESCRIPTION:Detailed discussion on team milestones and deliverables #103
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0104@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250921T100000
+DTEND;TZID=Europe/Lisbon:20250921T110000
+SUMMARY:Project Sync & Meeting #104
+DESCRIPTION:Detailed discussion on team milestones and deliverables #104
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0105@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251022T100000
+DTEND;TZID=Europe/Lisbon:20251022T110000
+SUMMARY:Project Sync & Meeting #105
+DESCRIPTION:Detailed discussion on team milestones and deliverables #105
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0106@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251123T100000
+DTEND;TZID=Europe/Lisbon:20251123T110000
+SUMMARY:Project Sync & Meeting #106
+DESCRIPTION:Detailed discussion on team milestones and deliverables #106
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0107@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251224T100000
+DTEND;TZID=Europe/Lisbon:20251224T110000
+SUMMARY:Project Sync & Meeting #107
+DESCRIPTION:Detailed discussion on team milestones and deliverables #107
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0108@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250125T100000
+DTEND;TZID=Europe/Lisbon:20250125T110000
+SUMMARY:Project Sync & Meeting #108
+DESCRIPTION:Detailed discussion on team milestones and deliverables #108
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0109@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250226T100000
+DTEND;TZID=Europe/Lisbon:20250226T110000
+SUMMARY:Project Sync & Meeting #109
+DESCRIPTION:Detailed discussion on team milestones and deliverables #109
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0110@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250327T100000
+DTEND;TZID=Europe/Lisbon:20250327T110000
+SUMMARY:Project Sync & Meeting #110
+DESCRIPTION:Detailed discussion on team milestones and deliverables #110
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0111@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250428T100000
+DTEND;TZID=Europe/Lisbon:20250428T110000
+SUMMARY:Project Sync & Meeting #111
+DESCRIPTION:Detailed discussion on team milestones and deliverables #111
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0112@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250501T100000
+DTEND;TZID=Europe/Lisbon:20250501T110000
+SUMMARY:Project Sync & Meeting #112
+DESCRIPTION:Detailed discussion on team milestones and deliverables #112
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0113@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250602T100000
+DTEND;TZID=Europe/Lisbon:20250602T110000
+SUMMARY:Project Sync & Meeting #113
+DESCRIPTION:Detailed discussion on team milestones and deliverables #113
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0114@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250703T100000
+DTEND;TZID=Europe/Lisbon:20250703T110000
+SUMMARY:Project Sync & Meeting #114
+DESCRIPTION:Detailed discussion on team milestones and deliverables #114
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0115@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250804T100000
+DTEND;TZID=Europe/Lisbon:20250804T110000
+SUMMARY:Project Sync & Meeting #115
+DESCRIPTION:Detailed discussion on team milestones and deliverables #115
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0116@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250905T100000
+DTEND;TZID=Europe/Lisbon:20250905T110000
+SUMMARY:Project Sync & Meeting #116
+DESCRIPTION:Detailed discussion on team milestones and deliverables #116
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0117@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251006T100000
+DTEND;TZID=Europe/Lisbon:20251006T110000
+SUMMARY:Project Sync & Meeting #117
+DESCRIPTION:Detailed discussion on team milestones and deliverables #117
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0118@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251107T100000
+DTEND;TZID=Europe/Lisbon:20251107T110000
+SUMMARY:Project Sync & Meeting #118
+DESCRIPTION:Detailed discussion on team milestones and deliverables #118
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0119@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251208T100000
+DTEND;TZID=Europe/Lisbon:20251208T110000
+SUMMARY:Project Sync & Meeting #119
+DESCRIPTION:Detailed discussion on team milestones and deliverables #119
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0120@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250109T100000
+DTEND;TZID=Europe/Lisbon:20250109T110000
+SUMMARY:Project Sync & Meeting #120
+DESCRIPTION:Detailed discussion on team milestones and deliverables #120
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0121@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250210T100000
+DTEND;TZID=Europe/Lisbon:20250210T110000
+SUMMARY:Project Sync & Meeting #121
+DESCRIPTION:Detailed discussion on team milestones and deliverables #121
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0122@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250311T100000
+DTEND;TZID=Europe/Lisbon:20250311T110000
+SUMMARY:Project Sync & Meeting #122
+DESCRIPTION:Detailed discussion on team milestones and deliverables #122
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0123@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250412T100000
+DTEND;TZID=Europe/Lisbon:20250412T110000
+SUMMARY:Project Sync & Meeting #123
+DESCRIPTION:Detailed discussion on team milestones and deliverables #123
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0124@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250513T100000
+DTEND;TZID=Europe/Lisbon:20250513T110000
+SUMMARY:Project Sync & Meeting #124
+DESCRIPTION:Detailed discussion on team milestones and deliverables #124
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0125@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250614T100000
+DTEND;TZID=Europe/Lisbon:20250614T110000
+SUMMARY:Project Sync & Meeting #125
+DESCRIPTION:Detailed discussion on team milestones and deliverables #125
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0126@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250715T100000
+DTEND;TZID=Europe/Lisbon:20250715T110000
+SUMMARY:Project Sync & Meeting #126
+DESCRIPTION:Detailed discussion on team milestones and deliverables #126
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0127@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250816T100000
+DTEND;TZID=Europe/Lisbon:20250816T110000
+SUMMARY:Project Sync & Meeting #127
+DESCRIPTION:Detailed discussion on team milestones and deliverables #127
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0128@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250917T100000
+DTEND;TZID=Europe/Lisbon:20250917T110000
+SUMMARY:Project Sync & Meeting #128
+DESCRIPTION:Detailed discussion on team milestones and deliverables #128
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0129@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251018T100000
+DTEND;TZID=Europe/Lisbon:20251018T110000
+SUMMARY:Project Sync & Meeting #129
+DESCRIPTION:Detailed discussion on team milestones and deliverables #129
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0130@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251119T100000
+DTEND;TZID=Europe/Lisbon:20251119T110000
+SUMMARY:Project Sync & Meeting #130
+DESCRIPTION:Detailed discussion on team milestones and deliverables #130
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0131@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251220T100000
+DTEND;TZID=Europe/Lisbon:20251220T110000
+SUMMARY:Project Sync & Meeting #131
+DESCRIPTION:Detailed discussion on team milestones and deliverables #131
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0132@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250121T100000
+DTEND;TZID=Europe/Lisbon:20250121T110000
+SUMMARY:Project Sync & Meeting #132
+DESCRIPTION:Detailed discussion on team milestones and deliverables #132
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0133@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250222T100000
+DTEND;TZID=Europe/Lisbon:20250222T110000
+SUMMARY:Project Sync & Meeting #133
+DESCRIPTION:Detailed discussion on team milestones and deliverables #133
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0134@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250323T100000
+DTEND;TZID=Europe/Lisbon:20250323T110000
+SUMMARY:Project Sync & Meeting #134
+DESCRIPTION:Detailed discussion on team milestones and deliverables #134
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0135@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250424T100000
+DTEND;TZID=Europe/Lisbon:20250424T110000
+SUMMARY:Project Sync & Meeting #135
+DESCRIPTION:Detailed discussion on team milestones and deliverables #135
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0136@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250525T100000
+DTEND;TZID=Europe/Lisbon:20250525T110000
+SUMMARY:Project Sync & Meeting #136
+DESCRIPTION:Detailed discussion on team milestones and deliverables #136
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0137@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250626T100000
+DTEND;TZID=Europe/Lisbon:20250626T110000
+SUMMARY:Project Sync & Meeting #137
+DESCRIPTION:Detailed discussion on team milestones and deliverables #137
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0138@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250727T100000
+DTEND;TZID=Europe/Lisbon:20250727T110000
+SUMMARY:Project Sync & Meeting #138
+DESCRIPTION:Detailed discussion on team milestones and deliverables #138
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0139@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250828T100000
+DTEND;TZID=Europe/Lisbon:20250828T110000
+SUMMARY:Project Sync & Meeting #139
+DESCRIPTION:Detailed discussion on team milestones and deliverables #139
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0140@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250901T100000
+DTEND;TZID=Europe/Lisbon:20250901T110000
+SUMMARY:Project Sync & Meeting #140
+DESCRIPTION:Detailed discussion on team milestones and deliverables #140
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0141@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251002T100000
+DTEND;TZID=Europe/Lisbon:20251002T110000
+SUMMARY:Project Sync & Meeting #141
+DESCRIPTION:Detailed discussion on team milestones and deliverables #141
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0142@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251103T100000
+DTEND;TZID=Europe/Lisbon:20251103T110000
+SUMMARY:Project Sync & Meeting #142
+DESCRIPTION:Detailed discussion on team milestones and deliverables #142
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0143@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251204T100000
+DTEND;TZID=Europe/Lisbon:20251204T110000
+SUMMARY:Project Sync & Meeting #143
+DESCRIPTION:Detailed discussion on team milestones and deliverables #143
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0144@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250105T100000
+DTEND;TZID=Europe/Lisbon:20250105T110000
+SUMMARY:Project Sync & Meeting #144
+DESCRIPTION:Detailed discussion on team milestones and deliverables #144
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0145@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250206T100000
+DTEND;TZID=Europe/Lisbon:20250206T110000
+SUMMARY:Project Sync & Meeting #145
+DESCRIPTION:Detailed discussion on team milestones and deliverables #145
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0146@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250307T100000
+DTEND;TZID=Europe/Lisbon:20250307T110000
+SUMMARY:Project Sync & Meeting #146
+DESCRIPTION:Detailed discussion on team milestones and deliverables #146
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0147@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250408T100000
+DTEND;TZID=Europe/Lisbon:20250408T110000
+SUMMARY:Project Sync & Meeting #147
+DESCRIPTION:Detailed discussion on team milestones and deliverables #147
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0148@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250509T100000
+DTEND;TZID=Europe/Lisbon:20250509T110000
+SUMMARY:Project Sync & Meeting #148
+DESCRIPTION:Detailed discussion on team milestones and deliverables #148
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0149@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250610T100000
+DTEND;TZID=Europe/Lisbon:20250610T110000
+SUMMARY:Project Sync & Meeting #149
+DESCRIPTION:Detailed discussion on team milestones and deliverables #149
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0150@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250711T100000
+DTEND;TZID=Europe/Lisbon:20250711T110000
+SUMMARY:Project Sync & Meeting #150
+DESCRIPTION:Detailed discussion on team milestones and deliverables #150
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0151@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250812T100000
+DTEND;TZID=Europe/Lisbon:20250812T110000
+SUMMARY:Project Sync & Meeting #151
+DESCRIPTION:Detailed discussion on team milestones and deliverables #151
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0152@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250913T100000
+DTEND;TZID=Europe/Lisbon:20250913T110000
+SUMMARY:Project Sync & Meeting #152
+DESCRIPTION:Detailed discussion on team milestones and deliverables #152
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0153@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251014T100000
+DTEND;TZID=Europe/Lisbon:20251014T110000
+SUMMARY:Project Sync & Meeting #153
+DESCRIPTION:Detailed discussion on team milestones and deliverables #153
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0154@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251115T100000
+DTEND;TZID=Europe/Lisbon:20251115T110000
+SUMMARY:Project Sync & Meeting #154
+DESCRIPTION:Detailed discussion on team milestones and deliverables #154
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0155@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251216T100000
+DTEND;TZID=Europe/Lisbon:20251216T110000
+SUMMARY:Project Sync & Meeting #155
+DESCRIPTION:Detailed discussion on team milestones and deliverables #155
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0156@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250117T100000
+DTEND;TZID=Europe/Lisbon:20250117T110000
+SUMMARY:Project Sync & Meeting #156
+DESCRIPTION:Detailed discussion on team milestones and deliverables #156
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0157@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250218T100000
+DTEND;TZID=Europe/Lisbon:20250218T110000
+SUMMARY:Project Sync & Meeting #157
+DESCRIPTION:Detailed discussion on team milestones and deliverables #157
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0158@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250319T100000
+DTEND;TZID=Europe/Lisbon:20250319T110000
+SUMMARY:Project Sync & Meeting #158
+DESCRIPTION:Detailed discussion on team milestones and deliverables #158
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0159@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250420T100000
+DTEND;TZID=Europe/Lisbon:20250420T110000
+SUMMARY:Project Sync & Meeting #159
+DESCRIPTION:Detailed discussion on team milestones and deliverables #159
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0160@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250521T100000
+DTEND;TZID=Europe/Lisbon:20250521T110000
+SUMMARY:Project Sync & Meeting #160
+DESCRIPTION:Detailed discussion on team milestones and deliverables #160
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0161@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250622T100000
+DTEND;TZID=Europe/Lisbon:20250622T110000
+SUMMARY:Project Sync & Meeting #161
+DESCRIPTION:Detailed discussion on team milestones and deliverables #161
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0162@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250723T100000
+DTEND;TZID=Europe/Lisbon:20250723T110000
+SUMMARY:Project Sync & Meeting #162
+DESCRIPTION:Detailed discussion on team milestones and deliverables #162
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0163@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250824T100000
+DTEND;TZID=Europe/Lisbon:20250824T110000
+SUMMARY:Project Sync & Meeting #163
+DESCRIPTION:Detailed discussion on team milestones and deliverables #163
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0164@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250925T100000
+DTEND;TZID=Europe/Lisbon:20250925T110000
+SUMMARY:Project Sync & Meeting #164
+DESCRIPTION:Detailed discussion on team milestones and deliverables #164
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0165@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251026T100000
+DTEND;TZID=Europe/Lisbon:20251026T110000
+SUMMARY:Project Sync & Meeting #165
+DESCRIPTION:Detailed discussion on team milestones and deliverables #165
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0166@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251127T100000
+DTEND;TZID=Europe/Lisbon:20251127T110000
+SUMMARY:Project Sync & Meeting #166
+DESCRIPTION:Detailed discussion on team milestones and deliverables #166
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0167@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251228T100000
+DTEND;TZID=Europe/Lisbon:20251228T110000
+SUMMARY:Project Sync & Meeting #167
+DESCRIPTION:Detailed discussion on team milestones and deliverables #167
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0168@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250101T100000
+DTEND;TZID=Europe/Lisbon:20250101T110000
+SUMMARY:Project Sync & Meeting #168
+DESCRIPTION:Detailed discussion on team milestones and deliverables #168
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0169@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250202T100000
+DTEND;TZID=Europe/Lisbon:20250202T110000
+SUMMARY:Project Sync & Meeting #169
+DESCRIPTION:Detailed discussion on team milestones and deliverables #169
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0170@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250303T100000
+DTEND;TZID=Europe/Lisbon:20250303T110000
+SUMMARY:Project Sync & Meeting #170
+DESCRIPTION:Detailed discussion on team milestones and deliverables #170
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0171@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250404T100000
+DTEND;TZID=Europe/Lisbon:20250404T110000
+SUMMARY:Project Sync & Meeting #171
+DESCRIPTION:Detailed discussion on team milestones and deliverables #171
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0172@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250505T100000
+DTEND;TZID=Europe/Lisbon:20250505T110000
+SUMMARY:Project Sync & Meeting #172
+DESCRIPTION:Detailed discussion on team milestones and deliverables #172
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0173@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250606T100000
+DTEND;TZID=Europe/Lisbon:20250606T110000
+SUMMARY:Project Sync & Meeting #173
+DESCRIPTION:Detailed discussion on team milestones and deliverables #173
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0174@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250707T100000
+DTEND;TZID=Europe/Lisbon:20250707T110000
+SUMMARY:Project Sync & Meeting #174
+DESCRIPTION:Detailed discussion on team milestones and deliverables #174
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0175@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250808T100000
+DTEND;TZID=Europe/Lisbon:20250808T110000
+SUMMARY:Project Sync & Meeting #175
+DESCRIPTION:Detailed discussion on team milestones and deliverables #175
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0176@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250909T100000
+DTEND;TZID=Europe/Lisbon:20250909T110000
+SUMMARY:Project Sync & Meeting #176
+DESCRIPTION:Detailed discussion on team milestones and deliverables #176
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0177@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251010T100000
+DTEND;TZID=Europe/Lisbon:20251010T110000
+SUMMARY:Project Sync & Meeting #177
+DESCRIPTION:Detailed discussion on team milestones and deliverables #177
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0178@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251111T100000
+DTEND;TZID=Europe/Lisbon:20251111T110000
+SUMMARY:Project Sync & Meeting #178
+DESCRIPTION:Detailed discussion on team milestones and deliverables #178
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0179@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251212T100000
+DTEND;TZID=Europe/Lisbon:20251212T110000
+SUMMARY:Project Sync & Meeting #179
+DESCRIPTION:Detailed discussion on team milestones and deliverables #179
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0180@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250113T100000
+DTEND;TZID=Europe/Lisbon:20250113T110000
+SUMMARY:Project Sync & Meeting #180
+DESCRIPTION:Detailed discussion on team milestones and deliverables #180
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0181@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250214T100000
+DTEND;TZID=Europe/Lisbon:20250214T110000
+SUMMARY:Project Sync & Meeting #181
+DESCRIPTION:Detailed discussion on team milestones and deliverables #181
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0182@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250315T100000
+DTEND;TZID=Europe/Lisbon:20250315T110000
+SUMMARY:Project Sync & Meeting #182
+DESCRIPTION:Detailed discussion on team milestones and deliverables #182
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0183@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250416T100000
+DTEND;TZID=Europe/Lisbon:20250416T110000
+SUMMARY:Project Sync & Meeting #183
+DESCRIPTION:Detailed discussion on team milestones and deliverables #183
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0184@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250517T100000
+DTEND;TZID=Europe/Lisbon:20250517T110000
+SUMMARY:Project Sync & Meeting #184
+DESCRIPTION:Detailed discussion on team milestones and deliverables #184
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0185@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250618T100000
+DTEND;TZID=Europe/Lisbon:20250618T110000
+SUMMARY:Project Sync & Meeting #185
+DESCRIPTION:Detailed discussion on team milestones and deliverables #185
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0186@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250719T100000
+DTEND;TZID=Europe/Lisbon:20250719T110000
+SUMMARY:Project Sync & Meeting #186
+DESCRIPTION:Detailed discussion on team milestones and deliverables #186
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0187@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250820T100000
+DTEND;TZID=Europe/Lisbon:20250820T110000
+SUMMARY:Project Sync & Meeting #187
+DESCRIPTION:Detailed discussion on team milestones and deliverables #187
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0188@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250921T100000
+DTEND;TZID=Europe/Lisbon:20250921T110000
+SUMMARY:Project Sync & Meeting #188
+DESCRIPTION:Detailed discussion on team milestones and deliverables #188
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0189@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251022T100000
+DTEND;TZID=Europe/Lisbon:20251022T110000
+SUMMARY:Project Sync & Meeting #189
+DESCRIPTION:Detailed discussion on team milestones and deliverables #189
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0190@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251123T100000
+DTEND;TZID=Europe/Lisbon:20251123T110000
+SUMMARY:Project Sync & Meeting #190
+DESCRIPTION:Detailed discussion on team milestones and deliverables #190
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0191@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251224T100000
+DTEND;TZID=Europe/Lisbon:20251224T110000
+SUMMARY:Project Sync & Meeting #191
+DESCRIPTION:Detailed discussion on team milestones and deliverables #191
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0192@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250125T100000
+DTEND;TZID=Europe/Lisbon:20250125T110000
+SUMMARY:Project Sync & Meeting #192
+DESCRIPTION:Detailed discussion on team milestones and deliverables #192
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0193@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250226T100000
+DTEND;TZID=Europe/Lisbon:20250226T110000
+SUMMARY:Project Sync & Meeting #193
+DESCRIPTION:Detailed discussion on team milestones and deliverables #193
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0194@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250327T100000
+DTEND;TZID=Europe/Lisbon:20250327T110000
+SUMMARY:Project Sync & Meeting #194
+DESCRIPTION:Detailed discussion on team milestones and deliverables #194
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0195@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250428T100000
+DTEND;TZID=Europe/Lisbon:20250428T110000
+SUMMARY:Project Sync & Meeting #195
+DESCRIPTION:Detailed discussion on team milestones and deliverables #195
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0196@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250501T100000
+DTEND;TZID=Europe/Lisbon:20250501T110000
+SUMMARY:Project Sync & Meeting #196
+DESCRIPTION:Detailed discussion on team milestones and deliverables #196
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0197@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250602T100000
+DTEND;TZID=Europe/Lisbon:20250602T110000
+SUMMARY:Project Sync & Meeting #197
+DESCRIPTION:Detailed discussion on team milestones and deliverables #197
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0198@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250703T100000
+DTEND;TZID=Europe/Lisbon:20250703T110000
+SUMMARY:Project Sync & Meeting #198
+DESCRIPTION:Detailed discussion on team milestones and deliverables #198
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0199@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250804T100000
+DTEND;TZID=Europe/Lisbon:20250804T110000
+SUMMARY:Project Sync & Meeting #199
+DESCRIPTION:Detailed discussion on team milestones and deliverables #199
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0200@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250905T100000
+DTEND;TZID=Europe/Lisbon:20250905T110000
+SUMMARY:Project Sync & Meeting #200
+DESCRIPTION:Detailed discussion on team milestones and deliverables #200
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0201@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251006T100000
+DTEND;TZID=Europe/Lisbon:20251006T110000
+SUMMARY:Project Sync & Meeting #201
+DESCRIPTION:Detailed discussion on team milestones and deliverables #201
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0202@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251107T100000
+DTEND;TZID=Europe/Lisbon:20251107T110000
+SUMMARY:Project Sync & Meeting #202
+DESCRIPTION:Detailed discussion on team milestones and deliverables #202
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0203@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251208T100000
+DTEND;TZID=Europe/Lisbon:20251208T110000
+SUMMARY:Project Sync & Meeting #203
+DESCRIPTION:Detailed discussion on team milestones and deliverables #203
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0204@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250109T100000
+DTEND;TZID=Europe/Lisbon:20250109T110000
+SUMMARY:Project Sync & Meeting #204
+DESCRIPTION:Detailed discussion on team milestones and deliverables #204
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0205@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250210T100000
+DTEND;TZID=Europe/Lisbon:20250210T110000
+SUMMARY:Project Sync & Meeting #205
+DESCRIPTION:Detailed discussion on team milestones and deliverables #205
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0206@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250311T100000
+DTEND;TZID=Europe/Lisbon:20250311T110000
+SUMMARY:Project Sync & Meeting #206
+DESCRIPTION:Detailed discussion on team milestones and deliverables #206
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0207@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250412T100000
+DTEND;TZID=Europe/Lisbon:20250412T110000
+SUMMARY:Project Sync & Meeting #207
+DESCRIPTION:Detailed discussion on team milestones and deliverables #207
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0208@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250513T100000
+DTEND;TZID=Europe/Lisbon:20250513T110000
+SUMMARY:Project Sync & Meeting #208
+DESCRIPTION:Detailed discussion on team milestones and deliverables #208
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0209@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250614T100000
+DTEND;TZID=Europe/Lisbon:20250614T110000
+SUMMARY:Project Sync & Meeting #209
+DESCRIPTION:Detailed discussion on team milestones and deliverables #209
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0210@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250715T100000
+DTEND;TZID=Europe/Lisbon:20250715T110000
+SUMMARY:Project Sync & Meeting #210
+DESCRIPTION:Detailed discussion on team milestones and deliverables #210
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0211@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250816T100000
+DTEND;TZID=Europe/Lisbon:20250816T110000
+SUMMARY:Project Sync & Meeting #211
+DESCRIPTION:Detailed discussion on team milestones and deliverables #211
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0212@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250917T100000
+DTEND;TZID=Europe/Lisbon:20250917T110000
+SUMMARY:Project Sync & Meeting #212
+DESCRIPTION:Detailed discussion on team milestones and deliverables #212
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0213@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251018T100000
+DTEND;TZID=Europe/Lisbon:20251018T110000
+SUMMARY:Project Sync & Meeting #213
+DESCRIPTION:Detailed discussion on team milestones and deliverables #213
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0214@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251119T100000
+DTEND;TZID=Europe/Lisbon:20251119T110000
+SUMMARY:Project Sync & Meeting #214
+DESCRIPTION:Detailed discussion on team milestones and deliverables #214
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0215@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251220T100000
+DTEND;TZID=Europe/Lisbon:20251220T110000
+SUMMARY:Project Sync & Meeting #215
+DESCRIPTION:Detailed discussion on team milestones and deliverables #215
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0216@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250121T100000
+DTEND;TZID=Europe/Lisbon:20250121T110000
+SUMMARY:Project Sync & Meeting #216
+DESCRIPTION:Detailed discussion on team milestones and deliverables #216
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0217@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250222T100000
+DTEND;TZID=Europe/Lisbon:20250222T110000
+SUMMARY:Project Sync & Meeting #217
+DESCRIPTION:Detailed discussion on team milestones and deliverables #217
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0218@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250323T100000
+DTEND;TZID=Europe/Lisbon:20250323T110000
+SUMMARY:Project Sync & Meeting #218
+DESCRIPTION:Detailed discussion on team milestones and deliverables #218
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0219@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250424T100000
+DTEND;TZID=Europe/Lisbon:20250424T110000
+SUMMARY:Project Sync & Meeting #219
+DESCRIPTION:Detailed discussion on team milestones and deliverables #219
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0220@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250525T100000
+DTEND;TZID=Europe/Lisbon:20250525T110000
+SUMMARY:Project Sync & Meeting #220
+DESCRIPTION:Detailed discussion on team milestones and deliverables #220
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0221@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250626T100000
+DTEND;TZID=Europe/Lisbon:20250626T110000
+SUMMARY:Project Sync & Meeting #221
+DESCRIPTION:Detailed discussion on team milestones and deliverables #221
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0222@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250727T100000
+DTEND;TZID=Europe/Lisbon:20250727T110000
+SUMMARY:Project Sync & Meeting #222
+DESCRIPTION:Detailed discussion on team milestones and deliverables #222
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0223@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250828T100000
+DTEND;TZID=Europe/Lisbon:20250828T110000
+SUMMARY:Project Sync & Meeting #223
+DESCRIPTION:Detailed discussion on team milestones and deliverables #223
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0224@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250901T100000
+DTEND;TZID=Europe/Lisbon:20250901T110000
+SUMMARY:Project Sync & Meeting #224
+DESCRIPTION:Detailed discussion on team milestones and deliverables #224
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0225@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251002T100000
+DTEND;TZID=Europe/Lisbon:20251002T110000
+SUMMARY:Project Sync & Meeting #225
+DESCRIPTION:Detailed discussion on team milestones and deliverables #225
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0226@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251103T100000
+DTEND;TZID=Europe/Lisbon:20251103T110000
+SUMMARY:Project Sync & Meeting #226
+DESCRIPTION:Detailed discussion on team milestones and deliverables #226
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0227@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251204T100000
+DTEND;TZID=Europe/Lisbon:20251204T110000
+SUMMARY:Project Sync & Meeting #227
+DESCRIPTION:Detailed discussion on team milestones and deliverables #227
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0228@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250105T100000
+DTEND;TZID=Europe/Lisbon:20250105T110000
+SUMMARY:Project Sync & Meeting #228
+DESCRIPTION:Detailed discussion on team milestones and deliverables #228
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0229@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250206T100000
+DTEND;TZID=Europe/Lisbon:20250206T110000
+SUMMARY:Project Sync & Meeting #229
+DESCRIPTION:Detailed discussion on team milestones and deliverables #229
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0230@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250307T100000
+DTEND;TZID=Europe/Lisbon:20250307T110000
+SUMMARY:Project Sync & Meeting #230
+DESCRIPTION:Detailed discussion on team milestones and deliverables #230
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0231@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250408T100000
+DTEND;TZID=Europe/Lisbon:20250408T110000
+SUMMARY:Project Sync & Meeting #231
+DESCRIPTION:Detailed discussion on team milestones and deliverables #231
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0232@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250509T100000
+DTEND;TZID=Europe/Lisbon:20250509T110000
+SUMMARY:Project Sync & Meeting #232
+DESCRIPTION:Detailed discussion on team milestones and deliverables #232
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0233@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250610T100000
+DTEND;TZID=Europe/Lisbon:20250610T110000
+SUMMARY:Project Sync & Meeting #233
+DESCRIPTION:Detailed discussion on team milestones and deliverables #233
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0234@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250711T100000
+DTEND;TZID=Europe/Lisbon:20250711T110000
+SUMMARY:Project Sync & Meeting #234
+DESCRIPTION:Detailed discussion on team milestones and deliverables #234
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0235@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250812T100000
+DTEND;TZID=Europe/Lisbon:20250812T110000
+SUMMARY:Project Sync & Meeting #235
+DESCRIPTION:Detailed discussion on team milestones and deliverables #235
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0236@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250913T100000
+DTEND;TZID=Europe/Lisbon:20250913T110000
+SUMMARY:Project Sync & Meeting #236
+DESCRIPTION:Detailed discussion on team milestones and deliverables #236
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0237@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251014T100000
+DTEND;TZID=Europe/Lisbon:20251014T110000
+SUMMARY:Project Sync & Meeting #237
+DESCRIPTION:Detailed discussion on team milestones and deliverables #237
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0238@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251115T100000
+DTEND;TZID=Europe/Lisbon:20251115T110000
+SUMMARY:Project Sync & Meeting #238
+DESCRIPTION:Detailed discussion on team milestones and deliverables #238
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0239@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251216T100000
+DTEND;TZID=Europe/Lisbon:20251216T110000
+SUMMARY:Project Sync & Meeting #239
+DESCRIPTION:Detailed discussion on team milestones and deliverables #239
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0240@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250117T100000
+DTEND;TZID=Europe/Lisbon:20250117T110000
+SUMMARY:Project Sync & Meeting #240
+DESCRIPTION:Detailed discussion on team milestones and deliverables #240
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0241@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250218T100000
+DTEND;TZID=Europe/Lisbon:20250218T110000
+SUMMARY:Project Sync & Meeting #241
+DESCRIPTION:Detailed discussion on team milestones and deliverables #241
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0242@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250319T100000
+DTEND;TZID=Europe/Lisbon:20250319T110000
+SUMMARY:Project Sync & Meeting #242
+DESCRIPTION:Detailed discussion on team milestones and deliverables #242
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0243@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250420T100000
+DTEND;TZID=Europe/Lisbon:20250420T110000
+SUMMARY:Project Sync & Meeting #243
+DESCRIPTION:Detailed discussion on team milestones and deliverables #243
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0244@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250521T100000
+DTEND;TZID=Europe/Lisbon:20250521T110000
+SUMMARY:Project Sync & Meeting #244
+DESCRIPTION:Detailed discussion on team milestones and deliverables #244
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0245@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250622T100000
+DTEND;TZID=Europe/Lisbon:20250622T110000
+SUMMARY:Project Sync & Meeting #245
+DESCRIPTION:Detailed discussion on team milestones and deliverables #245
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0246@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250723T100000
+DTEND;TZID=Europe/Lisbon:20250723T110000
+SUMMARY:Project Sync & Meeting #246
+DESCRIPTION:Detailed discussion on team milestones and deliverables #246
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0247@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250824T100000
+DTEND;TZID=Europe/Lisbon:20250824T110000
+SUMMARY:Project Sync & Meeting #247
+DESCRIPTION:Detailed discussion on team milestones and deliverables #247
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0248@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250925T100000
+DTEND;TZID=Europe/Lisbon:20250925T110000
+SUMMARY:Project Sync & Meeting #248
+DESCRIPTION:Detailed discussion on team milestones and deliverables #248
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0249@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251026T100000
+DTEND;TZID=Europe/Lisbon:20251026T110000
+SUMMARY:Project Sync & Meeting #249
+DESCRIPTION:Detailed discussion on team milestones and deliverables #249
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0250@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251127T100000
+DTEND;TZID=Europe/Lisbon:20251127T110000
+SUMMARY:Project Sync & Meeting #250
+DESCRIPTION:Detailed discussion on team milestones and deliverables #250
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0251@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251228T100000
+DTEND;TZID=Europe/Lisbon:20251228T110000
+SUMMARY:Project Sync & Meeting #251
+DESCRIPTION:Detailed discussion on team milestones and deliverables #251
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0252@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250101T100000
+DTEND;TZID=Europe/Lisbon:20250101T110000
+SUMMARY:Project Sync & Meeting #252
+DESCRIPTION:Detailed discussion on team milestones and deliverables #252
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0253@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250202T100000
+DTEND;TZID=Europe/Lisbon:20250202T110000
+SUMMARY:Project Sync & Meeting #253
+DESCRIPTION:Detailed discussion on team milestones and deliverables #253
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0254@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250303T100000
+DTEND;TZID=Europe/Lisbon:20250303T110000
+SUMMARY:Project Sync & Meeting #254
+DESCRIPTION:Detailed discussion on team milestones and deliverables #254
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0255@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250404T100000
+DTEND;TZID=Europe/Lisbon:20250404T110000
+SUMMARY:Project Sync & Meeting #255
+DESCRIPTION:Detailed discussion on team milestones and deliverables #255
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0256@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250505T100000
+DTEND;TZID=Europe/Lisbon:20250505T110000
+SUMMARY:Project Sync & Meeting #256
+DESCRIPTION:Detailed discussion on team milestones and deliverables #256
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0257@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250606T100000
+DTEND;TZID=Europe/Lisbon:20250606T110000
+SUMMARY:Project Sync & Meeting #257
+DESCRIPTION:Detailed discussion on team milestones and deliverables #257
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0258@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250707T100000
+DTEND;TZID=Europe/Lisbon:20250707T110000
+SUMMARY:Project Sync & Meeting #258
+DESCRIPTION:Detailed discussion on team milestones and deliverables #258
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0259@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250808T100000
+DTEND;TZID=Europe/Lisbon:20250808T110000
+SUMMARY:Project Sync & Meeting #259
+DESCRIPTION:Detailed discussion on team milestones and deliverables #259
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0260@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250909T100000
+DTEND;TZID=Europe/Lisbon:20250909T110000
+SUMMARY:Project Sync & Meeting #260
+DESCRIPTION:Detailed discussion on team milestones and deliverables #260
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0261@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251010T100000
+DTEND;TZID=Europe/Lisbon:20251010T110000
+SUMMARY:Project Sync & Meeting #261
+DESCRIPTION:Detailed discussion on team milestones and deliverables #261
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0262@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251111T100000
+DTEND;TZID=Europe/Lisbon:20251111T110000
+SUMMARY:Project Sync & Meeting #262
+DESCRIPTION:Detailed discussion on team milestones and deliverables #262
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0263@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251212T100000
+DTEND;TZID=Europe/Lisbon:20251212T110000
+SUMMARY:Project Sync & Meeting #263
+DESCRIPTION:Detailed discussion on team milestones and deliverables #263
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0264@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250113T100000
+DTEND;TZID=Europe/Lisbon:20250113T110000
+SUMMARY:Project Sync & Meeting #264
+DESCRIPTION:Detailed discussion on team milestones and deliverables #264
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0265@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250214T100000
+DTEND;TZID=Europe/Lisbon:20250214T110000
+SUMMARY:Project Sync & Meeting #265
+DESCRIPTION:Detailed discussion on team milestones and deliverables #265
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0266@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250315T100000
+DTEND;TZID=Europe/Lisbon:20250315T110000
+SUMMARY:Project Sync & Meeting #266
+DESCRIPTION:Detailed discussion on team milestones and deliverables #266
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0267@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250416T100000
+DTEND;TZID=Europe/Lisbon:20250416T110000
+SUMMARY:Project Sync & Meeting #267
+DESCRIPTION:Detailed discussion on team milestones and deliverables #267
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0268@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250517T100000
+DTEND;TZID=Europe/Lisbon:20250517T110000
+SUMMARY:Project Sync & Meeting #268
+DESCRIPTION:Detailed discussion on team milestones and deliverables #268
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0269@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250618T100000
+DTEND;TZID=Europe/Lisbon:20250618T110000
+SUMMARY:Project Sync & Meeting #269
+DESCRIPTION:Detailed discussion on team milestones and deliverables #269
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0270@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250719T100000
+DTEND;TZID=Europe/Lisbon:20250719T110000
+SUMMARY:Project Sync & Meeting #270
+DESCRIPTION:Detailed discussion on team milestones and deliverables #270
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0271@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250820T100000
+DTEND;TZID=Europe/Lisbon:20250820T110000
+SUMMARY:Project Sync & Meeting #271
+DESCRIPTION:Detailed discussion on team milestones and deliverables #271
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0272@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250921T100000
+DTEND;TZID=Europe/Lisbon:20250921T110000
+SUMMARY:Project Sync & Meeting #272
+DESCRIPTION:Detailed discussion on team milestones and deliverables #272
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0273@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251022T100000
+DTEND;TZID=Europe/Lisbon:20251022T110000
+SUMMARY:Project Sync & Meeting #273
+DESCRIPTION:Detailed discussion on team milestones and deliverables #273
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0274@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251123T100000
+DTEND;TZID=Europe/Lisbon:20251123T110000
+SUMMARY:Project Sync & Meeting #274
+DESCRIPTION:Detailed discussion on team milestones and deliverables #274
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0275@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251224T100000
+DTEND;TZID=Europe/Lisbon:20251224T110000
+SUMMARY:Project Sync & Meeting #275
+DESCRIPTION:Detailed discussion on team milestones and deliverables #275
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0276@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250125T100000
+DTEND;TZID=Europe/Lisbon:20250125T110000
+SUMMARY:Project Sync & Meeting #276
+DESCRIPTION:Detailed discussion on team milestones and deliverables #276
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0277@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250226T100000
+DTEND;TZID=Europe/Lisbon:20250226T110000
+SUMMARY:Project Sync & Meeting #277
+DESCRIPTION:Detailed discussion on team milestones and deliverables #277
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0278@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250327T100000
+DTEND;TZID=Europe/Lisbon:20250327T110000
+SUMMARY:Project Sync & Meeting #278
+DESCRIPTION:Detailed discussion on team milestones and deliverables #278
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0279@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250428T100000
+DTEND;TZID=Europe/Lisbon:20250428T110000
+SUMMARY:Project Sync & Meeting #279
+DESCRIPTION:Detailed discussion on team milestones and deliverables #279
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0280@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250501T100000
+DTEND;TZID=Europe/Lisbon:20250501T110000
+SUMMARY:Project Sync & Meeting #280
+DESCRIPTION:Detailed discussion on team milestones and deliverables #280
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0281@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250602T100000
+DTEND;TZID=Europe/Lisbon:20250602T110000
+SUMMARY:Project Sync & Meeting #281
+DESCRIPTION:Detailed discussion on team milestones and deliverables #281
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0282@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250703T100000
+DTEND;TZID=Europe/Lisbon:20250703T110000
+SUMMARY:Project Sync & Meeting #282
+DESCRIPTION:Detailed discussion on team milestones and deliverables #282
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0283@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250804T100000
+DTEND;TZID=Europe/Lisbon:20250804T110000
+SUMMARY:Project Sync & Meeting #283
+DESCRIPTION:Detailed discussion on team milestones and deliverables #283
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0284@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250905T100000
+DTEND;TZID=Europe/Lisbon:20250905T110000
+SUMMARY:Project Sync & Meeting #284
+DESCRIPTION:Detailed discussion on team milestones and deliverables #284
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0285@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251006T100000
+DTEND;TZID=Europe/Lisbon:20251006T110000
+SUMMARY:Project Sync & Meeting #285
+DESCRIPTION:Detailed discussion on team milestones and deliverables #285
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0286@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251107T100000
+DTEND;TZID=Europe/Lisbon:20251107T110000
+SUMMARY:Project Sync & Meeting #286
+DESCRIPTION:Detailed discussion on team milestones and deliverables #286
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0287@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251208T100000
+DTEND;TZID=Europe/Lisbon:20251208T110000
+SUMMARY:Project Sync & Meeting #287
+DESCRIPTION:Detailed discussion on team milestones and deliverables #287
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0288@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250109T100000
+DTEND;TZID=Europe/Lisbon:20250109T110000
+SUMMARY:Project Sync & Meeting #288
+DESCRIPTION:Detailed discussion on team milestones and deliverables #288
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0289@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250210T100000
+DTEND;TZID=Europe/Lisbon:20250210T110000
+SUMMARY:Project Sync & Meeting #289
+DESCRIPTION:Detailed discussion on team milestones and deliverables #289
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0290@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250311T100000
+DTEND;TZID=Europe/Lisbon:20250311T110000
+SUMMARY:Project Sync & Meeting #290
+DESCRIPTION:Detailed discussion on team milestones and deliverables #290
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0291@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250412T100000
+DTEND;TZID=Europe/Lisbon:20250412T110000
+SUMMARY:Project Sync & Meeting #291
+DESCRIPTION:Detailed discussion on team milestones and deliverables #291
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0292@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250513T100000
+DTEND;TZID=Europe/Lisbon:20250513T110000
+SUMMARY:Project Sync & Meeting #292
+DESCRIPTION:Detailed discussion on team milestones and deliverables #292
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0293@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250614T100000
+DTEND;TZID=Europe/Lisbon:20250614T110000
+SUMMARY:Project Sync & Meeting #293
+DESCRIPTION:Detailed discussion on team milestones and deliverables #293
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0294@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250715T100000
+DTEND;TZID=Europe/Lisbon:20250715T110000
+SUMMARY:Project Sync & Meeting #294
+DESCRIPTION:Detailed discussion on team milestones and deliverables #294
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0295@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250816T100000
+DTEND;TZID=Europe/Lisbon:20250816T110000
+SUMMARY:Project Sync & Meeting #295
+DESCRIPTION:Detailed discussion on team milestones and deliverables #295
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0296@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250917T100000
+DTEND;TZID=Europe/Lisbon:20250917T110000
+SUMMARY:Project Sync & Meeting #296
+DESCRIPTION:Detailed discussion on team milestones and deliverables #296
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0297@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251018T100000
+DTEND;TZID=Europe/Lisbon:20251018T110000
+SUMMARY:Project Sync & Meeting #297
+DESCRIPTION:Detailed discussion on team milestones and deliverables #297
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0298@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251119T100000
+DTEND;TZID=Europe/Lisbon:20251119T110000
+SUMMARY:Project Sync & Meeting #298
+DESCRIPTION:Detailed discussion on team milestones and deliverables #298
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0299@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251220T100000
+DTEND;TZID=Europe/Lisbon:20251220T110000
+SUMMARY:Project Sync & Meeting #299
+DESCRIPTION:Detailed discussion on team milestones and deliverables #299
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0300@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250121T100000
+DTEND;TZID=Europe/Lisbon:20250121T110000
+SUMMARY:Project Sync & Meeting #300
+DESCRIPTION:Detailed discussion on team milestones and deliverables #300
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0301@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250222T100000
+DTEND;TZID=Europe/Lisbon:20250222T110000
+SUMMARY:Project Sync & Meeting #301
+DESCRIPTION:Detailed discussion on team milestones and deliverables #301
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0302@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250323T100000
+DTEND;TZID=Europe/Lisbon:20250323T110000
+SUMMARY:Project Sync & Meeting #302
+DESCRIPTION:Detailed discussion on team milestones and deliverables #302
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0303@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250424T100000
+DTEND;TZID=Europe/Lisbon:20250424T110000
+SUMMARY:Project Sync & Meeting #303
+DESCRIPTION:Detailed discussion on team milestones and deliverables #303
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0304@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250525T100000
+DTEND;TZID=Europe/Lisbon:20250525T110000
+SUMMARY:Project Sync & Meeting #304
+DESCRIPTION:Detailed discussion on team milestones and deliverables #304
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0305@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250626T100000
+DTEND;TZID=Europe/Lisbon:20250626T110000
+SUMMARY:Project Sync & Meeting #305
+DESCRIPTION:Detailed discussion on team milestones and deliverables #305
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0306@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250727T100000
+DTEND;TZID=Europe/Lisbon:20250727T110000
+SUMMARY:Project Sync & Meeting #306
+DESCRIPTION:Detailed discussion on team milestones and deliverables #306
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0307@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250828T100000
+DTEND;TZID=Europe/Lisbon:20250828T110000
+SUMMARY:Project Sync & Meeting #307
+DESCRIPTION:Detailed discussion on team milestones and deliverables #307
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0308@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250901T100000
+DTEND;TZID=Europe/Lisbon:20250901T110000
+SUMMARY:Project Sync & Meeting #308
+DESCRIPTION:Detailed discussion on team milestones and deliverables #308
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0309@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251002T100000
+DTEND;TZID=Europe/Lisbon:20251002T110000
+SUMMARY:Project Sync & Meeting #309
+DESCRIPTION:Detailed discussion on team milestones and deliverables #309
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0310@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251103T100000
+DTEND;TZID=Europe/Lisbon:20251103T110000
+SUMMARY:Project Sync & Meeting #310
+DESCRIPTION:Detailed discussion on team milestones and deliverables #310
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0311@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251204T100000
+DTEND;TZID=Europe/Lisbon:20251204T110000
+SUMMARY:Project Sync & Meeting #311
+DESCRIPTION:Detailed discussion on team milestones and deliverables #311
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0312@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250105T100000
+DTEND;TZID=Europe/Lisbon:20250105T110000
+SUMMARY:Project Sync & Meeting #312
+DESCRIPTION:Detailed discussion on team milestones and deliverables #312
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0313@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250206T100000
+DTEND;TZID=Europe/Lisbon:20250206T110000
+SUMMARY:Project Sync & Meeting #313
+DESCRIPTION:Detailed discussion on team milestones and deliverables #313
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0314@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250307T100000
+DTEND;TZID=Europe/Lisbon:20250307T110000
+SUMMARY:Project Sync & Meeting #314
+DESCRIPTION:Detailed discussion on team milestones and deliverables #314
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0315@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250408T100000
+DTEND;TZID=Europe/Lisbon:20250408T110000
+SUMMARY:Project Sync & Meeting #315
+DESCRIPTION:Detailed discussion on team milestones and deliverables #315
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0316@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250509T100000
+DTEND;TZID=Europe/Lisbon:20250509T110000
+SUMMARY:Project Sync & Meeting #316
+DESCRIPTION:Detailed discussion on team milestones and deliverables #316
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0317@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250610T100000
+DTEND;TZID=Europe/Lisbon:20250610T110000
+SUMMARY:Project Sync & Meeting #317
+DESCRIPTION:Detailed discussion on team milestones and deliverables #317
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0318@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250711T100000
+DTEND;TZID=Europe/Lisbon:20250711T110000
+SUMMARY:Project Sync & Meeting #318
+DESCRIPTION:Detailed discussion on team milestones and deliverables #318
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0319@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250812T100000
+DTEND;TZID=Europe/Lisbon:20250812T110000
+SUMMARY:Project Sync & Meeting #319
+DESCRIPTION:Detailed discussion on team milestones and deliverables #319
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0320@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250913T100000
+DTEND;TZID=Europe/Lisbon:20250913T110000
+SUMMARY:Project Sync & Meeting #320
+DESCRIPTION:Detailed discussion on team milestones and deliverables #320
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0321@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251014T100000
+DTEND;TZID=Europe/Lisbon:20251014T110000
+SUMMARY:Project Sync & Meeting #321
+DESCRIPTION:Detailed discussion on team milestones and deliverables #321
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0322@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251115T100000
+DTEND;TZID=Europe/Lisbon:20251115T110000
+SUMMARY:Project Sync & Meeting #322
+DESCRIPTION:Detailed discussion on team milestones and deliverables #322
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0323@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251216T100000
+DTEND;TZID=Europe/Lisbon:20251216T110000
+SUMMARY:Project Sync & Meeting #323
+DESCRIPTION:Detailed discussion on team milestones and deliverables #323
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0324@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250117T100000
+DTEND;TZID=Europe/Lisbon:20250117T110000
+SUMMARY:Project Sync & Meeting #324
+DESCRIPTION:Detailed discussion on team milestones and deliverables #324
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0325@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250218T100000
+DTEND;TZID=Europe/Lisbon:20250218T110000
+SUMMARY:Project Sync & Meeting #325
+DESCRIPTION:Detailed discussion on team milestones and deliverables #325
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0326@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250319T100000
+DTEND;TZID=Europe/Lisbon:20250319T110000
+SUMMARY:Project Sync & Meeting #326
+DESCRIPTION:Detailed discussion on team milestones and deliverables #326
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0327@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250420T100000
+DTEND;TZID=Europe/Lisbon:20250420T110000
+SUMMARY:Project Sync & Meeting #327
+DESCRIPTION:Detailed discussion on team milestones and deliverables #327
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0328@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250521T100000
+DTEND;TZID=Europe/Lisbon:20250521T110000
+SUMMARY:Project Sync & Meeting #328
+DESCRIPTION:Detailed discussion on team milestones and deliverables #328
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0329@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250622T100000
+DTEND;TZID=Europe/Lisbon:20250622T110000
+SUMMARY:Project Sync & Meeting #329
+DESCRIPTION:Detailed discussion on team milestones and deliverables #329
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0330@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250723T100000
+DTEND;TZID=Europe/Lisbon:20250723T110000
+SUMMARY:Project Sync & Meeting #330
+DESCRIPTION:Detailed discussion on team milestones and deliverables #330
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0331@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250824T100000
+DTEND;TZID=Europe/Lisbon:20250824T110000
+SUMMARY:Project Sync & Meeting #331
+DESCRIPTION:Detailed discussion on team milestones and deliverables #331
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0332@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250925T100000
+DTEND;TZID=Europe/Lisbon:20250925T110000
+SUMMARY:Project Sync & Meeting #332
+DESCRIPTION:Detailed discussion on team milestones and deliverables #332
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0333@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251026T100000
+DTEND;TZID=Europe/Lisbon:20251026T110000
+SUMMARY:Project Sync & Meeting #333
+DESCRIPTION:Detailed discussion on team milestones and deliverables #333
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0334@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251127T100000
+DTEND;TZID=Europe/Lisbon:20251127T110000
+SUMMARY:Project Sync & Meeting #334
+DESCRIPTION:Detailed discussion on team milestones and deliverables #334
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0335@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251228T100000
+DTEND;TZID=Europe/Lisbon:20251228T110000
+SUMMARY:Project Sync & Meeting #335
+DESCRIPTION:Detailed discussion on team milestones and deliverables #335
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0336@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250101T100000
+DTEND;TZID=Europe/Lisbon:20250101T110000
+SUMMARY:Project Sync & Meeting #336
+DESCRIPTION:Detailed discussion on team milestones and deliverables #336
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0337@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250202T100000
+DTEND;TZID=Europe/Lisbon:20250202T110000
+SUMMARY:Project Sync & Meeting #337
+DESCRIPTION:Detailed discussion on team milestones and deliverables #337
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0338@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250303T100000
+DTEND;TZID=Europe/Lisbon:20250303T110000
+SUMMARY:Project Sync & Meeting #338
+DESCRIPTION:Detailed discussion on team milestones and deliverables #338
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0339@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250404T100000
+DTEND;TZID=Europe/Lisbon:20250404T110000
+SUMMARY:Project Sync & Meeting #339
+DESCRIPTION:Detailed discussion on team milestones and deliverables #339
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0340@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250505T100000
+DTEND;TZID=Europe/Lisbon:20250505T110000
+SUMMARY:Project Sync & Meeting #340
+DESCRIPTION:Detailed discussion on team milestones and deliverables #340
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0341@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250606T100000
+DTEND;TZID=Europe/Lisbon:20250606T110000
+SUMMARY:Project Sync & Meeting #341
+DESCRIPTION:Detailed discussion on team milestones and deliverables #341
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0342@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250707T100000
+DTEND;TZID=Europe/Lisbon:20250707T110000
+SUMMARY:Project Sync & Meeting #342
+DESCRIPTION:Detailed discussion on team milestones and deliverables #342
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0343@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250808T100000
+DTEND;TZID=Europe/Lisbon:20250808T110000
+SUMMARY:Project Sync & Meeting #343
+DESCRIPTION:Detailed discussion on team milestones and deliverables #343
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0344@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250909T100000
+DTEND;TZID=Europe/Lisbon:20250909T110000
+SUMMARY:Project Sync & Meeting #344
+DESCRIPTION:Detailed discussion on team milestones and deliverables #344
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0345@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251010T100000
+DTEND;TZID=Europe/Lisbon:20251010T110000
+SUMMARY:Project Sync & Meeting #345
+DESCRIPTION:Detailed discussion on team milestones and deliverables #345
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0346@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251111T100000
+DTEND;TZID=Europe/Lisbon:20251111T110000
+SUMMARY:Project Sync & Meeting #346
+DESCRIPTION:Detailed discussion on team milestones and deliverables #346
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0347@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251212T100000
+DTEND;TZID=Europe/Lisbon:20251212T110000
+SUMMARY:Project Sync & Meeting #347
+DESCRIPTION:Detailed discussion on team milestones and deliverables #347
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0348@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250113T100000
+DTEND;TZID=Europe/Lisbon:20250113T110000
+SUMMARY:Project Sync & Meeting #348
+DESCRIPTION:Detailed discussion on team milestones and deliverables #348
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0349@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250214T100000
+DTEND;TZID=Europe/Lisbon:20250214T110000
+SUMMARY:Project Sync & Meeting #349
+DESCRIPTION:Detailed discussion on team milestones and deliverables #349
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0350@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250315T100000
+DTEND;TZID=Europe/Lisbon:20250315T110000
+SUMMARY:Project Sync & Meeting #350
+DESCRIPTION:Detailed discussion on team milestones and deliverables #350
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0351@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250416T100000
+DTEND;TZID=Europe/Lisbon:20250416T110000
+SUMMARY:Project Sync & Meeting #351
+DESCRIPTION:Detailed discussion on team milestones and deliverables #351
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0352@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250517T100000
+DTEND;TZID=Europe/Lisbon:20250517T110000
+SUMMARY:Project Sync & Meeting #352
+DESCRIPTION:Detailed discussion on team milestones and deliverables #352
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0353@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250618T100000
+DTEND;TZID=Europe/Lisbon:20250618T110000
+SUMMARY:Project Sync & Meeting #353
+DESCRIPTION:Detailed discussion on team milestones and deliverables #353
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0354@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250719T100000
+DTEND;TZID=Europe/Lisbon:20250719T110000
+SUMMARY:Project Sync & Meeting #354
+DESCRIPTION:Detailed discussion on team milestones and deliverables #354
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0355@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250820T100000
+DTEND;TZID=Europe/Lisbon:20250820T110000
+SUMMARY:Project Sync & Meeting #355
+DESCRIPTION:Detailed discussion on team milestones and deliverables #355
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0356@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250921T100000
+DTEND;TZID=Europe/Lisbon:20250921T110000
+SUMMARY:Project Sync & Meeting #356
+DESCRIPTION:Detailed discussion on team milestones and deliverables #356
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0357@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251022T100000
+DTEND;TZID=Europe/Lisbon:20251022T110000
+SUMMARY:Project Sync & Meeting #357
+DESCRIPTION:Detailed discussion on team milestones and deliverables #357
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0358@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251123T100000
+DTEND;TZID=Europe/Lisbon:20251123T110000
+SUMMARY:Project Sync & Meeting #358
+DESCRIPTION:Detailed discussion on team milestones and deliverables #358
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0359@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251224T100000
+DTEND;TZID=Europe/Lisbon:20251224T110000
+SUMMARY:Project Sync & Meeting #359
+DESCRIPTION:Detailed discussion on team milestones and deliverables #359
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0360@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250125T100000
+DTEND;TZID=Europe/Lisbon:20250125T110000
+SUMMARY:Project Sync & Meeting #360
+DESCRIPTION:Detailed discussion on team milestones and deliverables #360
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0361@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250226T100000
+DTEND;TZID=Europe/Lisbon:20250226T110000
+SUMMARY:Project Sync & Meeting #361
+DESCRIPTION:Detailed discussion on team milestones and deliverables #361
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0362@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250327T100000
+DTEND;TZID=Europe/Lisbon:20250327T110000
+SUMMARY:Project Sync & Meeting #362
+DESCRIPTION:Detailed discussion on team milestones and deliverables #362
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0363@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250428T100000
+DTEND;TZID=Europe/Lisbon:20250428T110000
+SUMMARY:Project Sync & Meeting #363
+DESCRIPTION:Detailed discussion on team milestones and deliverables #363
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0364@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250501T100000
+DTEND;TZID=Europe/Lisbon:20250501T110000
+SUMMARY:Project Sync & Meeting #364
+DESCRIPTION:Detailed discussion on team milestones and deliverables #364
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0365@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250602T100000
+DTEND;TZID=Europe/Lisbon:20250602T110000
+SUMMARY:Project Sync & Meeting #365
+DESCRIPTION:Detailed discussion on team milestones and deliverables #365
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0366@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250703T100000
+DTEND;TZID=Europe/Lisbon:20250703T110000
+SUMMARY:Project Sync & Meeting #366
+DESCRIPTION:Detailed discussion on team milestones and deliverables #366
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0367@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250804T100000
+DTEND;TZID=Europe/Lisbon:20250804T110000
+SUMMARY:Project Sync & Meeting #367
+DESCRIPTION:Detailed discussion on team milestones and deliverables #367
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0368@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250905T100000
+DTEND;TZID=Europe/Lisbon:20250905T110000
+SUMMARY:Project Sync & Meeting #368
+DESCRIPTION:Detailed discussion on team milestones and deliverables #368
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0369@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251006T100000
+DTEND;TZID=Europe/Lisbon:20251006T110000
+SUMMARY:Project Sync & Meeting #369
+DESCRIPTION:Detailed discussion on team milestones and deliverables #369
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0370@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251107T100000
+DTEND;TZID=Europe/Lisbon:20251107T110000
+SUMMARY:Project Sync & Meeting #370
+DESCRIPTION:Detailed discussion on team milestones and deliverables #370
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0371@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251208T100000
+DTEND;TZID=Europe/Lisbon:20251208T110000
+SUMMARY:Project Sync & Meeting #371
+DESCRIPTION:Detailed discussion on team milestones and deliverables #371
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0372@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250109T100000
+DTEND;TZID=Europe/Lisbon:20250109T110000
+SUMMARY:Project Sync & Meeting #372
+DESCRIPTION:Detailed discussion on team milestones and deliverables #372
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0373@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250210T100000
+DTEND;TZID=Europe/Lisbon:20250210T110000
+SUMMARY:Project Sync & Meeting #373
+DESCRIPTION:Detailed discussion on team milestones and deliverables #373
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0374@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250311T100000
+DTEND;TZID=Europe/Lisbon:20250311T110000
+SUMMARY:Project Sync & Meeting #374
+DESCRIPTION:Detailed discussion on team milestones and deliverables #374
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0375@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250412T100000
+DTEND;TZID=Europe/Lisbon:20250412T110000
+SUMMARY:Project Sync & Meeting #375
+DESCRIPTION:Detailed discussion on team milestones and deliverables #375
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0376@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250513T100000
+DTEND;TZID=Europe/Lisbon:20250513T110000
+SUMMARY:Project Sync & Meeting #376
+DESCRIPTION:Detailed discussion on team milestones and deliverables #376
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0377@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250614T100000
+DTEND;TZID=Europe/Lisbon:20250614T110000
+SUMMARY:Project Sync & Meeting #377
+DESCRIPTION:Detailed discussion on team milestones and deliverables #377
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0378@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250715T100000
+DTEND;TZID=Europe/Lisbon:20250715T110000
+SUMMARY:Project Sync & Meeting #378
+DESCRIPTION:Detailed discussion on team milestones and deliverables #378
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0379@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250816T100000
+DTEND;TZID=Europe/Lisbon:20250816T110000
+SUMMARY:Project Sync & Meeting #379
+DESCRIPTION:Detailed discussion on team milestones and deliverables #379
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0380@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250917T100000
+DTEND;TZID=Europe/Lisbon:20250917T110000
+SUMMARY:Project Sync & Meeting #380
+DESCRIPTION:Detailed discussion on team milestones and deliverables #380
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0381@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251018T100000
+DTEND;TZID=Europe/Lisbon:20251018T110000
+SUMMARY:Project Sync & Meeting #381
+DESCRIPTION:Detailed discussion on team milestones and deliverables #381
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0382@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251119T100000
+DTEND;TZID=Europe/Lisbon:20251119T110000
+SUMMARY:Project Sync & Meeting #382
+DESCRIPTION:Detailed discussion on team milestones and deliverables #382
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0383@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251220T100000
+DTEND;TZID=Europe/Lisbon:20251220T110000
+SUMMARY:Project Sync & Meeting #383
+DESCRIPTION:Detailed discussion on team milestones and deliverables #383
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0384@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250121T100000
+DTEND;TZID=Europe/Lisbon:20250121T110000
+SUMMARY:Project Sync & Meeting #384
+DESCRIPTION:Detailed discussion on team milestones and deliverables #384
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0385@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250222T100000
+DTEND;TZID=Europe/Lisbon:20250222T110000
+SUMMARY:Project Sync & Meeting #385
+DESCRIPTION:Detailed discussion on team milestones and deliverables #385
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0386@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250323T100000
+DTEND;TZID=Europe/Lisbon:20250323T110000
+SUMMARY:Project Sync & Meeting #386
+DESCRIPTION:Detailed discussion on team milestones and deliverables #386
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0387@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250424T100000
+DTEND;TZID=Europe/Lisbon:20250424T110000
+SUMMARY:Project Sync & Meeting #387
+DESCRIPTION:Detailed discussion on team milestones and deliverables #387
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0388@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250525T100000
+DTEND;TZID=Europe/Lisbon:20250525T110000
+SUMMARY:Project Sync & Meeting #388
+DESCRIPTION:Detailed discussion on team milestones and deliverables #388
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0389@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250626T100000
+DTEND;TZID=Europe/Lisbon:20250626T110000
+SUMMARY:Project Sync & Meeting #389
+DESCRIPTION:Detailed discussion on team milestones and deliverables #389
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0390@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250727T100000
+DTEND;TZID=Europe/Lisbon:20250727T110000
+SUMMARY:Project Sync & Meeting #390
+DESCRIPTION:Detailed discussion on team milestones and deliverables #390
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0391@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250828T100000
+DTEND;TZID=Europe/Lisbon:20250828T110000
+SUMMARY:Project Sync & Meeting #391
+DESCRIPTION:Detailed discussion on team milestones and deliverables #391
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0392@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250901T100000
+DTEND;TZID=Europe/Lisbon:20250901T110000
+SUMMARY:Project Sync & Meeting #392
+DESCRIPTION:Detailed discussion on team milestones and deliverables #392
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0393@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251002T100000
+DTEND;TZID=Europe/Lisbon:20251002T110000
+SUMMARY:Project Sync & Meeting #393
+DESCRIPTION:Detailed discussion on team milestones and deliverables #393
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0394@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251103T100000
+DTEND;TZID=Europe/Lisbon:20251103T110000
+SUMMARY:Project Sync & Meeting #394
+DESCRIPTION:Detailed discussion on team milestones and deliverables #394
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0395@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251204T100000
+DTEND;TZID=Europe/Lisbon:20251204T110000
+SUMMARY:Project Sync & Meeting #395
+DESCRIPTION:Detailed discussion on team milestones and deliverables #395
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0396@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250105T100000
+DTEND;TZID=Europe/Lisbon:20250105T110000
+SUMMARY:Project Sync & Meeting #396
+DESCRIPTION:Detailed discussion on team milestones and deliverables #396
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0397@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250206T100000
+DTEND;TZID=Europe/Lisbon:20250206T110000
+SUMMARY:Project Sync & Meeting #397
+DESCRIPTION:Detailed discussion on team milestones and deliverables #397
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0398@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250307T100000
+DTEND;TZID=Europe/Lisbon:20250307T110000
+SUMMARY:Project Sync & Meeting #398
+DESCRIPTION:Detailed discussion on team milestones and deliverables #398
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0399@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250408T100000
+DTEND;TZID=Europe/Lisbon:20250408T110000
+SUMMARY:Project Sync & Meeting #399
+DESCRIPTION:Detailed discussion on team milestones and deliverables #399
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0400@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250509T100000
+DTEND;TZID=Europe/Lisbon:20250509T110000
+SUMMARY:Project Sync & Meeting #400
+DESCRIPTION:Detailed discussion on team milestones and deliverables #400
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0401@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250610T100000
+DTEND;TZID=Europe/Lisbon:20250610T110000
+SUMMARY:Project Sync & Meeting #401
+DESCRIPTION:Detailed discussion on team milestones and deliverables #401
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0402@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250711T100000
+DTEND;TZID=Europe/Lisbon:20250711T110000
+SUMMARY:Project Sync & Meeting #402
+DESCRIPTION:Detailed discussion on team milestones and deliverables #402
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0403@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250812T100000
+DTEND;TZID=Europe/Lisbon:20250812T110000
+SUMMARY:Project Sync & Meeting #403
+DESCRIPTION:Detailed discussion on team milestones and deliverables #403
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0404@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250913T100000
+DTEND;TZID=Europe/Lisbon:20250913T110000
+SUMMARY:Project Sync & Meeting #404
+DESCRIPTION:Detailed discussion on team milestones and deliverables #404
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0405@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251014T100000
+DTEND;TZID=Europe/Lisbon:20251014T110000
+SUMMARY:Project Sync & Meeting #405
+DESCRIPTION:Detailed discussion on team milestones and deliverables #405
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0406@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251115T100000
+DTEND;TZID=Europe/Lisbon:20251115T110000
+SUMMARY:Project Sync & Meeting #406
+DESCRIPTION:Detailed discussion on team milestones and deliverables #406
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0407@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251216T100000
+DTEND;TZID=Europe/Lisbon:20251216T110000
+SUMMARY:Project Sync & Meeting #407
+DESCRIPTION:Detailed discussion on team milestones and deliverables #407
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0408@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250117T100000
+DTEND;TZID=Europe/Lisbon:20250117T110000
+SUMMARY:Project Sync & Meeting #408
+DESCRIPTION:Detailed discussion on team milestones and deliverables #408
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0409@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250218T100000
+DTEND;TZID=Europe/Lisbon:20250218T110000
+SUMMARY:Project Sync & Meeting #409
+DESCRIPTION:Detailed discussion on team milestones and deliverables #409
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0410@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250319T100000
+DTEND;TZID=Europe/Lisbon:20250319T110000
+SUMMARY:Project Sync & Meeting #410
+DESCRIPTION:Detailed discussion on team milestones and deliverables #410
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0411@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250420T100000
+DTEND;TZID=Europe/Lisbon:20250420T110000
+SUMMARY:Project Sync & Meeting #411
+DESCRIPTION:Detailed discussion on team milestones and deliverables #411
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0412@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250521T100000
+DTEND;TZID=Europe/Lisbon:20250521T110000
+SUMMARY:Project Sync & Meeting #412
+DESCRIPTION:Detailed discussion on team milestones and deliverables #412
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0413@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250622T100000
+DTEND;TZID=Europe/Lisbon:20250622T110000
+SUMMARY:Project Sync & Meeting #413
+DESCRIPTION:Detailed discussion on team milestones and deliverables #413
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0414@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250723T100000
+DTEND;TZID=Europe/Lisbon:20250723T110000
+SUMMARY:Project Sync & Meeting #414
+DESCRIPTION:Detailed discussion on team milestones and deliverables #414
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0415@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250824T100000
+DTEND;TZID=Europe/Lisbon:20250824T110000
+SUMMARY:Project Sync & Meeting #415
+DESCRIPTION:Detailed discussion on team milestones and deliverables #415
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0416@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250925T100000
+DTEND;TZID=Europe/Lisbon:20250925T110000
+SUMMARY:Project Sync & Meeting #416
+DESCRIPTION:Detailed discussion on team milestones and deliverables #416
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0417@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251026T100000
+DTEND;TZID=Europe/Lisbon:20251026T110000
+SUMMARY:Project Sync & Meeting #417
+DESCRIPTION:Detailed discussion on team milestones and deliverables #417
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0418@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251127T100000
+DTEND;TZID=Europe/Lisbon:20251127T110000
+SUMMARY:Project Sync & Meeting #418
+DESCRIPTION:Detailed discussion on team milestones and deliverables #418
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0419@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251228T100000
+DTEND;TZID=Europe/Lisbon:20251228T110000
+SUMMARY:Project Sync & Meeting #419
+DESCRIPTION:Detailed discussion on team milestones and deliverables #419
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0420@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250101T100000
+DTEND;TZID=Europe/Lisbon:20250101T110000
+SUMMARY:Project Sync & Meeting #420
+DESCRIPTION:Detailed discussion on team milestones and deliverables #420
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0421@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250202T100000
+DTEND;TZID=Europe/Lisbon:20250202T110000
+SUMMARY:Project Sync & Meeting #421
+DESCRIPTION:Detailed discussion on team milestones and deliverables #421
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0422@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250303T100000
+DTEND;TZID=Europe/Lisbon:20250303T110000
+SUMMARY:Project Sync & Meeting #422
+DESCRIPTION:Detailed discussion on team milestones and deliverables #422
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0423@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250404T100000
+DTEND;TZID=Europe/Lisbon:20250404T110000
+SUMMARY:Project Sync & Meeting #423
+DESCRIPTION:Detailed discussion on team milestones and deliverables #423
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0424@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250505T100000
+DTEND;TZID=Europe/Lisbon:20250505T110000
+SUMMARY:Project Sync & Meeting #424
+DESCRIPTION:Detailed discussion on team milestones and deliverables #424
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0425@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250606T100000
+DTEND;TZID=Europe/Lisbon:20250606T110000
+SUMMARY:Project Sync & Meeting #425
+DESCRIPTION:Detailed discussion on team milestones and deliverables #425
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0426@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250707T100000
+DTEND;TZID=Europe/Lisbon:20250707T110000
+SUMMARY:Project Sync & Meeting #426
+DESCRIPTION:Detailed discussion on team milestones and deliverables #426
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0427@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250808T100000
+DTEND;TZID=Europe/Lisbon:20250808T110000
+SUMMARY:Project Sync & Meeting #427
+DESCRIPTION:Detailed discussion on team milestones and deliverables #427
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0428@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250909T100000
+DTEND;TZID=Europe/Lisbon:20250909T110000
+SUMMARY:Project Sync & Meeting #428
+DESCRIPTION:Detailed discussion on team milestones and deliverables #428
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0429@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251010T100000
+DTEND;TZID=Europe/Lisbon:20251010T110000
+SUMMARY:Project Sync & Meeting #429
+DESCRIPTION:Detailed discussion on team milestones and deliverables #429
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0430@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251111T100000
+DTEND;TZID=Europe/Lisbon:20251111T110000
+SUMMARY:Project Sync & Meeting #430
+DESCRIPTION:Detailed discussion on team milestones and deliverables #430
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0431@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251212T100000
+DTEND;TZID=Europe/Lisbon:20251212T110000
+SUMMARY:Project Sync & Meeting #431
+DESCRIPTION:Detailed discussion on team milestones and deliverables #431
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0432@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250113T100000
+DTEND;TZID=Europe/Lisbon:20250113T110000
+SUMMARY:Project Sync & Meeting #432
+DESCRIPTION:Detailed discussion on team milestones and deliverables #432
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0433@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250214T100000
+DTEND;TZID=Europe/Lisbon:20250214T110000
+SUMMARY:Project Sync & Meeting #433
+DESCRIPTION:Detailed discussion on team milestones and deliverables #433
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0434@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250315T100000
+DTEND;TZID=Europe/Lisbon:20250315T110000
+SUMMARY:Project Sync & Meeting #434
+DESCRIPTION:Detailed discussion on team milestones and deliverables #434
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0435@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250416T100000
+DTEND;TZID=Europe/Lisbon:20250416T110000
+SUMMARY:Project Sync & Meeting #435
+DESCRIPTION:Detailed discussion on team milestones and deliverables #435
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0436@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250517T100000
+DTEND;TZID=Europe/Lisbon:20250517T110000
+SUMMARY:Project Sync & Meeting #436
+DESCRIPTION:Detailed discussion on team milestones and deliverables #436
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0437@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250618T100000
+DTEND;TZID=Europe/Lisbon:20250618T110000
+SUMMARY:Project Sync & Meeting #437
+DESCRIPTION:Detailed discussion on team milestones and deliverables #437
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0438@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250719T100000
+DTEND;TZID=Europe/Lisbon:20250719T110000
+SUMMARY:Project Sync & Meeting #438
+DESCRIPTION:Detailed discussion on team milestones and deliverables #438
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0439@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250820T100000
+DTEND;TZID=Europe/Lisbon:20250820T110000
+SUMMARY:Project Sync & Meeting #439
+DESCRIPTION:Detailed discussion on team milestones and deliverables #439
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0440@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250921T100000
+DTEND;TZID=Europe/Lisbon:20250921T110000
+SUMMARY:Project Sync & Meeting #440
+DESCRIPTION:Detailed discussion on team milestones and deliverables #440
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0441@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251022T100000
+DTEND;TZID=Europe/Lisbon:20251022T110000
+SUMMARY:Project Sync & Meeting #441
+DESCRIPTION:Detailed discussion on team milestones and deliverables #441
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0442@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251123T100000
+DTEND;TZID=Europe/Lisbon:20251123T110000
+SUMMARY:Project Sync & Meeting #442
+DESCRIPTION:Detailed discussion on team milestones and deliverables #442
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0443@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251224T100000
+DTEND;TZID=Europe/Lisbon:20251224T110000
+SUMMARY:Project Sync & Meeting #443
+DESCRIPTION:Detailed discussion on team milestones and deliverables #443
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0444@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250125T100000
+DTEND;TZID=Europe/Lisbon:20250125T110000
+SUMMARY:Project Sync & Meeting #444
+DESCRIPTION:Detailed discussion on team milestones and deliverables #444
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0445@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250226T100000
+DTEND;TZID=Europe/Lisbon:20250226T110000
+SUMMARY:Project Sync & Meeting #445
+DESCRIPTION:Detailed discussion on team milestones and deliverables #445
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0446@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250327T100000
+DTEND;TZID=Europe/Lisbon:20250327T110000
+SUMMARY:Project Sync & Meeting #446
+DESCRIPTION:Detailed discussion on team milestones and deliverables #446
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0447@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250428T100000
+DTEND;TZID=Europe/Lisbon:20250428T110000
+SUMMARY:Project Sync & Meeting #447
+DESCRIPTION:Detailed discussion on team milestones and deliverables #447
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0448@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250501T100000
+DTEND;TZID=Europe/Lisbon:20250501T110000
+SUMMARY:Project Sync & Meeting #448
+DESCRIPTION:Detailed discussion on team milestones and deliverables #448
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0449@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250602T100000
+DTEND;TZID=Europe/Lisbon:20250602T110000
+SUMMARY:Project Sync & Meeting #449
+DESCRIPTION:Detailed discussion on team milestones and deliverables #449
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0450@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250703T100000
+DTEND;TZID=Europe/Lisbon:20250703T110000
+SUMMARY:Project Sync & Meeting #450
+DESCRIPTION:Detailed discussion on team milestones and deliverables #450
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0451@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250804T100000
+DTEND;TZID=Europe/Lisbon:20250804T110000
+SUMMARY:Project Sync & Meeting #451
+DESCRIPTION:Detailed discussion on team milestones and deliverables #451
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0452@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250905T100000
+DTEND;TZID=Europe/Lisbon:20250905T110000
+SUMMARY:Project Sync & Meeting #452
+DESCRIPTION:Detailed discussion on team milestones and deliverables #452
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0453@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251006T100000
+DTEND;TZID=Europe/Lisbon:20251006T110000
+SUMMARY:Project Sync & Meeting #453
+DESCRIPTION:Detailed discussion on team milestones and deliverables #453
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0454@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251107T100000
+DTEND;TZID=Europe/Lisbon:20251107T110000
+SUMMARY:Project Sync & Meeting #454
+DESCRIPTION:Detailed discussion on team milestones and deliverables #454
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0455@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251208T100000
+DTEND;TZID=Europe/Lisbon:20251208T110000
+SUMMARY:Project Sync & Meeting #455
+DESCRIPTION:Detailed discussion on team milestones and deliverables #455
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0456@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250109T100000
+DTEND;TZID=Europe/Lisbon:20250109T110000
+SUMMARY:Project Sync & Meeting #456
+DESCRIPTION:Detailed discussion on team milestones and deliverables #456
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0457@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250210T100000
+DTEND;TZID=Europe/Lisbon:20250210T110000
+SUMMARY:Project Sync & Meeting #457
+DESCRIPTION:Detailed discussion on team milestones and deliverables #457
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0458@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250311T100000
+DTEND;TZID=Europe/Lisbon:20250311T110000
+SUMMARY:Project Sync & Meeting #458
+DESCRIPTION:Detailed discussion on team milestones and deliverables #458
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0459@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250412T100000
+DTEND;TZID=Europe/Lisbon:20250412T110000
+SUMMARY:Project Sync & Meeting #459
+DESCRIPTION:Detailed discussion on team milestones and deliverables #459
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0460@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250513T100000
+DTEND;TZID=Europe/Lisbon:20250513T110000
+SUMMARY:Project Sync & Meeting #460
+DESCRIPTION:Detailed discussion on team milestones and deliverables #460
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0461@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250614T100000
+DTEND;TZID=Europe/Lisbon:20250614T110000
+SUMMARY:Project Sync & Meeting #461
+DESCRIPTION:Detailed discussion on team milestones and deliverables #461
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0462@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250715T100000
+DTEND;TZID=Europe/Lisbon:20250715T110000
+SUMMARY:Project Sync & Meeting #462
+DESCRIPTION:Detailed discussion on team milestones and deliverables #462
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0463@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250816T100000
+DTEND;TZID=Europe/Lisbon:20250816T110000
+SUMMARY:Project Sync & Meeting #463
+DESCRIPTION:Detailed discussion on team milestones and deliverables #463
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0464@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250917T100000
+DTEND;TZID=Europe/Lisbon:20250917T110000
+SUMMARY:Project Sync & Meeting #464
+DESCRIPTION:Detailed discussion on team milestones and deliverables #464
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0465@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251018T100000
+DTEND;TZID=Europe/Lisbon:20251018T110000
+SUMMARY:Project Sync & Meeting #465
+DESCRIPTION:Detailed discussion on team milestones and deliverables #465
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0466@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251119T100000
+DTEND;TZID=Europe/Lisbon:20251119T110000
+SUMMARY:Project Sync & Meeting #466
+DESCRIPTION:Detailed discussion on team milestones and deliverables #466
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0467@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251220T100000
+DTEND;TZID=Europe/Lisbon:20251220T110000
+SUMMARY:Project Sync & Meeting #467
+DESCRIPTION:Detailed discussion on team milestones and deliverables #467
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0468@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250121T100000
+DTEND;TZID=Europe/Lisbon:20250121T110000
+SUMMARY:Project Sync & Meeting #468
+DESCRIPTION:Detailed discussion on team milestones and deliverables #468
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0469@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250222T100000
+DTEND;TZID=Europe/Lisbon:20250222T110000
+SUMMARY:Project Sync & Meeting #469
+DESCRIPTION:Detailed discussion on team milestones and deliverables #469
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0470@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250323T100000
+DTEND;TZID=Europe/Lisbon:20250323T110000
+SUMMARY:Project Sync & Meeting #470
+DESCRIPTION:Detailed discussion on team milestones and deliverables #470
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0471@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250424T100000
+DTEND;TZID=Europe/Lisbon:20250424T110000
+SUMMARY:Project Sync & Meeting #471
+DESCRIPTION:Detailed discussion on team milestones and deliverables #471
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0472@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250525T100000
+DTEND;TZID=Europe/Lisbon:20250525T110000
+SUMMARY:Project Sync & Meeting #472
+DESCRIPTION:Detailed discussion on team milestones and deliverables #472
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0473@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250626T100000
+DTEND;TZID=Europe/Lisbon:20250626T110000
+SUMMARY:Project Sync & Meeting #473
+DESCRIPTION:Detailed discussion on team milestones and deliverables #473
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0474@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250727T100000
+DTEND;TZID=Europe/Lisbon:20250727T110000
+SUMMARY:Project Sync & Meeting #474
+DESCRIPTION:Detailed discussion on team milestones and deliverables #474
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0475@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250828T100000
+DTEND;TZID=Europe/Lisbon:20250828T110000
+SUMMARY:Project Sync & Meeting #475
+DESCRIPTION:Detailed discussion on team milestones and deliverables #475
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0476@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250901T100000
+DTEND;TZID=Europe/Lisbon:20250901T110000
+SUMMARY:Project Sync & Meeting #476
+DESCRIPTION:Detailed discussion on team milestones and deliverables #476
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0477@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251002T100000
+DTEND;TZID=Europe/Lisbon:20251002T110000
+SUMMARY:Project Sync & Meeting #477
+DESCRIPTION:Detailed discussion on team milestones and deliverables #477
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0478@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251103T100000
+DTEND;TZID=Europe/Lisbon:20251103T110000
+SUMMARY:Project Sync & Meeting #478
+DESCRIPTION:Detailed discussion on team milestones and deliverables #478
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0479@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251204T100000
+DTEND;TZID=Europe/Lisbon:20251204T110000
+SUMMARY:Project Sync & Meeting #479
+DESCRIPTION:Detailed discussion on team milestones and deliverables #479
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0480@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250105T100000
+DTEND;TZID=Europe/Lisbon:20250105T110000
+SUMMARY:Project Sync & Meeting #480
+DESCRIPTION:Detailed discussion on team milestones and deliverables #480
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0481@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250206T100000
+DTEND;TZID=Europe/Lisbon:20250206T110000
+SUMMARY:Project Sync & Meeting #481
+DESCRIPTION:Detailed discussion on team milestones and deliverables #481
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0482@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250307T100000
+DTEND;TZID=Europe/Lisbon:20250307T110000
+SUMMARY:Project Sync & Meeting #482
+DESCRIPTION:Detailed discussion on team milestones and deliverables #482
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0483@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250408T100000
+DTEND;TZID=Europe/Lisbon:20250408T110000
+SUMMARY:Project Sync & Meeting #483
+DESCRIPTION:Detailed discussion on team milestones and deliverables #483
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0484@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250509T100000
+DTEND;TZID=Europe/Lisbon:20250509T110000
+SUMMARY:Project Sync & Meeting #484
+DESCRIPTION:Detailed discussion on team milestones and deliverables #484
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0485@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250610T100000
+DTEND;TZID=Europe/Lisbon:20250610T110000
+SUMMARY:Project Sync & Meeting #485
+DESCRIPTION:Detailed discussion on team milestones and deliverables #485
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0486@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250711T100000
+DTEND;TZID=Europe/Lisbon:20250711T110000
+SUMMARY:Project Sync & Meeting #486
+DESCRIPTION:Detailed discussion on team milestones and deliverables #486
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0487@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250812T100000
+DTEND;TZID=Europe/Lisbon:20250812T110000
+SUMMARY:Project Sync & Meeting #487
+DESCRIPTION:Detailed discussion on team milestones and deliverables #487
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0488@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250913T100000
+DTEND;TZID=Europe/Lisbon:20250913T110000
+SUMMARY:Project Sync & Meeting #488
+DESCRIPTION:Detailed discussion on team milestones and deliverables #488
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0489@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251014T100000
+DTEND;TZID=Europe/Lisbon:20251014T110000
+SUMMARY:Project Sync & Meeting #489
+DESCRIPTION:Detailed discussion on team milestones and deliverables #489
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0490@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251115T100000
+DTEND;TZID=Europe/Lisbon:20251115T110000
+SUMMARY:Project Sync & Meeting #490
+DESCRIPTION:Detailed discussion on team milestones and deliverables #490
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0491@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251216T100000
+DTEND;TZID=Europe/Lisbon:20251216T110000
+SUMMARY:Project Sync & Meeting #491
+DESCRIPTION:Detailed discussion on team milestones and deliverables #491
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0492@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250117T100000
+DTEND;TZID=Europe/Lisbon:20250117T110000
+SUMMARY:Project Sync & Meeting #492
+DESCRIPTION:Detailed discussion on team milestones and deliverables #492
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0493@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250218T100000
+DTEND;TZID=Europe/Lisbon:20250218T110000
+SUMMARY:Project Sync & Meeting #493
+DESCRIPTION:Detailed discussion on team milestones and deliverables #493
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0494@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250319T100000
+DTEND;TZID=Europe/Lisbon:20250319T110000
+SUMMARY:Project Sync & Meeting #494
+DESCRIPTION:Detailed discussion on team milestones and deliverables #494
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0495@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250420T100000
+DTEND;TZID=Europe/Lisbon:20250420T110000
+SUMMARY:Project Sync & Meeting #495
+DESCRIPTION:Detailed discussion on team milestones and deliverables #495
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0496@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250521T100000
+DTEND;TZID=Europe/Lisbon:20250521T110000
+SUMMARY:Project Sync & Meeting #496
+DESCRIPTION:Detailed discussion on team milestones and deliverables #496
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0497@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250622T100000
+DTEND;TZID=Europe/Lisbon:20250622T110000
+SUMMARY:Project Sync & Meeting #497
+DESCRIPTION:Detailed discussion on team milestones and deliverables #497
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0498@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250723T100000
+DTEND;TZID=Europe/Lisbon:20250723T110000
+SUMMARY:Project Sync & Meeting #498
+DESCRIPTION:Detailed discussion on team milestones and deliverables #498
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0499@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250824T100000
+DTEND;TZID=Europe/Lisbon:20250824T110000
+SUMMARY:Project Sync & Meeting #499
+DESCRIPTION:Detailed discussion on team milestones and deliverables #499
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0500@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250925T100000
+DTEND;TZID=Europe/Lisbon:20250925T110000
+SUMMARY:Project Sync & Meeting #500
+DESCRIPTION:Detailed discussion on team milestones and deliverables #500
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0501@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251026T100000
+DTEND;TZID=Europe/Lisbon:20251026T110000
+SUMMARY:Project Sync & Meeting #501
+DESCRIPTION:Detailed discussion on team milestones and deliverables #501
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0502@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251127T100000
+DTEND;TZID=Europe/Lisbon:20251127T110000
+SUMMARY:Project Sync & Meeting #502
+DESCRIPTION:Detailed discussion on team milestones and deliverables #502
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0503@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251228T100000
+DTEND;TZID=Europe/Lisbon:20251228T110000
+SUMMARY:Project Sync & Meeting #503
+DESCRIPTION:Detailed discussion on team milestones and deliverables #503
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0504@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250101T100000
+DTEND;TZID=Europe/Lisbon:20250101T110000
+SUMMARY:Project Sync & Meeting #504
+DESCRIPTION:Detailed discussion on team milestones and deliverables #504
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0505@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250202T100000
+DTEND;TZID=Europe/Lisbon:20250202T110000
+SUMMARY:Project Sync & Meeting #505
+DESCRIPTION:Detailed discussion on team milestones and deliverables #505
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0506@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250303T100000
+DTEND;TZID=Europe/Lisbon:20250303T110000
+SUMMARY:Project Sync & Meeting #506
+DESCRIPTION:Detailed discussion on team milestones and deliverables #506
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0507@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250404T100000
+DTEND;TZID=Europe/Lisbon:20250404T110000
+SUMMARY:Project Sync & Meeting #507
+DESCRIPTION:Detailed discussion on team milestones and deliverables #507
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0508@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250505T100000
+DTEND;TZID=Europe/Lisbon:20250505T110000
+SUMMARY:Project Sync & Meeting #508
+DESCRIPTION:Detailed discussion on team milestones and deliverables #508
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0509@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250606T100000
+DTEND;TZID=Europe/Lisbon:20250606T110000
+SUMMARY:Project Sync & Meeting #509
+DESCRIPTION:Detailed discussion on team milestones and deliverables #509
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0510@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250707T100000
+DTEND;TZID=Europe/Lisbon:20250707T110000
+SUMMARY:Project Sync & Meeting #510
+DESCRIPTION:Detailed discussion on team milestones and deliverables #510
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0511@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250808T100000
+DTEND;TZID=Europe/Lisbon:20250808T110000
+SUMMARY:Project Sync & Meeting #511
+DESCRIPTION:Detailed discussion on team milestones and deliverables #511
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0512@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250909T100000
+DTEND;TZID=Europe/Lisbon:20250909T110000
+SUMMARY:Project Sync & Meeting #512
+DESCRIPTION:Detailed discussion on team milestones and deliverables #512
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0513@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251010T100000
+DTEND;TZID=Europe/Lisbon:20251010T110000
+SUMMARY:Project Sync & Meeting #513
+DESCRIPTION:Detailed discussion on team milestones and deliverables #513
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0514@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251111T100000
+DTEND;TZID=Europe/Lisbon:20251111T110000
+SUMMARY:Project Sync & Meeting #514
+DESCRIPTION:Detailed discussion on team milestones and deliverables #514
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0515@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251212T100000
+DTEND;TZID=Europe/Lisbon:20251212T110000
+SUMMARY:Project Sync & Meeting #515
+DESCRIPTION:Detailed discussion on team milestones and deliverables #515
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0516@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250113T100000
+DTEND;TZID=Europe/Lisbon:20250113T110000
+SUMMARY:Project Sync & Meeting #516
+DESCRIPTION:Detailed discussion on team milestones and deliverables #516
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0517@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250214T100000
+DTEND;TZID=Europe/Lisbon:20250214T110000
+SUMMARY:Project Sync & Meeting #517
+DESCRIPTION:Detailed discussion on team milestones and deliverables #517
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0518@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250315T100000
+DTEND;TZID=Europe/Lisbon:20250315T110000
+SUMMARY:Project Sync & Meeting #518
+DESCRIPTION:Detailed discussion on team milestones and deliverables #518
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0519@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250416T100000
+DTEND;TZID=Europe/Lisbon:20250416T110000
+SUMMARY:Project Sync & Meeting #519
+DESCRIPTION:Detailed discussion on team milestones and deliverables #519
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0520@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250517T100000
+DTEND;TZID=Europe/Lisbon:20250517T110000
+SUMMARY:Project Sync & Meeting #520
+DESCRIPTION:Detailed discussion on team milestones and deliverables #520
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0521@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250618T100000
+DTEND;TZID=Europe/Lisbon:20250618T110000
+SUMMARY:Project Sync & Meeting #521
+DESCRIPTION:Detailed discussion on team milestones and deliverables #521
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0522@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250719T100000
+DTEND;TZID=Europe/Lisbon:20250719T110000
+SUMMARY:Project Sync & Meeting #522
+DESCRIPTION:Detailed discussion on team milestones and deliverables #522
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0523@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250820T100000
+DTEND;TZID=Europe/Lisbon:20250820T110000
+SUMMARY:Project Sync & Meeting #523
+DESCRIPTION:Detailed discussion on team milestones and deliverables #523
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0524@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250921T100000
+DTEND;TZID=Europe/Lisbon:20250921T110000
+SUMMARY:Project Sync & Meeting #524
+DESCRIPTION:Detailed discussion on team milestones and deliverables #524
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0525@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251022T100000
+DTEND;TZID=Europe/Lisbon:20251022T110000
+SUMMARY:Project Sync & Meeting #525
+DESCRIPTION:Detailed discussion on team milestones and deliverables #525
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0526@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251123T100000
+DTEND;TZID=Europe/Lisbon:20251123T110000
+SUMMARY:Project Sync & Meeting #526
+DESCRIPTION:Detailed discussion on team milestones and deliverables #526
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0527@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251224T100000
+DTEND;TZID=Europe/Lisbon:20251224T110000
+SUMMARY:Project Sync & Meeting #527
+DESCRIPTION:Detailed discussion on team milestones and deliverables #527
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0528@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250125T100000
+DTEND;TZID=Europe/Lisbon:20250125T110000
+SUMMARY:Project Sync & Meeting #528
+DESCRIPTION:Detailed discussion on team milestones and deliverables #528
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0529@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250226T100000
+DTEND;TZID=Europe/Lisbon:20250226T110000
+SUMMARY:Project Sync & Meeting #529
+DESCRIPTION:Detailed discussion on team milestones and deliverables #529
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0530@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250327T100000
+DTEND;TZID=Europe/Lisbon:20250327T110000
+SUMMARY:Project Sync & Meeting #530
+DESCRIPTION:Detailed discussion on team milestones and deliverables #530
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0531@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250428T100000
+DTEND;TZID=Europe/Lisbon:20250428T110000
+SUMMARY:Project Sync & Meeting #531
+DESCRIPTION:Detailed discussion on team milestones and deliverables #531
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0532@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250501T100000
+DTEND;TZID=Europe/Lisbon:20250501T110000
+SUMMARY:Project Sync & Meeting #532
+DESCRIPTION:Detailed discussion on team milestones and deliverables #532
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0533@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250602T100000
+DTEND;TZID=Europe/Lisbon:20250602T110000
+SUMMARY:Project Sync & Meeting #533
+DESCRIPTION:Detailed discussion on team milestones and deliverables #533
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0534@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250703T100000
+DTEND;TZID=Europe/Lisbon:20250703T110000
+SUMMARY:Project Sync & Meeting #534
+DESCRIPTION:Detailed discussion on team milestones and deliverables #534
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0535@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250804T100000
+DTEND;TZID=Europe/Lisbon:20250804T110000
+SUMMARY:Project Sync & Meeting #535
+DESCRIPTION:Detailed discussion on team milestones and deliverables #535
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0536@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250905T100000
+DTEND;TZID=Europe/Lisbon:20250905T110000
+SUMMARY:Project Sync & Meeting #536
+DESCRIPTION:Detailed discussion on team milestones and deliverables #536
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0537@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251006T100000
+DTEND;TZID=Europe/Lisbon:20251006T110000
+SUMMARY:Project Sync & Meeting #537
+DESCRIPTION:Detailed discussion on team milestones and deliverables #537
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0538@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251107T100000
+DTEND;TZID=Europe/Lisbon:20251107T110000
+SUMMARY:Project Sync & Meeting #538
+DESCRIPTION:Detailed discussion on team milestones and deliverables #538
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0539@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251208T100000
+DTEND;TZID=Europe/Lisbon:20251208T110000
+SUMMARY:Project Sync & Meeting #539
+DESCRIPTION:Detailed discussion on team milestones and deliverables #539
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0540@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250109T100000
+DTEND;TZID=Europe/Lisbon:20250109T110000
+SUMMARY:Project Sync & Meeting #540
+DESCRIPTION:Detailed discussion on team milestones and deliverables #540
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0541@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250210T100000
+DTEND;TZID=Europe/Lisbon:20250210T110000
+SUMMARY:Project Sync & Meeting #541
+DESCRIPTION:Detailed discussion on team milestones and deliverables #541
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0542@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250311T100000
+DTEND;TZID=Europe/Lisbon:20250311T110000
+SUMMARY:Project Sync & Meeting #542
+DESCRIPTION:Detailed discussion on team milestones and deliverables #542
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0543@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250412T100000
+DTEND;TZID=Europe/Lisbon:20250412T110000
+SUMMARY:Project Sync & Meeting #543
+DESCRIPTION:Detailed discussion on team milestones and deliverables #543
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0544@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250513T100000
+DTEND;TZID=Europe/Lisbon:20250513T110000
+SUMMARY:Project Sync & Meeting #544
+DESCRIPTION:Detailed discussion on team milestones and deliverables #544
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0545@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250614T100000
+DTEND;TZID=Europe/Lisbon:20250614T110000
+SUMMARY:Project Sync & Meeting #545
+DESCRIPTION:Detailed discussion on team milestones and deliverables #545
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0546@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250715T100000
+DTEND;TZID=Europe/Lisbon:20250715T110000
+SUMMARY:Project Sync & Meeting #546
+DESCRIPTION:Detailed discussion on team milestones and deliverables #546
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0547@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250816T100000
+DTEND;TZID=Europe/Lisbon:20250816T110000
+SUMMARY:Project Sync & Meeting #547
+DESCRIPTION:Detailed discussion on team milestones and deliverables #547
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0548@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250917T100000
+DTEND;TZID=Europe/Lisbon:20250917T110000
+SUMMARY:Project Sync & Meeting #548
+DESCRIPTION:Detailed discussion on team milestones and deliverables #548
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0549@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251018T100000
+DTEND;TZID=Europe/Lisbon:20251018T110000
+SUMMARY:Project Sync & Meeting #549
+DESCRIPTION:Detailed discussion on team milestones and deliverables #549
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0550@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251119T100000
+DTEND;TZID=Europe/Lisbon:20251119T110000
+SUMMARY:Project Sync & Meeting #550
+DESCRIPTION:Detailed discussion on team milestones and deliverables #550
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0551@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251220T100000
+DTEND;TZID=Europe/Lisbon:20251220T110000
+SUMMARY:Project Sync & Meeting #551
+DESCRIPTION:Detailed discussion on team milestones and deliverables #551
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0552@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250121T100000
+DTEND;TZID=Europe/Lisbon:20250121T110000
+SUMMARY:Project Sync & Meeting #552
+DESCRIPTION:Detailed discussion on team milestones and deliverables #552
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0553@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250222T100000
+DTEND;TZID=Europe/Lisbon:20250222T110000
+SUMMARY:Project Sync & Meeting #553
+DESCRIPTION:Detailed discussion on team milestones and deliverables #553
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0554@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250323T100000
+DTEND;TZID=Europe/Lisbon:20250323T110000
+SUMMARY:Project Sync & Meeting #554
+DESCRIPTION:Detailed discussion on team milestones and deliverables #554
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0555@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250424T100000
+DTEND;TZID=Europe/Lisbon:20250424T110000
+SUMMARY:Project Sync & Meeting #555
+DESCRIPTION:Detailed discussion on team milestones and deliverables #555
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0556@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250525T100000
+DTEND;TZID=Europe/Lisbon:20250525T110000
+SUMMARY:Project Sync & Meeting #556
+DESCRIPTION:Detailed discussion on team milestones and deliverables #556
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0557@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250626T100000
+DTEND;TZID=Europe/Lisbon:20250626T110000
+SUMMARY:Project Sync & Meeting #557
+DESCRIPTION:Detailed discussion on team milestones and deliverables #557
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0558@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250727T100000
+DTEND;TZID=Europe/Lisbon:20250727T110000
+SUMMARY:Project Sync & Meeting #558
+DESCRIPTION:Detailed discussion on team milestones and deliverables #558
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0559@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250828T100000
+DTEND;TZID=Europe/Lisbon:20250828T110000
+SUMMARY:Project Sync & Meeting #559
+DESCRIPTION:Detailed discussion on team milestones and deliverables #559
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0560@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250901T100000
+DTEND;TZID=Europe/Lisbon:20250901T110000
+SUMMARY:Project Sync & Meeting #560
+DESCRIPTION:Detailed discussion on team milestones and deliverables #560
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0561@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251002T100000
+DTEND;TZID=Europe/Lisbon:20251002T110000
+SUMMARY:Project Sync & Meeting #561
+DESCRIPTION:Detailed discussion on team milestones and deliverables #561
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0562@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251103T100000
+DTEND;TZID=Europe/Lisbon:20251103T110000
+SUMMARY:Project Sync & Meeting #562
+DESCRIPTION:Detailed discussion on team milestones and deliverables #562
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0563@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251204T100000
+DTEND;TZID=Europe/Lisbon:20251204T110000
+SUMMARY:Project Sync & Meeting #563
+DESCRIPTION:Detailed discussion on team milestones and deliverables #563
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0564@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250105T100000
+DTEND;TZID=Europe/Lisbon:20250105T110000
+SUMMARY:Project Sync & Meeting #564
+DESCRIPTION:Detailed discussion on team milestones and deliverables #564
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0565@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250206T100000
+DTEND;TZID=Europe/Lisbon:20250206T110000
+SUMMARY:Project Sync & Meeting #565
+DESCRIPTION:Detailed discussion on team milestones and deliverables #565
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0566@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250307T100000
+DTEND;TZID=Europe/Lisbon:20250307T110000
+SUMMARY:Project Sync & Meeting #566
+DESCRIPTION:Detailed discussion on team milestones and deliverables #566
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0567@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250408T100000
+DTEND;TZID=Europe/Lisbon:20250408T110000
+SUMMARY:Project Sync & Meeting #567
+DESCRIPTION:Detailed discussion on team milestones and deliverables #567
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0568@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250509T100000
+DTEND;TZID=Europe/Lisbon:20250509T110000
+SUMMARY:Project Sync & Meeting #568
+DESCRIPTION:Detailed discussion on team milestones and deliverables #568
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0569@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250610T100000
+DTEND;TZID=Europe/Lisbon:20250610T110000
+SUMMARY:Project Sync & Meeting #569
+DESCRIPTION:Detailed discussion on team milestones and deliverables #569
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0570@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250711T100000
+DTEND;TZID=Europe/Lisbon:20250711T110000
+SUMMARY:Project Sync & Meeting #570
+DESCRIPTION:Detailed discussion on team milestones and deliverables #570
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0571@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250812T100000
+DTEND;TZID=Europe/Lisbon:20250812T110000
+SUMMARY:Project Sync & Meeting #571
+DESCRIPTION:Detailed discussion on team milestones and deliverables #571
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0572@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250913T100000
+DTEND;TZID=Europe/Lisbon:20250913T110000
+SUMMARY:Project Sync & Meeting #572
+DESCRIPTION:Detailed discussion on team milestones and deliverables #572
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0573@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251014T100000
+DTEND;TZID=Europe/Lisbon:20251014T110000
+SUMMARY:Project Sync & Meeting #573
+DESCRIPTION:Detailed discussion on team milestones and deliverables #573
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0574@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251115T100000
+DTEND;TZID=Europe/Lisbon:20251115T110000
+SUMMARY:Project Sync & Meeting #574
+DESCRIPTION:Detailed discussion on team milestones and deliverables #574
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0575@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251216T100000
+DTEND;TZID=Europe/Lisbon:20251216T110000
+SUMMARY:Project Sync & Meeting #575
+DESCRIPTION:Detailed discussion on team milestones and deliverables #575
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0576@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250117T100000
+DTEND;TZID=Europe/Lisbon:20250117T110000
+SUMMARY:Project Sync & Meeting #576
+DESCRIPTION:Detailed discussion on team milestones and deliverables #576
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0577@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250218T100000
+DTEND;TZID=Europe/Lisbon:20250218T110000
+SUMMARY:Project Sync & Meeting #577
+DESCRIPTION:Detailed discussion on team milestones and deliverables #577
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0578@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250319T100000
+DTEND;TZID=Europe/Lisbon:20250319T110000
+SUMMARY:Project Sync & Meeting #578
+DESCRIPTION:Detailed discussion on team milestones and deliverables #578
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0579@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250420T100000
+DTEND;TZID=Europe/Lisbon:20250420T110000
+SUMMARY:Project Sync & Meeting #579
+DESCRIPTION:Detailed discussion on team milestones and deliverables #579
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0580@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250521T100000
+DTEND;TZID=Europe/Lisbon:20250521T110000
+SUMMARY:Project Sync & Meeting #580
+DESCRIPTION:Detailed discussion on team milestones and deliverables #580
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0581@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250622T100000
+DTEND;TZID=Europe/Lisbon:20250622T110000
+SUMMARY:Project Sync & Meeting #581
+DESCRIPTION:Detailed discussion on team milestones and deliverables #581
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0582@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250723T100000
+DTEND;TZID=Europe/Lisbon:20250723T110000
+SUMMARY:Project Sync & Meeting #582
+DESCRIPTION:Detailed discussion on team milestones and deliverables #582
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0583@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250824T100000
+DTEND;TZID=Europe/Lisbon:20250824T110000
+SUMMARY:Project Sync & Meeting #583
+DESCRIPTION:Detailed discussion on team milestones and deliverables #583
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0584@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250925T100000
+DTEND;TZID=Europe/Lisbon:20250925T110000
+SUMMARY:Project Sync & Meeting #584
+DESCRIPTION:Detailed discussion on team milestones and deliverables #584
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0585@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251026T100000
+DTEND;TZID=Europe/Lisbon:20251026T110000
+SUMMARY:Project Sync & Meeting #585
+DESCRIPTION:Detailed discussion on team milestones and deliverables #585
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0586@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251127T100000
+DTEND;TZID=Europe/Lisbon:20251127T110000
+SUMMARY:Project Sync & Meeting #586
+DESCRIPTION:Detailed discussion on team milestones and deliverables #586
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0587@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251228T100000
+DTEND;TZID=Europe/Lisbon:20251228T110000
+SUMMARY:Project Sync & Meeting #587
+DESCRIPTION:Detailed discussion on team milestones and deliverables #587
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0588@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250101T100000
+DTEND;TZID=Europe/Lisbon:20250101T110000
+SUMMARY:Project Sync & Meeting #588
+DESCRIPTION:Detailed discussion on team milestones and deliverables #588
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0589@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250202T100000
+DTEND;TZID=Europe/Lisbon:20250202T110000
+SUMMARY:Project Sync & Meeting #589
+DESCRIPTION:Detailed discussion on team milestones and deliverables #589
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0590@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250303T100000
+DTEND;TZID=Europe/Lisbon:20250303T110000
+SUMMARY:Project Sync & Meeting #590
+DESCRIPTION:Detailed discussion on team milestones and deliverables #590
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0591@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250404T100000
+DTEND;TZID=Europe/Lisbon:20250404T110000
+SUMMARY:Project Sync & Meeting #591
+DESCRIPTION:Detailed discussion on team milestones and deliverables #591
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0592@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250505T100000
+DTEND;TZID=Europe/Lisbon:20250505T110000
+SUMMARY:Project Sync & Meeting #592
+DESCRIPTION:Detailed discussion on team milestones and deliverables #592
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0593@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250606T100000
+DTEND;TZID=Europe/Lisbon:20250606T110000
+SUMMARY:Project Sync & Meeting #593
+DESCRIPTION:Detailed discussion on team milestones and deliverables #593
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0594@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250707T100000
+DTEND;TZID=Europe/Lisbon:20250707T110000
+SUMMARY:Project Sync & Meeting #594
+DESCRIPTION:Detailed discussion on team milestones and deliverables #594
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0595@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250808T100000
+DTEND;TZID=Europe/Lisbon:20250808T110000
+SUMMARY:Project Sync & Meeting #595
+DESCRIPTION:Detailed discussion on team milestones and deliverables #595
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0596@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250909T100000
+DTEND;TZID=Europe/Lisbon:20250909T110000
+SUMMARY:Project Sync & Meeting #596
+DESCRIPTION:Detailed discussion on team milestones and deliverables #596
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0597@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251010T100000
+DTEND;TZID=Europe/Lisbon:20251010T110000
+SUMMARY:Project Sync & Meeting #597
+DESCRIPTION:Detailed discussion on team milestones and deliverables #597
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0598@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251111T100000
+DTEND;TZID=Europe/Lisbon:20251111T110000
+SUMMARY:Project Sync & Meeting #598
+DESCRIPTION:Detailed discussion on team milestones and deliverables #598
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0599@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20251212T100000
+DTEND;TZID=Europe/Lisbon:20251212T110000
+SUMMARY:Project Sync & Meeting #599
+DESCRIPTION:Detailed discussion on team milestones and deliverables #599
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:evt_0600@google.com
+DTSTAMP:20260915T120000Z
+DTSTART;TZID=Europe/Lisbon:20250113T100000
+DTEND;TZID=Europe/Lisbon:20250113T110000
+SUMMARY:Project Sync & Meeting #600
+DESCRIPTION:Detailed discussion on team milestones and deliverables #600
+LOCATION:Online Google Meet
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

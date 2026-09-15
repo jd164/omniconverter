@@ -139,11 +139,80 @@ def main():
         default=8000,
         help="Port for local web server (default: 8000)"
     )
+    # ICS Slicer / Splitter options
+    parser.add_argument(
+        "--split",
+        type=str,
+        default=None,
+        metavar="FILE.ics",
+        help="Split a large .ics calendar file into smaller chunks (e.g. for Google Calendar)"
+    )
+    parser.add_argument(
+        "--max-size",
+        type=str,
+        default="950KB",
+        help="Max file size per slice (e.g. '1MB', '950KB', '500KB'). Default: 950KB (Google Calendar limit)"
+    )
+    parser.add_argument(
+        "--max-events",
+        type=int,
+        default=None,
+        help="Max number of events per slice (optional, overrides --max-size if set)"
+    )
+    parser.add_argument(
+        "--split-out",
+        type=str,
+        default="split_calendar",
+        help="Output folder for sliced .ics files (default: split_calendar)"
+    )
 
     args = parser.parse_args()
 
     if args.web:
         start_web_server(port=args.port)
+        return
+
+    # Handle ICS Slicing mode
+    if args.split:
+        if not os.path.exists(args.split):
+            print(f"[ERROR] Calendar file '{args.split}' not found!")
+            sys.exit(1)
+
+        from converter import split_ics
+
+        # Parse max_size
+        max_bytes = None
+        if not args.max_events:
+            size_str = args.max_size.upper().strip()
+            if size_str.endswith("MB"):
+                max_bytes = int(float(size_str[:-2]) * 1024 * 1024)
+            elif size_str.endswith("KB"):
+                max_bytes = int(float(size_str[:-2]) * 1024)
+            elif size_str.isdigit():
+                max_bytes = int(size_str)
+            else:
+                max_bytes = 950 * 1024
+
+        print("=" * 60)
+        print("OmniConverter - ICS Calendar Slicer")
+        print("=" * 60)
+        print(f"File to split: {args.split}")
+        if args.max_events:
+            print(f"Strategy: Max {args.max_events} events per file")
+        else:
+            print(f"Strategy: Max {args.max_size} (~{max_bytes // 1024} KB) per file")
+
+        try:
+            res = split_ics(args.split, output_dir=args.split_out, max_size_bytes=max_bytes, max_events=args.max_events)
+            print(f"\n[SUCCESS] Split completed successfully!")
+            print(f"Calendar:       {res['calendar_name']}")
+            print(f"Total events:   {res['original_events']}")
+            print(f"Generated parts: {res['total_parts']} files in '{args.split_out}/':")
+            for p in res["parts"]:
+                print(f"   * {p['filename']} ({p['events_count']} events | {p['size_formatted']})")
+        except Exception as e:
+            print(f"[ERROR] Failed to split calendar: {e}")
+            sys.exit(1)
         return
 
     print("=" * 60)

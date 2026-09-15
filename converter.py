@@ -409,6 +409,152 @@ def convert_all(source, base_name="call_logs", event_title="Call with {contact}"
     }
 
 
+def parse_ics_components(content: str):
+    """
+    Parses an RFC-5545 iCalendar string into:
+    1. Header lines (everything before the first BEGIN:VEVENT, including VTIMEZONE components)
+    2. Event blocks (list of lists of lines, each BEGIN:VEVENT ... END:VEVENT)
+    3. Footer lines (END:VCALENDAR)
+    4. Metadata dict (detected calendar name, prodid, etc.)
+    """
+    lines = content.replace("\r\n", "\n").replace("\r", "\n").split("\n")
+    header_lines = []
+    events = []
+    footer_lines = ["END:VCALENDAR"]
+    metadata = {"calendar_name": "Calendar", "prodid": "", "total_events": 0}
+
+    in_event = False
+    current_event = []
+
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith("X-WR-CALNAME:"):
+            metadata["calendar_name"] = stripped.split(":", 1)[1]
+        elif stripped.startswith("PRODID:"):
+            metadata["prodid"] = stripped.split(":", 1)[1]
+
+        if stripped == "BEGIN:VEVENT":
+            in_event = True
+            current_event = [line]
+        elif in_event:
+            current_event.append(line)
+            if stripped == "END:VEVENT":
+                in_event = False
+                events.append(current_event)
+                current_event = []
+        elif stripped == "END:VCALENDAR":
+            continue
+        elif not events:
+            header_lines.append(line)
+
+    if not header_lines:
+        header_lines = [
+            "BEGIN:VCALENDAR",
+            "VERSION:2.0",
+            "PRODID:-//OmniConverter//EN",
+            "CALSCALE:GREGORIAN",
+            "METHOD:PUBLISH"
+        ]
+    elif not any(h.strip() == "BEGIN:VCALENDAR" for h in header_lines):
+        header_lines.insert(0, "BEGIN:VCALENDAR")
+
+    metadata["total_events"] = len(events)
+    return header_lines, events, footer_lines, metadata
+
+
+def split_ics(input_source, output_dir=None, max_size_bytes=None, max_events=None, base_name=None):
+    """
+    Splits an RFC-5545 .ics file into smaller valid .ics files.
+    Either by max_size_bytes (e.g. 950_000 for Google Calendar 1MB limit)
+    or by max_events (e.g. 500).
+    """
+    if isinstance(input_source, str) and os.path.exists(input_source):
+        with open(input_source, "r", encoding="utf-8", errors="ignore") as f:
+            content = f.read()
+        if not base_name:
+            base_name = os.path.splitext(os.path.basename(input_source))[0]
+    else:
+        content = str(input_source)
+        if not base_name:
+            base_name = "calendar_split"
+
+    header_lines, events, footer_lines, metadata = parse_ics_components(content)
+
+    if not events:
+        raise ValueError("No VEVENT components found in the provided ICS content.")
+
+    # Default to 950KB (~0.95MB) to ensure Google Calendar's strict 1MB import limit is never breached
+    if not max_size_bytes and not max_events:
+        max_size_bytes = 950 * 1024
+
+    slices = []
+    if max_events and max_events > 0:
+        for i in range(0, len(events), max_events):
+            slices.append(events[i:i + max_events])
+    else:
+        header_str = "\r\n".join(header_lines) + "\r\n"
+        footer_str = "\r\n" + "\r\n".join(footer_lines)
+        base_overhead = len(header_str.encode("utf-8")) + len(footer_str.encode("utf-8"))
+
+        current_slice = []
+        current_bytes = base_overhead
+
+        for event in events:
+            event_str = "\r\n".join(event) + "\r\n"
+            event_bytes = len(event_str.encode("utf-8"))
+
+            if current_slice and (current_bytes + event_bytes > max_size_bytes):
+                slices.append(current_slice)
+                current_slice = [event]
+                current_bytes = base_overhead + event_bytes
+            else:
+                current_slice.append(event)
+                current_bytes += event_bytes
+
+        if current_slice:
+            slices.append(current_slice)
+
+    if output_dir:
+        os.makedirs(output_dir, exist_ok=True)
+
+    results = []
+    total_parts = len(slices)
+
+    for idx, slice_events in enumerate(slices, start=1):
+        part_name = f"{base_name}_part{idx:02d}.ics"
+        out_path = os.path.join(output_dir, part_name) if output_dir else part_name
+
+        part_lines = list(header_lines)
+        for ev in slice_events:
+            part_lines.extend(ev)
+        part_lines.extend(footer_lines)
+
+        part_content = "\r\n".join(part_lines)
+
+        if output_dir:
+            with open(out_path, "w", encoding="utf-8") as f:
+                f.write(part_content)
+
+        size_bytes = len(part_content.encode("utf-8"))
+        results.append({
+            "part": idx,
+            "total_parts": total_parts,
+            "filename": part_name,
+            "path": out_path if output_dir else None,
+            "events_count": len(slice_events),
+            "size_bytes": size_bytes,
+            "size_formatted": f"{size_bytes / 1024:.1f} KB" if size_bytes < 1024 * 1024 else f"{size_bytes / (1024 * 1024):.2f} MB",
+            "content": part_content
+        })
+
+    return {
+        "original_events": len(events),
+        "total_parts": total_parts,
+        "calendar_name": metadata["calendar_name"],
+        "parts": results
+    }
+
+
 # Backwards compatibility aliases
 carregar_dados = load_data
 exportar_excel = export_excel
@@ -416,3 +562,5 @@ exportar_csv = export_csv
 exportar_json = export_json
 exportar_ics = export_ics
 converter_todos = convert_all
+dividir_ics = split_ics
+
