@@ -7,25 +7,41 @@ import argparse
 import os
 import sys
 import webbrowser
+
+# Ensure Windows terminal supports UTF-8 safely
+if sys.stdout and hasattr(sys.stdout, "reconfigure"):
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+if sys.stderr and hasattr(sys.stderr, "reconfigure"):
+    try:
+        sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+
 from converter import (
-    carregar_dados,
-    converter_todos,
-    exportar_csv,
-    exportar_excel,
-    exportar_ics,
-    exportar_json,
+    convert_all,
+    export_csv,
+    export_excel,
+    export_ics,
+    export_json,
+    load_data,
 )
 
 
-def gerar_ics(json_path="dados.json", ics_path="call_logs.ics", title="Call with {contact}"):
+def generate_ics(json_path="data.json", ics_path="call_logs.ics", title="Call with {contact}", limit=None):
     """
-    Backwards compatibility function.
     Generates .ics calendar file from JSON.
     """
-    return exportar_ics(json_path, ics_path, event_title=title)
+    return export_ics(json_path, ics_path, event_title=title, limit=limit)
 
 
-def iniciar_servidor_web(port=8000, open_browser=True):
+# Backward compatibility alias
+gerar_ics = generate_ics
+
+
+def start_web_server(port=8000, open_browser=True):
     """
     Launches local FastAPI web server and opens browser.
     """
@@ -35,7 +51,7 @@ def iniciar_servidor_web(port=8000, open_browser=True):
 
         url = f"http://127.0.0.1:{port}"
         print("=" * 60)
-        print(f"🚀 Launching Interactive Web Dashboard at: {url}")
+        print(f"[OmniConverter] Launching Interactive Web Dashboard at: {url}")
         print("Press Ctrl+C to stop the server.")
         print("=" * 60)
 
@@ -63,13 +79,16 @@ def iniciar_servidor_web(port=8000, open_browser=True):
                 super().__init__(*args, directory=web_dir, **kwargs)
 
         print("=" * 60)
-        print(f"🚀 Starting static server at: http://127.0.0.1:{port}")
+        print(f"[OmniConverter] Starting static server at: http://127.0.0.1:{port}")
         print("=" * 60)
         if open_browser:
             webbrowser.open(f"http://127.0.0.1:{port}")
 
         with socketserver.TCPServer(("127.0.0.1", port), Handler) as httpd:
             httpd.serve_forever()
+
+
+iniciar_servidor_web = start_web_server
 
 
 def main():
@@ -79,8 +98,8 @@ def main():
     )
     parser.add_argument(
         "-i", "--input",
-        default="dados.json",
-        help="Path to input JSON file (default: dados.json)"
+        default="data.json",
+        help="Path to input JSON file (default: data.json or dados.json)"
     )
     parser.add_argument(
         "-o", "--output",
@@ -104,6 +123,12 @@ def main():
         help="Event summary/title template for ICS calendar (e.g. 'Call with {contact}')"
     )
     parser.add_argument(
+        "-n", "--limit",
+        type=int,
+        default=None,
+        help="Limit number of calls to convert (e.g. -n 3 to export only 3 events)"
+    )
+    parser.add_argument(
         "--web",
         action="store_true",
         help="Launch the interactive web dashboard in your browser"
@@ -118,16 +143,20 @@ def main():
     args = parser.parse_args()
 
     if args.web:
-        iniciar_servidor_web(port=args.port)
+        start_web_server(port=args.port)
         return
 
     print("=" * 60)
-    print("📊 OmniConverter • Multi-Format Call Log Conversion Tool")
+    print("OmniConverter - Multi-Format Call Log Conversion Tool")
     print("=" * 60)
 
-    if not os.path.exists(args.input):
-        print(f"❌ Error: Input file '{args.input}' not found!")
-        sys.exit(1)
+    input_file = args.input
+    if not os.path.exists(input_file):
+        if input_file == "data.json" and os.path.exists("dados.json"):
+            input_file = "dados.json"
+        else:
+            print(f"[ERROR] Input file '{args.input}' not found!")
+            sys.exit(1)
 
     base = args.output
     for ext in [".xlsx", ".csv", ".json", ".ics"]:
@@ -136,34 +165,34 @@ def main():
 
     try:
         if args.format == "all":
-            res = converter_todos(args.input, base_name=base, event_title=args.title)
-            print(f"✅ Conversion completed successfully ({res['totalCalls']} calls | {res['totalDuration']}):")
-            print(f"   • Excel:      {res['xlsx']}")
-            print(f"   • CSV:        {res['csv']}")
-            print(f"   • JSON:       {res['json']}")
-            print(f"   • Calendar:   {res['ics']}")
+            res = convert_all(input_file, base_name=base, event_title=args.title, limit=args.limit)
+            print(f"[SUCCESS] Conversion completed ({res['totalCalls']} calls | {res['totalDuration']}):")
+            print(f"   * Excel:    {res['xlsx']}")
+            print(f"   * CSV:      {res['csv']}")
+            print(f"   * JSON:     {res['json']}")
+            print(f"   * Calendar: {res['ics']}")
         elif args.format == "xlsx":
             out = f"{base}.xlsx"
-            exportar_excel(args.input, out, event_title=args.title)
-            print(f"✅ Excel spreadsheet generated: {out}")
+            export_excel(input_file, out, event_title=args.title, limit=args.limit)
+            print(f"[SUCCESS] Excel spreadsheet generated: {out}")
         elif args.format == "csv":
             out = f"{base}.csv"
-            exportar_csv(args.input, out)
-            print(f"✅ CSV file generated: {out}")
+            export_csv(input_file, out, limit=args.limit)
+            print(f"[SUCCESS] CSV file generated: {out}")
         elif args.format == "json":
             out = f"{base}.json"
-            exportar_json(args.input, out)
-            print(f"✅ JSON file generated: {out}")
+            export_json(input_file, out, limit=args.limit)
+            print(f"[SUCCESS] JSON file generated: {out}")
         elif args.format == "ics":
             out = f"{base}.ics"
-            exportar_ics(args.input, out, event_title=args.title)
-            print(f"✅ iCalendar (.ics) file generated: {out}")
+            export_ics(input_file, out, event_title=args.title, limit=args.limit)
+            print(f"[SUCCESS] iCalendar (.ics) file generated: {out}")
 
-        print("\n💡 Tip: To use the visual interactive dashboard, run:")
+        print("\nTip: To use the visual interactive dashboard, run:")
         print("   python main.py --web")
-        print("   or double-click start_dashboard.bat")
+        print("   or double-click start.bat / start_dashboard.bat")
     except Exception as e:
-        print(f"❌ Error during conversion: {e}")
+        print(f"[ERROR] Error during conversion: {e}")
         sys.exit(1)
 
 

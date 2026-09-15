@@ -26,13 +26,19 @@ def format_duration(seconds: int) -> str:
     return f"{minutes:02d}:{secs:02d}"
 
 
-def carregar_dados(source):
+def load_data(source, limit=None, selected_ids=None):
     """
     Loads and normalizes call log data from file path or dictionary.
+    Optionally filters by limit or specific selected IDs.
     """
     if isinstance(source, str):
         if not os.path.exists(source):
-            raise FileNotFoundError(f"File not found: {source}")
+            for alt in ["data.json", "dados.json", "sample_data.json"]:
+                if os.path.exists(alt):
+                    source = alt
+                    break
+            if not os.path.exists(source):
+                raise FileNotFoundError(f"File not found: {source}")
         with open(source, "r", encoding="utf-8") as f:
             raw = json.load(f)
     elif isinstance(source, dict):
@@ -48,6 +54,10 @@ def carregar_dados(source):
 
     normalized_calls = []
     for c in calls_raw:
+        call_id = c.get("id", str(uuid.uuid4()))
+        if selected_ids and call_id not in selected_ids:
+            continue
+
         duration_sec = c.get("durationSec", 0)
         dur_formatted = c.get("durationFormatted") or format_duration(duration_sec)
 
@@ -66,7 +76,6 @@ def carregar_dados(source):
                 pass
 
         media_type = c.get("mediaType", "Voice")
-        # Normalize Voice / Video in English / Portuguese
         if media_type.lower() in ("voz", "voice", "audio"):
             media_type = "Voice"
         elif media_type.lower() in ("vídeo", "video"):
@@ -81,7 +90,7 @@ def carregar_dados(source):
             is_missed = True
 
         normalized_calls.append({
-            "id": c.get("id", str(uuid.uuid4())),
+            "id": call_id,
             "chatId": c.get("chatId", ""),
             "timestamp": c.get("timestamp", 0),
             "timestampMs": c.get("timestampMs", c.get("timestamp", 0) * 1000),
@@ -98,7 +107,9 @@ def carregar_dados(source):
             "source": c.get("source", "whatsapp-call-export")
         })
 
-    # Summary Statistics
+    if limit and limit > 0:
+        normalized_calls = normalized_calls[:limit]
+
     total_calls = len(normalized_calls)
     total_duration = sum(c["durationSec"] for c in normalized_calls)
     voice_count = sum(1 for c in normalized_calls if c["mediaType"].lower() == "voice")
@@ -122,22 +133,17 @@ def carregar_dados(source):
     }
 
 
-def exportar_excel(source, output_path="call_logs.xlsx", event_title="Call"):
-    """
-    Exports call logs to professionally styled Excel (.xlsx) workbook,
-    with 2 sheets: 'Call Log' and 'Statistical Summary'.
-    """
-    data = carregar_dados(source)
+def export_excel(source, output_path="call_logs.xlsx", event_title="Call", limit=None, selected_ids=None):
+    data = load_data(source, limit=limit, selected_ids=selected_ids)
     calls = data["calls"]
 
     wb = openpyxl.Workbook()
 
-    # --- Sheet 1: Call Log ---
     ws = wb.active
     ws.title = "Call Log"
     ws.views.sheetView[0].showGridLines = True
 
-    header_fill = PatternFill(start_color="1E293B", end_color="1E293B", fill_type="solid")  # Navy Slate
+    header_fill = PatternFill(start_color="1E293B", end_color="1E293B", fill_type="solid")
     header_font = Font(name="Segoe UI", size=11, bold=True, color="FFFFFF")
     data_font = Font(name="Segoe UI", size=10, color="0F172A")
     zebra_fill = PatternFill(start_color="F8FAFC", end_color="F8FAFC", fill_type="solid")
@@ -190,13 +196,11 @@ def exportar_excel(source, output_path="call_logs.xlsx", event_title="Call"):
             cell.border = border_cell
         ws.row_dimensions[row_idx].height = 20
 
-    # Auto column width
     for col in ws.columns:
         col_letter = get_column_letter(col[0].column)
         max_len = max(len(str(cell.value or "")) for cell in col)
         ws.column_dimensions[col_letter].width = max(max_len + 4, 12)
 
-    # --- Sheet 2: Statistical Summary ---
     ws_stats = wb.create_sheet(title="Statistical Summary")
     ws_stats.views.sheetView[0].showGridLines = True
 
@@ -264,13 +268,10 @@ def exportar_excel(source, output_path="call_logs.xlsx", event_title="Call"):
     return output_path
 
 
-def exportar_csv(source, output_path="call_logs.csv", delimiter=";"):
-    """
-    Exports call logs to CSV with UTF-8 BOM (utf-8-sig) for immediate Excel compatibility.
-    """
+def export_csv(source, output_path="call_logs.csv", delimiter=";", limit=None, selected_ids=None):
     import csv
 
-    data = carregar_dados(source)
+    data = load_data(source, limit=limit, selected_ids=selected_ids)
     calls = data["calls"]
 
     with open(output_path, "w", encoding="utf-8-sig", newline="") as f:
@@ -309,21 +310,15 @@ def exportar_csv(source, output_path="call_logs.csv", delimiter=";"):
     return output_path
 
 
-def exportar_json(source, output_path="call_logs.json", indent=2):
-    """
-    Exports normalized call log data in clean formatted JSON.
-    """
-    data = carregar_dados(source)
+def export_json(source, output_path="call_logs.json", indent=2, limit=None, selected_ids=None):
+    data = load_data(source, limit=limit, selected_ids=selected_ids)
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=indent)
     return output_path
 
 
-def exportar_ics(source, output_path="call_logs.ics", event_title="Call with {contact}"):
-    """
-    Generates RFC-5545 compliant iCalendar (.ics) calendar file with UTC timestamps.
-    """
-    data = carregar_dados(source)
+def export_ics(source, output_path="call_logs.ics", event_title="Call with {contact}", limit=None, selected_ids=None):
+    data = load_data(source, limit=limit, selected_ids=selected_ids)
     calls = data["calls"]
 
     now_str = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
@@ -391,21 +386,18 @@ def exportar_ics(source, output_path="call_logs.ics", event_title="Call with {co
     return output_path
 
 
-def converter_todos(source, base_name="call_logs", event_title="Call with {contact}"):
-    """
-    Generates all 4 formats (.xlsx, .csv, .json, .ics) in one single step.
-    """
-    data = carregar_dados(source)
+def convert_all(source, base_name="call_logs", event_title="Call with {contact}", limit=None, selected_ids=None):
+    data = load_data(source, limit=limit, selected_ids=selected_ids)
 
     xlsx_file = f"{base_name}.xlsx"
     csv_file = f"{base_name}.csv"
     json_file = f"{base_name}.json"
     ics_file = f"{base_name}.ics"
 
-    exportar_excel(data, xlsx_file, event_title=event_title)
-    exportar_csv(data, csv_file)
-    exportar_json(data, json_file)
-    exportar_ics(data, ics_file, event_title=event_title)
+    export_excel(data, xlsx_file, event_title=event_title)
+    export_csv(data, csv_file)
+    export_json(data, json_file)
+    export_ics(data, ics_file, event_title=event_title)
 
     return {
         "xlsx": xlsx_file,
@@ -415,3 +407,12 @@ def converter_todos(source, base_name="call_logs", event_title="Call with {conta
         "totalCalls": data["totalCalls"],
         "totalDuration": data["totalDurationFormatted"]
     }
+
+
+# Backwards compatibility aliases
+carregar_dados = load_data
+exportar_excel = export_excel
+exportar_csv = export_csv
+exportar_json = export_json
+exportar_ics = export_ics
+converter_todos = convert_all

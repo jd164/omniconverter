@@ -8,7 +8,7 @@ const AppState = {
   rawDataset: null,
   activeCalls: [],
   filteredCalls: [],
-  selectedIds: new Set(),
+  selectedIds: new Set(), // Starts empty: manual selection mode
   currentPage: 1,
   pageSize: 15,
   currentSort: { column: 'date', order: 'desc' },
@@ -214,7 +214,7 @@ function normalizeDataset(raw) {
 function loadDataset(dataset, filename = 'call_logs.json') {
   AppState.rawDataset = dataset;
   AppState.activeCalls = dataset.calls;
-  AppState.selectedIds = new Set(dataset.calls.map(c => c.id));
+  AppState.selectedIds = new Set(); // Default: empty so user can check just 1, 2, or 3!
   AppState.currentPage = 1;
 
   DOM.loadedFilenameDisplay.textContent = filename;
@@ -225,12 +225,12 @@ function loadDataset(dataset, filename = 'call_logs.json') {
   applyFilters();
   updateKPIs();
   updateCharts();
+  updateSelectionUI();
   showToast(`Successfully loaded ${dataset.calls.length} calls!`, 'success');
 }
 
 // Check Backend Connection or Fallback to Static Sample Data
 async function checkBackend() {
-  // 1. Try local server API
   try {
     const res = await fetch('/api/data');
     if (res.ok) {
@@ -238,30 +238,27 @@ async function checkBackend() {
       DOM.connectionBadge.className = 'connection-pill online';
       DOM.connectionStatusText.textContent = 'Local Server Active';
       const data = await res.json();
-      loadDataset(normalizeDataset(data), 'dados.json (server)');
+      loadDataset(normalizeDataset(data), 'data.json (server)');
       return;
     }
   } catch (err) {}
 
-  // 2. Static / GitHub Pages Mode
   AppState.backendAvailable = false;
   DOM.connectionBadge.className = 'connection-pill offline';
   DOM.connectionStatusText.textContent = 'Browser Mode (Offline)';
 
-  // Try to load sample_data.json
-  const samplePaths = ['sample_data.json', './sample_data.json', '../sample_data.json', 'dados.json', '../dados.json'];
+  const samplePaths = ['data.json', 'sample_data.json', './data.json', './sample_data.json', '../data.json'];
   for (const path of samplePaths) {
     try {
       const res = await fetch(path);
       if (res.ok) {
         const json = await res.json();
-        loadDataset(normalizeDataset(json), 'sample_data.json');
+        loadDataset(normalizeDataset(json), 'data.json');
         return;
       }
     } catch (e) {}
   }
 
-  // Fallback prompt if static file can't be fetched
   DOM.loadedFilenameDisplay.textContent = 'Ready for data';
   DOM.loadedDetailsDisplay.textContent = 'Drag & drop any WhatsApp JSON export above or click Load Sample';
   DOM.loadedFileBanner.classList.remove('hidden');
@@ -316,7 +313,6 @@ function updateCharts() {
 
   const calls = AppState.filteredCalls;
 
-  // 1. Timeline Chart
   const dateMap = {};
   calls.forEach(c => {
     if (!c.date) return;
@@ -396,7 +392,6 @@ function updateCharts() {
     }
   });
 
-  // 2. Hourly Breakdown Chart
   const hourCounts = new Array(24).fill(0);
   calls.forEach(c => {
     if (c.time) {
@@ -454,6 +449,22 @@ function updateCharts() {
   });
 }
 
+// Update Selection UI & Export Indicators
+function updateSelectionUI() {
+  const selectedCount = AppState.selectedIds.size;
+  const filteredCount = AppState.filteredCalls.length;
+
+  if (selectedCount > 0) {
+    DOM.filteredCountBadge.textContent = `${selectedCount} selected`;
+    DOM.chkExportFiltered.closest('.checkbox-container').querySelector('.checkbox-label').innerHTML =
+      `⭐ <strong>Exporting ONLY ${selectedCount} selected call(s)</strong> (Uncheck to export all ${filteredCount})`;
+  } else {
+    DOM.filteredCountBadge.textContent = filteredCount;
+    DOM.chkExportFiltered.closest('.checkbox-container').querySelector('.checkbox-label').innerHTML =
+      `Export only currently filtered calls (<strong>${filteredCount}</strong> items)`;
+  }
+}
+
 // Filtering & Searching Logic
 function applyFilters() {
   const query = AppState.filterQuery.toLowerCase().trim();
@@ -492,10 +503,10 @@ function applyFilters() {
   renderTable();
   updateKPIs();
   updateCharts();
+  updateSelectionUI();
 
   DOM.visibleCount.textContent = AppState.filteredCalls.length;
   DOM.totalCount.textContent = AppState.activeCalls.length;
-  DOM.filteredCountBadge.textContent = AppState.filteredCalls.length;
 }
 
 function sortCalls() {
@@ -576,7 +587,8 @@ function renderTable() {
       </td>
       <td class="col-iso font-mono text-subtle" style="font-size: 0.76rem;">${call.iso.slice(0, 19)}Z</td>
       <td class="col-actions">
-        <button class="btn-icon-action btn-inspect-row" data-id="${call.id}" title="View complete details">🔍</button>
+        <button class="btn-icon-action btn-inspect-row" data-id="${call.id}" title="View details">🔍</button>
+        <button class="btn-icon-action btn-export-single-ics" data-id="${call.id}" title="Export only this event to .ICS">📅</button>
       </td>
     `;
 
@@ -673,14 +685,14 @@ function closeModal() {
 
 // Multi-Format Exporters (Client-Side Standalone & API)
 function getTargetCallsForExport() {
-  const onlyFiltered = DOM.chkExportFiltered.checked;
-  let pool = onlyFiltered ? AppState.filteredCalls : AppState.activeCalls;
-
-  if (AppState.selectedIds.size > 0 && AppState.selectedIds.size < AppState.activeCalls.length) {
-    const selectedPool = pool.filter(c => AppState.selectedIds.has(c.id));
-    if (selectedPool.length > 0) return selectedPool;
+  // If user selected specific calls with checkboxes, return ONLY those calls!
+  if (AppState.selectedIds.size > 0) {
+    const selected = AppState.activeCalls.filter(c => AppState.selectedIds.has(c.id));
+    if (selected.length > 0) return selected;
   }
-  return pool;
+
+  const onlyFiltered = DOM.chkExportFiltered.checked;
+  return onlyFiltered ? AppState.filteredCalls : AppState.activeCalls;
 }
 
 function downloadBlob(blob, filename) {
@@ -759,7 +771,8 @@ function exportToExcel() {
 
   const wbout = XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
   const blob = new Blob([wbout], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
-  downloadBlob(blob, 'call_logs_export.xlsx');
+  const fname = calls.length === AppState.activeCalls.length ? 'call_logs.xlsx' : `call_logs_${calls.length}_selected.xlsx`;
+  downloadBlob(blob, fname);
   showToast(`Excel (.xlsx) generated successfully (${calls.length} calls)!`, 'success');
 }
 
@@ -800,7 +813,8 @@ function exportToCsv() {
 
   const csvContent = '\uFEFF' + csvRows.join('\r\n');
   const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
-  downloadBlob(blob, 'call_logs_export.csv');
+  const fname = calls.length === AppState.activeCalls.length ? 'call_logs.csv' : `call_logs_${calls.length}_selected.csv`;
+  downloadBlob(blob, fname);
   showToast(`CSV (.csv) generated successfully (${calls.length} calls)!`, 'success');
 }
 
@@ -840,13 +854,14 @@ function exportToJson() {
 
   const jsonStr = JSON.stringify(payload, null, 2);
   const blob = new Blob([jsonStr], { type: 'application/json;charset=utf-8;' });
-  downloadBlob(blob, 'call_logs_export.json');
+  const fname = calls.length === AppState.activeCalls.length ? 'call_logs.json' : `call_logs_${calls.length}_selected.json`;
+  downloadBlob(blob, fname);
   showToast(`JSON (.json) generated successfully (${calls.length} calls)!`, 'success');
 }
 
 // 4. iCalendar (.ics) Exporter
-function exportToIcs() {
-  const calls = getTargetCallsForExport();
+function exportToIcs(singleCall = null) {
+  const calls = singleCall ? [singleCall] : getTargetCallsForExport();
   if (calls.length === 0) {
     showToast('No calls available to export!', 'error');
     return;
@@ -901,8 +916,9 @@ function exportToIcs() {
 
   const icsContent = icsLines.join('\r\n');
   const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8;' });
-  downloadBlob(blob, 'call_logs_export.ics');
-  showToast(`Calendar (.ics) generated successfully (${calls.length} events)!`, 'success');
+  const fname = calls.length === 1 ? `call_${calls[0].date}_${calls[0].time.replace(/:/g, '')}.ics` : (calls.length === AppState.activeCalls.length ? 'call_logs.ics' : `call_logs_${calls.length}_selected.ics`);
+  downloadBlob(blob, fname);
+  showToast(`Calendar (.ics) generated successfully (${calls.length} event${calls.length > 1 ? 's' : ''})!`, 'success');
 }
 
 // 5. ZIP Bundle Exporter (All 4 formats)
@@ -913,7 +929,7 @@ async function exportToZip() {
     return;
   }
 
-  showToast('Preparing ZIP package with all 4 formats...', 'info');
+  showToast(`Preparing ZIP package with ${calls.length} calls in all 4 formats...`, 'info');
 
   const zip = new JSZip();
 
@@ -970,9 +986,9 @@ async function exportToZip() {
   icsLines.push("END:VCALENDAR");
   zip.file("call_logs.ics", icsLines.join('\r\n'));
 
-  // Generate Zip
   const zipContent = await zip.generateAsync({ type: 'blob' });
-  downloadBlob(zipContent, 'call_logs_bundle.zip');
+  const fname = calls.length === AppState.activeCalls.length ? 'call_logs_bundle.zip' : `call_logs_${calls.length}_selected_bundle.zip`;
+  downloadBlob(zipContent, fname);
   showToast('Complete ZIP bundle downloaded successfully!', 'success');
 }
 
@@ -1046,7 +1062,7 @@ function initEventListeners() {
 
   DOM.btnExportXlsx.addEventListener('click', exportToExcel);
   DOM.btnExportCsv.addEventListener('click', exportToCsv);
-  DOM.btnExportIcs.addEventListener('click', exportToIcs);
+  DOM.btnExportIcs.addEventListener('click', () => exportToIcs());
   DOM.btnExportJson.addEventListener('click', exportToJson);
   DOM.btnExportZip.addEventListener('click', exportToZip);
 
@@ -1100,13 +1116,15 @@ function initEventListeners() {
   DOM.btnSelectAll.addEventListener('click', () => {
     AppState.filteredCalls.forEach(c => AppState.selectedIds.add(c.id));
     renderTable();
-    showToast(`Selected ${AppState.selectedIds.size} calls`, 'info');
+    updateSelectionUI();
+    showToast(`Selected ${AppState.selectedIds.size} calls for export`, 'info');
   });
 
   DOM.btnSelectNone.addEventListener('click', () => {
     AppState.selectedIds.clear();
     renderTable();
-    showToast('Cleared selection', 'info');
+    updateSelectionUI();
+    showToast('Selection cleared. Will export all matching calls.', 'info');
   });
 
   DOM.chkSelectPage.addEventListener('change', (e) => {
@@ -1120,6 +1138,7 @@ function initEventListeners() {
       else AppState.selectedIds.delete(c.id);
     });
     renderTable();
+    updateSelectionUI();
   });
 
   DOM.callsTableBody.addEventListener('change', (e) => {
@@ -1130,6 +1149,11 @@ function initEventListeners() {
 
       const tr = e.target.closest('tr');
       if (tr) tr.classList.toggle('row-selected', e.target.checked);
+      updateSelectionUI();
+
+      if (AppState.selectedIds.size > 0) {
+        showToast(`${AppState.selectedIds.size} call(s) selected for export`, 'info', 1800);
+      }
     }
   });
 
@@ -1138,6 +1162,14 @@ function initEventListeners() {
     if (inspectBtn) {
       const id = inspectBtn.getAttribute('data-id');
       openDetailsModal(id);
+      return;
+    }
+
+    const singleIcsBtn = e.target.closest('.btn-export-single-ics');
+    if (singleIcsBtn) {
+      const id = singleIcsBtn.getAttribute('data-id');
+      const call = AppState.activeCalls.find(c => c.id === id);
+      if (call) exportToIcs(call);
     }
   });
 
